@@ -53,13 +53,37 @@
 
   <section id="ranking_section">
     <div class="first_container">
-      <p><?php $price ?></p>
+      <a href="detail-1.php"><img src="common/images/CC_donuts.jpg" alt=""></a>
+      <p>CCドーナツ(5個入り)</p>
+      <p>税込 \1,500円</p>
+      <p><input type="submit" value="カートに入れる"></p>
     </div>
-    <div class="second_container"></div>
-    <div class="third_container"></div>
-    <div class="fourth_container"></div>
-    <div class="fifth_container"></div>
-    <div class="sixth_container"></div>
+    <div class="second_container">
+      <a href="#ranking_section"><img src="common/images/fruits_donuts_1.jpg" alt=""></a>
+      <p>フルーツドーナツセット(12個入り)</p>
+      <p>税込 \3500円</p>
+      <p><input type="submit" value="カートに入れる"></p>
+    </div>
+    <div class="third_container">
+      <a href="common/images/fruits_donuts_2.jpg"></a>
+      <p>フルーツドーナツセット(14個入り)</p>
+      <p>税込 \4000円</p>
+    </div>
+    <div class="fourth_container">
+      <a href="#ranking_section"><img src="common/images/chocolate_delight.jpg" alt=""></a>
+      <p>チョコレートデライト(5個入り)</p>
+      <p>税込 \1600円</p>
+    </div>
+    <div class="fifth_container">
+      <a href="#ranking_section"><img src="common/images/best_selection.jpg" alt=""></a>
+      <p>ベストセレクションボックス(4個入り)</p>
+      <p>税込 \1200円</p>
+    </div>
+    <div class="sixth_container">
+      <a href="#ranking_section"><img src="common/images/strawberry_crush.jpg" alt=""></a>
+      <p>ストロベリークラッシュ(4個入り)</p>
+      <p>税込 \1800円</p>
+    </div>
   </section>
 
   <?php require 'includes/header.php'; ?>
