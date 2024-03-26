@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<?php require 'includes/header.php'; ?>
+<?php require 'inrcludes/heade.php'; ?>
 <br>
 <br>
 <br>

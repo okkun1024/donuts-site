@@ -27,7 +27,6 @@
                 <!-- メニュー本文 -->
                 <ul>
                     <li><img src="" alt="logo"></li>
-                    <li><a href="#">top</a></li>
                     <li><a href="">TOP</a></li>
                     <li><a href="">商品一覧</a></li>
                     <li><a href="">よくある質問</a></li>
