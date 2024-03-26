@@ -15,7 +15,9 @@
 </head>
 
 <body>
-  testtestテスト
+  <div class="hero_container">
+    <img src="comon/images/top_hero.jpg" alt="">
+  </div>
 </body>
 
 </html>
