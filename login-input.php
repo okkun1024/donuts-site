@@ -11,30 +11,34 @@
   <!-- 必要ならば下記のCSSを追加して -->
   <link rel="stylesheet" href="common/css/common.css">
   <style>
-    form{
+    form {
+      margin: auto;
       border: 2px solid #E8C2CA;
-      width:50%;
+      width: 50%;
     }
-    p,h1{text-align:center;}
-    input{
+    p,
+    h1 {
+      text-align: center;
+    }
+    input {
       display: block;
-      margin:  auto;}
-    
+      margin: auto;
+    }
   </style>
   <!-- タイトルここ -->
   <title>ログイン-入力ページ</title>
 </head>
 
 <body>
-<h1>ログイン</h1>
+  <h1>ログイン</h1>
+  <form action="login-complete.php" method="post">
+    <p>メールアドレス</p>
+    <input type="email" name="mail" required>
+    <p>パスワード</p>
+    <input type="password" name="password" required>
+    <input type="submit" value="ログインする">
+  </form>
 
-<form action="login-complete.php" method="post">
-<p>メールアドレス</p>
-<input type="email" name="mail" required>
-<p>パスワード</p>
-<input type="password" name="password" required>
-<input type="submit" value="ログインする">
-</form>
+  <p><a href="customer-input.php">会員登録がお済でない方はこちら</a></p>
 </body>
-
 </html>
