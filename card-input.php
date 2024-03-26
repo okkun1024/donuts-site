@@ -21,9 +21,11 @@
     <p>お名前<span></span></p>
     <input type="text" name="name">
     <p>カード会社<span></span></p>
-    <label><input type="radio" name="JCB" value="JCB">JCB</label>
-    <label><input type="radio" name="Visa" value="Visa">Visa</label>
-    <label><input type="radio" name="Mastercard" value="Mastercard">Mastercard</label>
+    <div>
+      <label><input type="radio" name="JCB" value="JCB">JCB</label>
+      <label><input type="radio" name="Visa" value="Visa">Visa</label>
+      <label><input type="radio" name="Mastercard" value="Mastercard">Mastercard</label>
+    </div>
     <p>カード番号<span></span></p>
     <input type="text" name="cardNumber">
     <p>有効期限<span></span></p>
