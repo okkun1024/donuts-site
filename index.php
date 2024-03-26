@@ -34,6 +34,7 @@
         <p>ドーナツのある生活</p>
       </div>
       <div class="item_list">
+        <img src="common/images/ist_product.jpg" alt="">
         <p>商品一覧</p>
       </div>
     </div>
