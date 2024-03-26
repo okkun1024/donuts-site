@@ -17,10 +17,10 @@
 <body>
 
   <div class="hero_container">
-    <img src="comon/images/top_hero.jpg" alt="">
+    <img src="common/images/top_hero.jpg" alt="">
   </div>
 
-<?php require 'inrcludes/heade.php'; ?>
+<?php require 'includes/header.php'; ?>
 <br>
 <br>
 <br>
