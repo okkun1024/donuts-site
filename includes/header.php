@@ -15,8 +15,16 @@
 </head>
 <body>
 <header>
-    <h1>
-        <img src="../common/images/X_icon.svg" alt="logo"></h1>
+    <div class="header_container">
+        <h1>
+            <a href="../index.php #introduce_section"><img src="../common/images/shop_logo.svg" alt="logo"></a>
+        </h1>
+        <div class="header_container_icon">
+            <a href="../login-input.php"><img src="../common/images/login_icon.svg" alt="">
+        ログイン</a>
+            <a href="../cart-show.php"><img class="cart_icon" src="../common/images/cart_icon.svg" alt="">カート</a>
+        </div>
+    </div>
 <div class="openbtn1"><span></span><span></span><span></span></div>
 <nav id="g-nav">
 <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
