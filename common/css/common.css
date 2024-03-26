@@ -1,125 +1,161 @@
 @charset "utf-8";
 
-/* ハンバーガーメニュー */
-.hum_menu {
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 100%;
-    z-index: 25;
-  }
+
+h1{
+  text-align: center;
+}
+/*========= ナビゲーションのためのCSS ===============*/
+
+#g-nav{
+  /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+  position: fixed;
+  z-index: 999;
+  /*ナビのスタート位置と形状*/
+  top: 0;
+  left: -120%; /* 右からではなく左から出てくるように変更 */
+  width: 100%;
+  height: 100vh; /*ナビの高さ*/
+  background: #999;
+  /*動き*/
+  transition: all 0.6s;
+}
+
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive{
+  left: 0; /* 右からではなく左からスライドイン */
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list{
+  /*ナビの数が増えた場合縦スクロール*/
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100vh; /*表示する高さ*/
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+  /*ナビゲーション天地中央揃え*/
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*リストのレイアウト設定*/
+#g-nav li{
+  list-style: none;
+  text-align: center;
+}
+
+#g-nav li a{
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn1{
+  position:fixed;
+    z-index: 9999;/*ボタンを最前面に*/
+  top:10px;
+  left: 10px;
+  cursor: pointer;
+    width: 50px;
+    height:50px;
+}
   
-  /* チェックボックスを非表示に */
-  .hum_menu .menu_button {
-    display: none;
-  }
-  
-  /* アイコンの位置を右上に固定 */
-  .hum_menu .menu_icon {
+/*×に変化*/  
+.openbtn1 span{
+    display: inline-block;
+    transition: all .4s;
     position: absolute;
-    right: 8px;
-    top: 8px;
-    padding-top: 5px;
-    height: 10px;
-    cursor: pointer;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+  background-color: #666;
+    width: 45%;
   }
-  
-  .hum_menu .menu_icon .menu_bg {
-    width: 48px;
-    height: 48px;
-    background-color: var(--black);
-    opacity: 0.5;
-    border-radius: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* span要素で三本線を作成 */
-  .hum_menu .menu_icon .nav_icon {
-    display: flex;
-    flex-direction: row;
-    background-color: var(--gray);
-    height: 2px;
-    width: 36px;
-    position: relative;
-    transition: all 0.4s ease-out;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* 上と下に線を表示 */
-  .hum_menu .menu_icon .nav_icon::after {
-    content: "";
-    position: absolute;
-    display: block;
-    background-color: var(--gray);
-    top: -12px;
-    width: 75%;
-    height: 100%;
-    transition: all 0.4s ease-out;
-  }
-  
-  .hum_menu .menu_icon .nav_icon::before {
-    content: "";
-    position: absolute;
-    display: block;
-    background-color: var(--gray);
-    top: 12px;
-    width: 75%;
-    height: 100%;
-    transition: all 0.4s ease-out;
-  }
-  
-  /* メニュー部分のスタイルを設定 */
-  .hum_menu ul {
-    background-color: rgba(0, 0, 0, 0.7);
-    text-align: center;
-    /* チェックが入ってないときに中が見えないようにする設定 */
-    overflow: hidden;
-    /* 高さを0にすることによって非表示にする */
-    max-height: 0;
-    transition: all 0.6s;
-  }
-  
-  .hum_menu .menu_button:checked ~ ul {
-    max-height: 800px;
-    height: 532px;
-    padding: 8px;
-  }
-  
-  .hum_menu ul li {
-    color: var(--white);
-    font-size: 20px;
-    text-transform: uppercase;
-    margin-bottom: 32px;
-    font-weight: bold;
-  }
-  
-  .hum_menu a {
-    font-size: 20px;
-  }
-  
-  .hum_menu ul li img {
-    width: 100px;
-    margin-bottom: 72px;
-  }
-  
-  .hum_menu .menu_button:checked ~ .menu_icon .nav_icon {
-    background-color: transparent;
-  }
-  
-  .hum_menu .menu_button:checked ~ .menu_icon .nav_icon::after {
-    /* 線を回転させて×マークを作成する */
-    transform: rotate(45deg);
-    top: 0px;
-    width: 100%;
-  }
-  
-  .hum_menu .menu_button:checked ~ .menu_icon .nav_icon::before {
-    transform: rotate(-45deg);
-    top: 0px;
-    width: 100%;
-  }
-  
-  /* ハンバーガーメニューここまで */
+
+.openbtn1 span:nth-of-type(1) {
+  top:15px; 
+}
+
+.openbtn1 span:nth-of-type(2) {
+  top:23px;
+}
+
+.openbtn1 span:nth-of-type(3) {
+  top:31px;
+}
+
+.openbtn1.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn1.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn1.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+h1{
+  font-size:1.2rem;
+}
+
+h2{
+  font-size:1.2rem;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+p{
+  margin-top:20px;  
+}
+
+small{
+  color:#fff;
+  display: block;
+  text-align: center;
+}
+
+#header{
+  width:100%;
+  background:#333;
+  color:#fff;
+  text-align: center;
+  padding: 20px;
+}
+
+section{
+  padding:100px 30px;
+}
+
+section:nth-child(2n){
+  background:#f3f3f3; 
+}
+
+#footer{
+  background:#333;
+  padding:20px;
+}
