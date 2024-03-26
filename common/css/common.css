@@ -2,8 +2,22 @@
 
 
 h1{
-  text-align: center;
+margin-left: auto;
+margin-right: auto;
 }
+.header_container{
+  display: flex
+}
+.header_container_icon{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.cart_icon{
+  margin-left: 10px;
+}
+
 /*========= ナビゲーションのためのCSS ===============*/
 
 #g-nav{
@@ -12,7 +26,7 @@ h1{
   z-index: 999;
   /*ナビのスタート位置と形状*/
   top: 0;
-  left: -120%; /* 右からではなく左から出てくるように変更 */
+  left: -120%; /* 右からではなく左から出てくる */
   width: 100%;
   height: 100vh; /*ナビの高さ*/
   background: #999;
@@ -76,7 +90,7 @@ h1{
 /*×に変化*/  
 .openbtn1 span{
     display: inline-block;
-    transition: all .4s;
+    transition: all .2s;
     position: absolute;
     left: 14px;
     height: 3px;
@@ -127,10 +141,6 @@ h2{
   font-size:1.2rem;
   text-align: center;
   margin: 0 0 30px 0;
-}
-
-p{
-  margin-top:20px;  
 }
 
 small{
