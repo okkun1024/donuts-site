@@ -26,9 +26,11 @@
   <section id="topic_section">
     <div class="topic_container">
       <div class="new_product">
+        <img src="common/images/summer_citrus.jpg" alt="">
         <p>サマーシトラス</p>
       </div>
       <div class="product_promotion">
+        <img src="common/images/life_with_donuts.jpg" alt="">
         <p>ドーナツのある生活</p>
       </div>
       <div class="item_list">
