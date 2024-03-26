@@ -15,6 +15,11 @@
 </head>
 
 <body>
+
+  <div class="hero_container">
+    <img src="comon/images/top_hero.jpg" alt="">
+  </div>
+
 <?php require 'inrcludes/heade.php'; ?>
 <br>
 <br>
@@ -25,6 +30,7 @@
 <br>
 <br>
 <?php require 'includes/footer.php'; ?>
+
 
 </body>
 
