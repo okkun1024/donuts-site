@@ -15,7 +15,17 @@
 </head>
 
 <body>
-  testtestテスト
+<?php require 'inrcludes/heade.php'; ?>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<?php require 'includes/footer.php'; ?>
+
 </body>
 
 </html>
