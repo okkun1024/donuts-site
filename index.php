@@ -20,16 +20,30 @@
     <img src="common/images/top_hero.jpg" alt="">
   </div>
 
-<?php require 'includes/header.php'; ?>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<?php require 'includes/footer.php'; ?>
+  <div class="topic_container">
+    <div class="new_product">
+      <p>サマーシトラス</p>
+    </div>
+    <div class="product_promotion">
+      <p>ドーナツのある生活</p>
+    </div>
+    <div class="item_list">
+      <p>商品一覧</p>
+    </div>
+  </div>
+
+
+
+  <?php require 'includes/header.php'; ?>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <?php require 'includes/footer.php'; ?>
 
 
 </body>
