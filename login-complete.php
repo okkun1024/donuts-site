@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -11,10 +12,26 @@
   <!-- 必要ならば下記のCSSを追加して -->
   <link rel="stylesheet" href="">
   <!-- タイトルここ -->
-  <title>Document</title>
+  <title>ログイン完了画面</title>
 </head>
 
 <body>
+<?php
+unset ($_SESSION['customer']);
+$pdo = new PDO('mysql:host=localhost;dbname=donuts;charset=utf8','donuts','password');
+
+$sql=$pdo->prepare('select * from customer where mail=? and password=?');
+$sql->execute([$_REQUEST['mail'],$_REQUEST['password']]);
+foreach($sql as $row ){
+  $_SESSION['customer']=[
+  'id'=>$row['id'], 'name'=>$row['name'],'kana'=>$row['kana'],'post_code'=>$row['post_code'], 
+  'address'=>$row['address'],'mail'=>$row['mail'],'password'=>$row['password']];
+}
+if(isset($_SESSION['customer'])){
+  echo
+}
+
+?>
 
 </body>
 
