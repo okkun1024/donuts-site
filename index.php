@@ -15,7 +15,13 @@
 </head>
 
 <body>
+<<<<<<< HEAD
   testtest
+=======
+  testtest　石川
+  testtestテスト
+  isikawa
+>>>>>>> 9dff393452eedc575f81f45875095de54763918a
 </body>
 
 </html>
