@@ -15,9 +15,17 @@
 </head>
 
 <body>
-  testtest　石川
-  testtestテスト
-  isikawa
+<?php require 'inrcludes/heade.php'; ?>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<?php require 'includes/footer.php'; ?>
+
 </body>
 
 </html>
