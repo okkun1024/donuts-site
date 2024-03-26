@@ -15,7 +15,11 @@
 </head>
 
 <body>
+<<<<<<< HEAD
   testtest　石川
+=======
+  testtestテスト
+>>>>>>> bc69983b5f66e4b3695294eac32f3b0f4f5bf493
 </body>
 
 </html>
