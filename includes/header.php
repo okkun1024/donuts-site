@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../common/css/reset.css">
   <!-- 必要ならば下記のCSSを追加して -->
@@ -17,14 +17,26 @@
 <header>
 <div class="header_container">
     <h1>
-        <a href="../index.php #introduce_section"><img src="../common/images/shop_logo.svg" alt="logo"></a>
+        <a href="../index.php #introduce_section">
+            <img src="../common/images/shop_logo.svg" alt="logo">
+        </a>
     </h1>
     <div class="header_container_icon">
         <div class="header_container_icon_login">
-            <a href="../login-input.php">
-                <img src="../common/images/login_icon.svg" alt="">
-                <span>ログイン</span>
-            </a>
+            <?php
+            if(isset($_SESSION['customer'])){
+                echo '<a href="logout-input.php">';
+                echo '<img src="../common/images/login_icon.svg" alt="">';
+                echo '<span>ログアウト</span>';
+                echo '</a>';
+            }else{
+                echo '<a href="login-input.php">';
+                echo '<img src="../common/images/login_icon.svg" alt="">';
+                echo '<span>ログイン</span>';
+                echo '</a>';
+            }
+            ?>
+           
         </div>
         <div class="header_container_icon_cart">
             <a href="../cart-show.php">
@@ -36,11 +48,12 @@
   
 </div>
 <div class="openbtn1"><span></span><span></span><span></span></div>
-<nav id="g-nav">
-<div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+<nav id="g_nav">
+<div id="g_nav_list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+<img src="../common/images/shop_logo.svg" class="nav_image">
 <ul>
-<li><a href="#">Top</a></li>  
-<li><a href="#">商品一覧</a></li>  
+<li><a href="../index.php">Top</a></li>  
+<li><a href="../product.php ">商品一覧</a></li>  
 <li><a href="#">よくある質問</a></li>  
 <li><a href="#">問い合わせ</a></li>  
 <li><a href="#">当サイトのポリシー</a></li>   
@@ -48,7 +61,7 @@
 </div>
 </nav>
 <div class="hedder_search_box">
-     <form action="#" class="search-form-1">
+     <form action="#" class="search_form_1">
         <button type="submit" aria-label="検索"></button>
 
         <label>

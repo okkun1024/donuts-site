@@ -11,27 +11,58 @@
   <!-- 必要ならば下記のCSSを追加して -->
   <link rel="stylesheet" href="common/css/common.css">
   <style>
-    form {
+    .former {
       margin: auto;
       border: 2px solid #E8C2CA;
-      width: 50%;
+      width: 89%;
     }
-    p,
-    h1 {
+    .former p{
+      margin:20px 0 4px 4%;
+      font-size: 12px;
+      color:#7F5539;
+    }
+    .login-inp-h1{
+      margin:32px 0 60px 0; 
       text-align: center;
+      color:#7F5539;
     }
-    input {
+    .former input {
       display: block;
       margin: auto;
+      width:90%;
     }
+    .former input[type=submit]{
+      width:200px;
+      padding:12px;
+      border-style: none;
+      background-color: #7F5539;
+      font-size: 16px;
+      color:white;
+      margin-top:40px;
+      margin-bottom:20px;
+    }
+    .relog{
+      width:95%;
+    }
+    .relog a{
+      display: block;
+      text-align: right;
+      margin-top:24px;
+      text-decoration: underline;
+      color:#7F5539;
+    }
+    
   </style>
   <!-- タイトルここ -->
   <title>ログイン-入力ページ</title>
 </head>
 
 <body>
-  <h1>ログイン</h1>
-  <form action="login-complete.php" method="post">
+  <?php
+  require 'includes/header.php';
+  ?>
+  <h1 class=login-inp-h1>ログイン</h1>
+  <form class="former"action="login-complete.php" method="post">
     <p>メールアドレス</p>
     <input type="email" name="mail" required>
     <p>パスワード</p>
@@ -39,6 +70,9 @@
     <input type="submit" value="ログインする">
   </form>
 
-  <p><a href="customer-input.php">会員登録がお済でない方はこちら</a></p>
+  <p class="relog"><a href="customer-input.php">会員登録がお済でない方はこちら</a></p>
+  <?php
+  require 'includes/footer.php';
+  ?>
 </body>
 </html>

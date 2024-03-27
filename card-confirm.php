@@ -17,6 +17,7 @@
 <body>
   <img src="common/images/shop_logo.svg" alt="c.c.donuts">
   <?php
+
   echo '<h1>ご入力内容の確認</h1>';
   echo '<p>お名前</p>';
   echo '<p>|', htmlspecialchars($_REQUEST['name']), '</p>';
@@ -30,6 +31,17 @@
 
 
   ?>
+
+
+  echo <<<END
+<h1>ご入力内容の確認</h1>
+
+
+
+
+END;
+  ?>
+
 
 
 

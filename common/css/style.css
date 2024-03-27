@@ -77,10 +77,63 @@ body {
     bottom: 7%;
 }
 
-#introduce_section {}
+#introduce_section {
+    background-image: url(../images/sp_introduce_background.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    object-fit: cover;
+    height: 568px;
+}
+
+.introduce_container {
+    text-align: center;
+    color: #fff;
+}
+
+.introduce_container h2 {
+    font-size: clamp(24px, 6vw, 40px);
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.introduce_container h3 {
+    font-size: clamp(16px, 4vw, 32px);
+    padding-bottom: 60px;
+}
+
+.philosophy_title {
+    font-size: clamp(20px, 5vw, 36px);
+    padding-bottom: 12px;
+}
+
+.philosophy_explain {
+    font-size: clamp(16px, 4vw, 32px);
+    padding-bottom: 300px;
+}
 
 .introduce_container img {
     width: 100%;
+}
+
+#ranking_section {
+    padding: 0 5.333vw;
+}
+
+#ranking_section h2 {
+    text-align: center;
+    font-size: clamp(20px, 5vw, 36px);
+    padding: 32px 0 80px;
+}
+
+#ranking_section img {
+    width: 42.133vw;
+}
+
+.first_second,
+.third_fourth,
+.fifth_sixth {
+    display: flex;
+
 }
 
 @media screen and (min-width: 768px) {}
