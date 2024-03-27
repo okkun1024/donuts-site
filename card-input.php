@@ -41,6 +41,8 @@
       color: #BF0000;
     }
 
+
+
     input[type=text],
     input[type=submit] {
       display: block;
@@ -107,7 +109,7 @@
 
   <form action="card-confirm.php" method="post">
     <p>お名前<span>（必須）</span></p>
-    <input type="text" name="name" id="formLong" required>
+    <input type="text" autocomplete="cc-name" name="name" id="formLong" required>
     <p>カード会社<span>（必須）</span></p>
 
     <label><input type="radio" name="card" value="JCB" checked="checked" required>JCB</label>
@@ -115,19 +117,19 @@
     <label><input type="radio" name="card" value="Mastercard">Mastercard</label>
 
     <p>カード番号<span>（必須）</span></p>
-    <input type="text" name="cardNumber" id="formLong" required>
+    <input type="text" autocomplete="cc-number" name="cardNumber" id="formLong" inputmode="numeric" pattern="[\d ]{14,16}" title="14〜16桁の番号を入力してください" required>
 
     <p>有効期限<span>（必須）</span></p>
-    <div><input type="text" name="cardExpirationMonth" id="formShort" required><span class="formExpiration">月</span></div>
-    <div><input type="text" name="cardExpirationYear" id="formShort"><span class="formExpiration">年</span></div>
+    <div><input type="text" autocomplete="cc-exp-month" name="cardExpirationMonth" id="formShort" pattern="[\d ]{2}" title="2桁の番号を入力してください" required><span class="formExpiration">月</span></div>
+    <div><input type="text" autocomplete="cc-exp-year" name="cardExpirationYear" id="formShort" pattern="[\d ]{4}" title="4桁の番号を入力してください"><span class="formExpiration">年</span></div>
 
     <p class="formSecurity">セキュリティーコード<span>（必須）</span></p>
-    <input type="text" name="security" id="formShort" required>
+    <input type="text" autocomplete="cc-csc" name="security" id="formShort" pattern="[\d ]{3,4}" title="4桁以下の番号を入力してください" required>
 
     <input type="submit" value="ご入力内容を確認する">
   </form>
 
-  <?php require 'includes/footer.php' ?>
+  <?php require 'includes/footer.php'; ?>
 
 </body>
 
