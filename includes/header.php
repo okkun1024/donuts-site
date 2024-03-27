@@ -17,14 +17,26 @@
 <header>
 <div class="header_container">
     <h1>
-        <a href="../index.php #introduce_section"><img src="../common/images/shop_logo.svg" alt="logo"></a>
+        <a href="../index.php #introduce_section">
+            <img src="../common/images/shop_logo.svg" alt="logo">
+        </a>
     </h1>
     <div class="header_container_icon">
         <div class="header_container_icon_login">
-            <a href="../login-input.php">
-                <img src="../common/images/login_icon.svg" alt="">
-                <span>ログイン</span>
-            </a>
+            <?php
+            if(isset($_SESSION['customer'])){
+                echo '<a href="logout-input.php">';
+                echo '<img src="../common/images/login_icon.svg" alt="">';
+                echo '<span>ログアウト</span>';
+                echo '</a>';
+            }else{
+                echo '<a href="login-input.php">';
+                echo '<img src="../common/images/login_icon.svg" alt="">';
+                echo '<span>ログイン</span>';
+                echo '</a>';
+            }
+            ?>
+           
         </div>
         <div class="header_container_icon_cart">
             <a href="../cart-show.php">
