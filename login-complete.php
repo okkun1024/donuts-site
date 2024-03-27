@@ -28,7 +28,7 @@ foreach($sql as $row ){
   'address'=>$row['address'],'mail'=>$row['mail'],'password'=>$row['password']];
 }
 if(isset($_SESSION['customer'])){
-  echo
+  
 }
 
 ?>
