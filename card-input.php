@@ -126,7 +126,7 @@
     <input type="submit" value="ご入力内容を確認する">
   </form>
 
-  <?php require 'includes/footer.php' ?>
+  <?php require 'includes/footer.php'; ?>
 
 </body>
 

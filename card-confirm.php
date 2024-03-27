@@ -9,12 +9,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="common/css/reset.css">
   <!-- 必要ならば下記のCSSを追加して -->
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="common/css/common.css">
   <!-- タイトルここ -->
-  <title>Document</title>
+  <title>カード入力内容確認</title>
 </head>
-<body>
 
+<body>
+  <img src="common/images/shop_logo.svg" alt="c.c.donuts">
+  <?php
+  echo <<<END
+<h1>ご入力内容の確認</h1>
+
+
+
+
+
+
+
+
+END;
+
+
+
+
+  ?>
+
+
+
+  <?php require 'includes/footer.php'; ?>
 </body>
 
 </html>
