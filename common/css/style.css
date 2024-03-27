@@ -121,6 +121,15 @@ body {
     padding: 32px 0 80px;
 }
 
+#ranking_section img {
+    width: 42.133vw;
+}
+
+.first_second,
+.third_fourth,
+.fifth_sixth {
+    display: flex;
+}
 
 @media screen and (min-width: 768px) {}
 

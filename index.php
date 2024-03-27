@@ -78,10 +78,10 @@
       </div>
     </div>
 
-    <div class="third_fours">
+    <div class="third_fourth">
       <div class="third_container">
         <div class="third_icon"><span>3</span></div>
-        <a href="common/images/fruits_donuts_2.jpg"></a>
+        <a href="#ranking_section"><img src="common/images/fruits_donuts_2.jpg"></a>
         <p>フルーツドーナツセット(14個入り)</p>
         <p>税込 \4000円</p>
       </div>
