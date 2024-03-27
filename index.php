@@ -51,46 +51,61 @@
 
   <section id="introduce_section">
     <div class="introduce_container">
-      <img src="common/images/introduce_background.jpg" alt="">
       <h2>philosophy</h2>
       <h3>私たちの信念</h3>
-      <p>"Creating Connections"</p>
-      <p>ドーナツでつながる</p>
+      <p class="philosophy_title">"Creating Connections"</p>
+      <p class="philosophy_explain">ドーナツでつながる</p>
     </div>
   </section>
 
   <section id="ranking_section">
-    <div class="first_container">
-      <a href="detail-1.php"><img src="common/images/CC_donuts.jpg" alt=""></a>
-      <p>CCドーナツ(5個入り)</p>
-      <p>税込 \1,500円</p>
-      <p><input type="submit" value="カートに入れる"></p>
+    <h2>人気ランキング</h2>
+
+    <div class="first_second">
+      <div class="first_container">
+        <div class="first_icon"><span>1</span></div>
+        <a href="detail-1.php"><img src="common/images/CC_donuts.jpg" alt=""></a>
+        <p>CCドーナツ(5個入り)</p>
+        <p>税込 \1,500円</p>
+        <p><input type="submit" value="カートに入れる"></p>
+      </div>
+      <div class="second_container">
+        <div class="second_icon"><span>2</span></div>
+        <a href="#ranking_section"><img src="common/images/fruits_donuts_1.jpg" alt=""></a>
+        <p>フルーツドーナツセット(12個入り)</p>
+        <p>税込 \3500円</p>
+        <p><input type="submit" value="カートに入れる"></p>
+      </div>
     </div>
-    <div class="second_container">
-      <a href="#ranking_section"><img src="common/images/fruits_donuts_1.jpg" alt=""></a>
-      <p>フルーツドーナツセット(12個入り)</p>
-      <p>税込 \3500円</p>
-      <p><input type="submit" value="カートに入れる"></p>
+
+    <div class="third_fours">
+      <div class="third_container">
+        <div class="third_icon"><span>3</span></div>
+        <a href="common/images/fruits_donuts_2.jpg"></a>
+        <p>フルーツドーナツセット(14個入り)</p>
+        <p>税込 \4000円</p>
+      </div>
+      <div class="fourth_container">
+        <div class="fourth_icon"><span>4</span></div>
+        <a href="#ranking_section"><img src="common/images/chocolate_delight.jpg" alt=""></a>
+        <p>チョコレートデライト(5個入り)</p>
+        <p>税込 \1600円</p>
+      </div>
     </div>
-    <div class="third_container">
-      <a href="common/images/fruits_donuts_2.jpg"></a>
-      <p>フルーツドーナツセット(14個入り)</p>
-      <p>税込 \4000円</p>
-    </div>
-    <div class="fourth_container">
-      <a href="#ranking_section"><img src="common/images/chocolate_delight.jpg" alt=""></a>
-      <p>チョコレートデライト(5個入り)</p>
-      <p>税込 \1600円</p>
-    </div>
-    <div class="fifth_container">
-      <a href="#ranking_section"><img src="common/images/best_selection.jpg" alt=""></a>
-      <p>ベストセレクションボックス(4個入り)</p>
-      <p>税込 \1200円</p>
-    </div>
-    <div class="sixth_container">
-      <a href="#ranking_section"><img src="common/images/strawberry_crush.jpg" alt=""></a>
-      <p>ストロベリークラッシュ(4個入り)</p>
-      <p>税込 \1800円</p>
+
+    <div class="fifth_sixth">
+      <div class="fifth_container">
+        <div class="fifth_icon"><span>5</span></div>
+        <a href="#ranking_section"><img src="common/images/best_selection.jpg" alt=""></a>
+        <p>ベストセレクションボックス(4個入り)</p>
+        <p>税込 \1200円</p>
+      </div>
+      <div class="sixth_container">
+        <div class="sixth_icon"><span>6</span></div>
+        <a href="#ranking_section"><img src="common/images/strawberry_crush.jpg" alt=""></a>
+        <p>ストロベリークラッシュ(4個入り)</p>
+        <p>税込 \1800円</p>
+      </div>
     </div>
   </section>
 
