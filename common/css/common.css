@@ -283,6 +283,28 @@ section:nth-child(2n){
 }
 
 
+/* ----------フッター-------- */
+footer{
+  background-color: #ede0d4;
+}
+
+footer ul{
+  list-style: none;
+  border-left: 2px solid #b392ec;
+
+}
+
+.footer_list{
+  margin-left: 12px;
+}
+
+.footer_list li{
+  margin-top: 16px;
+  margin-left: 12px;
+  margin-bottom: 16px;
+}
+
+
 @media screen and (min-width: 768px){
 /* 最大 1200px */
 
