@@ -32,7 +32,8 @@
                 <span>カート</span>
             </a>
         </div>
-    </div>
+    </div> 
+  
 </div>
 <div class="openbtn1"><span></span><span></span><span></span></div>
 <nav id="g-nav">
@@ -46,6 +47,16 @@
 </ul>
 </div>
 </nav>
+<div class="hedder_search_box">
+     <form action="#" class="search-form-1">
+        <button type="submit" aria-label="検索"></button>
+
+        <label>
+            <input type="text">
+        </label>
+    </form>   
+</div>
+
 </header>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
 <script src="../common/js/comon.js"></script>
