@@ -18,6 +18,7 @@
   <img src="common/images/shop_logo.svg" alt="c.c.donuts">
   <?php
   echo <<<END
+<h1>ご入力内容の確認</h1>
 
 
 
