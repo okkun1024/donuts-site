@@ -58,7 +58,7 @@ margin-top: 16px;
 
 /*========= ナビゲーションのためのCSS ===============*/
 
-#g-nav{
+#g_nav{
   /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
   position: fixed;
   z-index: 999;
@@ -67,18 +67,22 @@ margin-top: 16px;
   left: -120%; /* 右からではなく左から出てくる */
   width: 100%;
   height: 100vh; /*ナビの高さ*/
-  background: #999;
+  background: #95735E;
   /*動き*/
   transition: all 0.6s;
 }
 
+.nav_image{
+  display: none;
+}
+
 /*アクティブクラスがついたら位置を0に*/
-#g-nav.panelactive{
+#g_nav.panelactive{
   left: 0; /* 右からではなく左からスライドイン */
 }
 
 /*ナビゲーションの縦スクロール*/
-#g-nav.panelactive #g-nav-list{
+#g_nav.panelactive #g_nav_list{
   /*ナビの数が増えた場合縦スクロール*/
   position: fixed;
   z-index: 999;
@@ -89,29 +93,33 @@ margin-top: 16px;
 }
 
 /*ナビゲーション*/
-#g-nav ul {
+
+
+#g_nav ul {
   /*ナビゲーション天地中央揃え*/
   position: absolute;
   z-index: 999;
-  top: 50%;
-  left: 50%;
+  top:140px;
+  left: 92px;
   transform: translate(-50%, -50%);
 }
 
 /*リストのレイアウト設定*/
-#g-nav li{
+#g_nav li{
   list-style: none;
-  text-align: center;
+border-bottom: 1px solid #fff;
 }
 
-#g-nav li a{
-  color: #333;
+
+#g_nav li a{
+  color: #fff;
   text-decoration: none;
-  padding: 10px;
+  padding-top: 16px;
+  padding-left: 12px;
+  padding-bottom: 16px;
   display: block;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-weight: bold;
 }
 
 /*========= ボタンのためのCSS ===============*/
@@ -149,11 +157,20 @@ margin-top: 16px;
   top:41px;
 }
 
+.openbtn1.active {
+  left: auto; /* 元々左に固定していた設定を解除 */
+  right: 10px; /* 右側に移動 */
+}
+
+.openbtn1.active span {
+  background-color: #FFF; /* ×ボタンの色を#FFFに変更 */
+}
+
 .openbtn1.active span:nth-of-type(1) {
     top: 18px;
     left: 18px;
     transform: translateY(6px) rotate(-45deg);
-    width: 30%;
+    /* width: 30%; */
 }
 
 .openbtn1.active span:nth-of-type(2) {
@@ -164,7 +181,12 @@ margin-top: 16px;
     top: 30px;
     left: 18px;
     transform: translateY(-6px) rotate(45deg);
-    width: 30%;
+    /* width: 30%; */
+}
+
+.openbtn1.active span:nth-of-type(1),
+.openbtn1.active span:nth-of-type(3) {
+  background-color: #FFF; /* 1番目と3番目のバーの色を#FFFに変更 */
 }
 
 .hedder_search_box{
@@ -174,7 +196,7 @@ margin-top: 16px;
   padding-right: 12px;
 }
 
-.search-form-1 {
+.search_form_1 {
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -183,9 +205,9 @@ margin-top: 16px;
 
 }
 
-.search-form-1 input {
-  width: 250px;
+.search_form_1 input {
   height: 37px;
+  width: 460%;
   padding: 5px 15px;
   border: none;
   box-sizing: border-box;
@@ -193,11 +215,11 @@ margin-top: 16px;
   outline: none;
 }
 
-.search-form-1 input::placeholder{
+.search_form_1 input::placeholder{
   color: #000000;
 }
 
-.search-form-1 button {
+.search_form_1 button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -211,7 +233,7 @@ margin-top: 16px;
   cursor: pointer;
 }
 
-.search-form-1 button::before {
+.search_form_1 button::before {
   width: 18px;
   height: 17.53px;
   background-image: url("../images/search_icon.svg");
@@ -264,6 +286,13 @@ section:nth-child(2n){
 @media screen and (min-width: 768px){
 /* 最大 1200px */
 
+.nav_image {
+  display: block; /* 画像をブロック要素として扱う */
+  width:58.95px ;
+  height: 51.91px;
+  margin-top: 12px;
+  margin-left: 12px;
+}
 
 }
 
