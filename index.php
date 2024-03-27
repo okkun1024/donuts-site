@@ -8,13 +8,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="common/css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
   <!-- 必要ならば下記のCSSを追加して -->
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="common/css/style.css">
   <!-- タイトルここ -->
   <title>Document</title>
 </head>
 
 <body>
+
+  <p class="welcome_message">ようこそ、ゲスト様(仮)</p>
 
   <section id="hero_section">
     <div class="hero_container">
@@ -33,11 +38,14 @@
         <img src="common/images/life_with_donuts.jpg" alt="">
         <p>ドーナツのある生活</p>
       </div>
-      <div class="item_list">
+    </div>
+    <div class="item_list">
+      <div>
         <img src="common/images/ist_product.jpg" alt="">
         <p>商品一覧</p>
       </div>
     </div>
+
   </section>
 
 
