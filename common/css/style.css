@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+body {
+    width: 100%;
+    font-family: 'Noto Sans JP';
+    font-size: clamp(12px, 0.3vw, 14px);
+}
+
+.welcome_message {
+    margin: 12px 0 12px 5.333vw;
+}
+
+#hero_section img {
+    width: 100%;
+}
+
+#topic_section {
+    padding: 20px 5.33vw;
+}
+
+.topic_container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.new_product {
+    position: relative;
+    margin-right: 5.33vw;
+
+}
+
+.new_product p {
+    font-family: 'Noto Serif JP';
+    font-size: clamp(12px, 3vw, 20px);
+    /* font-weight: bold; */
+    color: #fff;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+.product_promotion {
+    position: relative;
+}
+
+.product_promotion p {
+    font-family: 'Noto Serif JP';
+    font-size: clamp(12px, 3vw, 20px);
+    /* font-weight: bold; */
+    color: #fff;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+.new_product img,
+.product_promotion img {
+    width: 42.13vw;
+
+}
+
+.item_list {
+    position: relative;
+}
+
+.item_list img {
+    width: 89.33vw;
+}
+
+.item_list p {
+    font-family: 'Noto Serif JP';
+    font-size: clamp(12px, 3vw, 20px);
+    /* font-weight: bold; */
+    color: #7F5539;
+    position: absolute;
+    right: 2%;
+    bottom: 7%;
+}
+
+#introduce_section {}
+
+.introduce_container img {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {}
+
+;
