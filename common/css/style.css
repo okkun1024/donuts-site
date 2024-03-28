@@ -122,7 +122,24 @@ body {
 #ranking_section h2 {
     text-align: center;
     font-size: clamp(20px, 5vw, 36px);
-    padding: 32px 0 80px;
+    padding-top: 32px;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+h2:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    display: inline-block;
+    width: 40.53vw;
+    height: 4px;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translate(-50%);
+    background-color: #ffd233;
 }
 
 #ranking_section img {
