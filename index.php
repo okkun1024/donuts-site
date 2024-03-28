@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="common/css/reset.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,46 +66,68 @@
       <div class="first_container">
         <div class="first_icon"><span>1</span></div>
         <a href="detail-1.php"><img src="common/images/CC_donuts.jpg" alt=""></a>
-        <p>CCドーナツ(5個入り)</p>
-        <p>税込 \1,500円</p>
-        <p><input type="submit" value="カートに入れる"></p>
+        <p class="product_name">CCドーナツ 当店オリジナル(5個入り)</p>
+        <div class="price_container">
+          <p class="product_price">税込 &yen;1,500円</p>
+          <p><i class="fa-regular fa-heart"></i></p>
+        </div>
+        <p><input type="submit" value="カートに入れる" class="button"></p>
       </div>
       <div class="second_container">
-        <div class="second_icon"><span>2</span></div>
+        <div class="rank_icon"><span>2</span></div>
         <a href="#ranking_section"><img src="common/images/fruits_donuts_1.jpg" alt=""></a>
-        <p>フルーツドーナツセット(12個入り)</p>
-        <p>税込 \3500円</p>
-        <p><input type="submit" value="カートに入れる"></p>
+        <p class="product_name">フルーツドーナツセット(12個入り)</p>
+        <div class="price_container">
+          <p class="product_price">税込 &yen;3,500円</p>
+          <p><i class="fa-regular fa-heart"></i></p>
+        </div>
+        <p><input type="submit" value="カートに入れる" class="button"></p>
       </div>
     </div>
 
     <div class="third_fourth">
       <div class="third_container">
-        <div class="third_icon"><span>3</span></div>
+        <div class="rank_icon"><span>3</span></div>
         <a href="#ranking_section"><img src="common/images/fruits_donuts_2.jpg"></a>
-        <p>フルーツドーナツセット(14個入り)</p>
-        <p>税込 \4000円</p>
+        <p class="product_name">フルーツドーナツセット(14個入り)</p>
+        <div class="price_container">
+          <p class="product_price">税込 &yen;4,000円</p>
+          <p><i class="fa-regular fa-heart"></i></p>
+        </div>
+        <p><input type="submit" value="カートに入れる" class="button"></p>
       </div>
       <div class="fourth_container">
-        <div class="fourth_icon"><span>4</span></div>
+        <div class="rank_icon"><span>4</span></div>
         <a href="#ranking_section"><img src="common/images/chocolate_delight.jpg" alt=""></a>
-        <p>チョコレートデライト(5個入り)</p>
-        <p>税込 \1600円</p>
+        <p class="product_name">チョコレートデライト(5個入り)</p>
+        <div class="price_container">
+          <p class="product_price">税込 &yen;1,600円</p>
+          <p><i class="fa-regular fa-heart"></i></p>
+        </div>
+        <p><input type="submit" value="カートに入れる" class="button"></p>
       </div>
     </div>
 
     <div class="fifth_sixth">
       <div class="fifth_container">
-        <div class="fifth_icon"><span>5</span></div>
+        <div class="rank_icon"><span>5</span></div>
         <a href="#ranking_section"><img src="common/images/best_selection.jpg" alt=""></a>
-        <p>ベストセレクションボックス(4個入り)</p>
-        <p>税込 \1200円</p>
+        <p class="product_name">ベストセレクションボックス(4個入り)</p>
+        <div class="price_container">
+          <p class="product_price">税込 &yen;1,200円</p>
+          <p><i class="fa-regular fa-heart"></i></p>
+        </div>
+        <p><input type="submit" value="カートに入れる" class="button"></p>
       </div>
       <div class="sixth_container">
-        <div class="sixth_icon"><span>6</span></div>
+        <div class="rank_icon"><span>6</span></div>
         <a href="#ranking_section"><img src="common/images/strawberry_crush.jpg" alt=""></a>
-        <p>ストロベリークラッシュ(4個入り)</p>
-        <p>税込 \1800円</p>
+        <p class="product_name">ストロベリークラッシュ(4個入り)</p>
+        <div class="price_container">
+          <p class="product_price">税込 &yen;1,800円</p>
+          <p><i class="fa-regular fa-heart"></i></p>
+        </div>
+        <p><input type="submit" value="カートに入れる" class="button"></p>
       </div>
     </div>
   </section>

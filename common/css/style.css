@@ -127,13 +127,87 @@ body {
 
 #ranking_section img {
     width: 42.133vw;
+    margin-bottom: 20px;
 }
 
 .first_second,
 .third_fourth,
 .fifth_sixth {
     display: flex;
+}
 
+.first_icon {
+    height: 9.333vw;
+    width: 9.333vw;
+    line-height: 9.333vw;
+    text-align: center;
+    background: #ffd233;
+    font-size: clamp(16px, 4vw, 32px);
+    margin: 0 auto 20px;
+}
+
+.rank_icon {
+    height: 9.333vw;
+    width: 9.333vw;
+    line-height: 9.333vw;
+    text-align: center;
+    background: #e8c2ca;
+    font-size: clamp(16px, 4vw, 32px);
+    margin: 0 auto 20px;
+}
+
+.first_container,
+.third_container,
+.fifth_container {
+    margin-right: 5.333vw;
+}
+
+.product_name,
+.product_price {
+    font-size: clamp(16px, 4vw, 32px);
+    margin-bottom: 22px;
+}
+
+.product_name {
+    line-height: 1.6;
+    color: #7F5539;
+}
+
+.product_price {
+    width: 30vw;
+    color: #bf0000;
+}
+
+.button {
+    width: 42.133vw;
+    font-family: 'Noto Sans JP';
+    font-size: clamp(12px, 3vw, 20px);
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 80px;
+    padding: 12px 9.866vw;
+    background: #7f5539;
+    color: #ffffff;
+    transition: .3s;
+    border: 1px solid #7f5539;
+}
+
+.button:hover {
+    color: #7f5539;
+    /* 背景色     */
+    background: #ffffff;
+    /* 文字色     */
+}
+
+.price_container {
+    display: flex;
+}
+
+.fa-heart {
+    width: 12vw;
+    font-size: clamp(20px, 5vw, 36px);
+    text-align: right;
+    color: #bf0000;
 }
 
 @media screen and (min-width: 768px) {}
