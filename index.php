@@ -14,12 +14,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
   <!-- 必要ならば下記のCSSを追加して -->
   <link rel="stylesheet" href="common/css/style.css">
+  <link rel="stylesheet" href="common/css/common.css">
+
   <!-- タイトルここ -->
   <title>Document</title>
 </head>
 
 <body>
-
+<?php
+require 'includes/header.php';
+?>
   <p class="welcome_message">ようこそ、ゲスト様(仮)</p>
 
   <section id="hero_section">
@@ -132,18 +136,11 @@
     </div>
   </section>
 
-  <?php require 'includes/header.php'; ?>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+
   <?php require 'includes/footer.php'; ?>
 
-
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+<script src="common/js/comon.js"></script>
 </body>
 
 </html>
