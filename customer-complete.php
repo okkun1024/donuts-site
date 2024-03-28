@@ -14,6 +14,46 @@ session_start()
   <!-- 必要ならば下記のCSSを追加して -->
   <link rel="stylesheet" href="">
   <!-- タイトルここ -->
+  <style>
+     .customer-wrpper h1{
+      color: #7F5539;
+      text-align: center;
+      margin:40px 0 52px 0;
+      font-size:20px;
+    }
+
+    .customer-wrpper div{
+      margin: 0 auto;
+      border: 2px solid #E8C2CA;
+      width:89%;
+      padding: 36px 0 36px 0;
+      margin-top:60px
+    }
+    .customer-wrpper div p{
+      text-align: center;
+    }
+    .relog{
+      width:89%;
+      margin: 0 auto;
+      margin-bottom:416px;
+    }
+    .customer-wrpper p a{
+      display: block;
+      text-align: right;
+      margin-top:24px;
+      margin-bottom:80px;
+      text-decoration: underline;
+      color: #7F5539;
+    }
+    .else-div{
+      margin-top: 36px;
+    }
+    .shop-logo{
+      margin:12px 0 0 12px;
+      width:60px;
+      height:50px;
+    }
+  </style>
   <title>会員登録情報登録</title>
 </head>
 
@@ -42,20 +82,22 @@ session_start()
           $_REQUEST['name'], $_REQUEST['kana'],$_REQUEST['post_code'],
           $_REQUEST['address'], $_REQUEST['mail'],$_REQUEST['password']
         ]);
-        echo '<div>';
+        echo '<div class="customer-wrpper">';
         echo '<h1>', '会員情報登録完了', '</h1>';
-        echo '<p>', '会員登録が完了しました。', '</p>';
-        echo '<a href="login-input.php">', 'ログイン画面へ進む', '</a>';
+        echo '<div><p>', '会員登録が完了しました。', '</p></div>';
+        echo '<p class="relog"><a href="login-input.php">', 'ログイン画面へ進む', '</a></p>';
         echo '</div>';
       } else {
-        echo '<div><p>このメールアドレスはすでに使用されています。</p></div>';
-        echo '<a href="customer-input.php">入力ページへ戻る</a>';
+        echo '<div class="customer-wrpper">';
+        echo '<div class="else-div"><p>このメールアドレスはすでに使用されています。</p></div>';
+        echo '<p class="relog"><a href="customer-input.php" >入力ページへ戻る</a></p>';
       }
       break;
   }
-  
   ?>
+  </div>
 
+  <?php require 'includes/footer.php' ?>
 </body>
 
 </html>
