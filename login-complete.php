@@ -35,6 +35,7 @@
       display: block;
       text-align: right;
       margin-top:24px;
+      margin-bottom:80px;
       text-decoration: underline;
       color:#7F5539;
     }
@@ -68,13 +69,6 @@ if(isset($_SESSION['customer'])){
   echo '<h1>','ログイン失敗','</h1>';
   echo '<div><p>','ログインに失敗しました。もう一度やり直してください。','</div></p>';
   echo '<p class=relog><a href="customer-input.php">','ログインページへ戻る','</a></p>';
-
-
-  echo;
-
-  
-
-
 }
 ?>
 </div>

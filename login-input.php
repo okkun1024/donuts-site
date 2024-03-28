@@ -48,8 +48,10 @@
       display: block;
       text-align: right;
       margin-top:24px;
+      margin-bottom:80px;
       text-decoration: underline;
       color:#7F5539;
+      
     }
     
   </style>

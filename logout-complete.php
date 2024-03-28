@@ -15,6 +15,7 @@
     .logout-wrpper h1{
       text-align: center;
       margin:32px 0 60px 0 ;
+      color: #7F5539;
     }
     .logout-wrpper div{
       margin: 0 auto;
@@ -34,7 +35,9 @@
       display: block;
       text-align: right;
       margin-top:24px;
+      margin-bottom:80px;
       text-decoration: underline;
+      color: #7F5539;
     }
     .else-div{
       margin-top: 36px;
@@ -55,7 +58,7 @@ if(isset($_SESSION['customer'])){
   echo '<p class=relog><a href="customer-input.php">','TOPページへ戻る','</a></p>';
 }else{
   echo '<div class="logout-wrpper">';
-  echo '<div class=else-div><p>','すでにログアウトしています。','</div></p>';
+  echo '<div class=else-div><p>','すでにログアウトしています。','</p></div>';
   echo '<p class=relog><a href="customer-input.php">','TOPページへ戻る','</a></p>';
 }
 ?>

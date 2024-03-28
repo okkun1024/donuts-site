@@ -37,7 +37,7 @@
       display: block;
       text-align: center;
       color: white;
-      
+      margin-bottom:80px;
     }
   </style>
   <!-- タイトルここ -->
