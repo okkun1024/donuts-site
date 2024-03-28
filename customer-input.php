@@ -117,10 +117,10 @@
     <input type="text" name="name" id="formLong" required>
     
     <p>お名前（フリガナ）<span>（必須）</span></p>
-    <input type="text" name="kana" id="formLong" pattern="[\u30A1-\u30FA\u30FC]+" required>
+    <input type="text" name="kana" id="formLong" pattern="[\u30A1-\u30FA\u30FC]+" title="全角カタカナで入力てください。" required>
 
     <p>郵便番号<span>（必須）</span></p>
-    <input type="text" name="post" id="formLong" class="post-input"  pattern="\d{7}" required>
+    <input type="text" name="post_code" id="formLong" class="post-input"  pattern="\d{7}" title="7桁の半角数字で入力してください。" required>
 
     <p>住所<span>（必須）</span></p>
     <input type="text" name="address" id="formLong" required>
@@ -132,7 +132,7 @@
     <p class="caution">A-Z、a-z、0-9を少なくとも各1つは含めて8文字以上で入力してください。</p>
     <input type="text" name="password" id="formLong" pattern="[a-zA-Z0-9]{8,}" required>
 
-    <input type="submit" value="ご入力内容を確認する">
+    <input type="submit" value="ご入力内容を確認する" >
   </form>
   キュイ━━━━ン
 　　　∧,,∧

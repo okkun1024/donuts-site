@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -48,6 +49,9 @@
       width:60px;
       height:50px;
     }
+    .passflex{
+      font-size: 10px;
+    }
   </style>
   <!-- タイトルここ -->
   <title>ご入力情報確認</title>
@@ -60,27 +64,45 @@
 
 <?php
 
-echo '<p class="title-confirm">','お名前','</p>';
-echo '<p class="content-confirm">',$_REQUEST['name'],'</p>';
+echo '<p class="title-confirm">お名前</p>';
+echo '<p class="content-confirm">',htmlspecialchars($_REQUEST['name']),'</p>';
 
-echo '<p class="title-confirm">','お名前(フリガナ)','</p>';
-echo '<p class="content-confirm">',$_REQUEST['kana'],'</p>';
+echo '<p class="title-confirm">お名前(フリガナ)</p>';
+echo '<p class="content-confirm">',htmlspecialchars($_REQUEST['kana']),'</p>';
 
-echo '<p class="title-confirm">','郵便番号','</p>';
-echo '<p class="content-confirm">',$_REQUEST['post'],'</p>';
+echo '<p class="title-confirm">郵便番号</p>';
+echo '<p class="content-confirm">',htmlspecialchars($_REQUEST['post_code']),'</p>';
 
-echo '<p class="title-confirm">','住所','</p>';
-echo '<p class="content-confirm">',$_REQUEST['address'],'</p>';
+echo '<p class="title-confirm">住所</p>';
+echo '<p class="content-confirm">',htmlspecialchars($_REQUEST['address']),'</p>';
 
-echo '<p class="title-confirm">','メールアドレス','</p>';
-echo '<p class="content-confirm">',$_REQUEST['mail'],'</p>';
+echo '<p class="title-confirm">メールアドレス</p>';
+echo '<p class="content-confirm">',htmlspecialchars($_REQUEST['mail']),'</p>';
 
-echo '<p class="title-confirm">','パスワード','</p>';
-$passhash= password_hash($_REQUEST['password'],PASSWORD_DEFAULT);
-echo '<p class="content-confirm">',$passhash,'</p>';
+echo '<p class="title-confirm">パスワード</p>';
+$pass=mb_strlen(htmlspecialchars($_REQUEST['password']));
+for($i=0; $i <= $pass ; $i++){
+  echo '<span class=passflex>●</span>';
+}
+
+$name=$kana=$post_code=$address=$mail=$password='';
+$name=htmlspecialchars($_REQUEST['name']);
+$kana=htmlspecialchars($_REQUEST['kana']);
+$post_code=htmlspecialchars($_REQUEST['post_code']);
+$address=htmlspecialchars($_REQUEST['address']);
+$mail=htmlspecialchars($_REQUEST['mail']);
+$password=htmlspecialchars($_REQUEST['password']);
+echo '<form action="customer-complete.php" method="post">';
+echo '<input type=hidden name="name" value="',$name,'">';
+echo '<input type=hidden name="kana" value="',$kana,'">';
+echo '<input type=hidden name="post_code" value="',$post_code,'">';
+echo '<input type=hidden name="address" value="',$address,'">';
+echo '<input type=hidden name="mail" value="',$mail,'">';
+echo '<input type=hidden name="password" value="',$password,'">';
 ?>
 
 <input type="submit" value="この内容で登録する">
+</form>
 </div>
 
 <?php require 'includes/footer.php' ?>

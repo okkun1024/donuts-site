@@ -10,6 +10,13 @@
   <link rel="stylesheet" href="common/css/reset.css">
   <!-- 必要ならば下記のCSSを追加して -->
   <link rel="stylesheet" href="common/css/common.css">
+  <style>
+
+
+
+
+
+  </style>
   <!-- タイトルここ -->
   <title>カード入力内容確認</title>
 </head>
@@ -19,33 +26,25 @@
   <?php
 
   echo '<h1>ご入力内容の確認</h1>';
-  echo '<p>お名前</p>';
-  echo '<p>|', htmlspecialchars($_REQUEST['name']), '</p>';
-  echo '<p>カード会社</p>';
-  echo '<p>|', htmlspecialchars($_REQUEST['card']), '</p>';
-  echo '<p>カード番号<p/>';
-  echo '<p>有効期限</p>';
-  echo '<p>|', htmlspecialchars($_REQUEST['cardExpirationMonth']), '/', htmlspecialchars($_REQUEST['cardExpirationYear']), '</p>';
-  echo '<p>セキュリティーコード</p>';
-  echo '<p>|', htmlspecialchars($_REQUEST['security']), '</p>';
-
+  echo '<p class="confirmP">お名前</p>';
+  echo '<p>', htmlspecialchars($_REQUEST['name']), '</p>';
+  echo '<p class="confirmP>カード会社</p>';
+  echo '<p>', htmlspecialchars($_REQUEST['card']), '</p>';
+  echo '<p class="confirmP>カード番号<p/>';
+  echo '<p>', htmlspecialchars($_REQUEST['cardNumber']), '</p>';
+  echo '<p class="confirmP>有効期限</p>';
+  echo '<p>', htmlspecialchars($_REQUEST['cardExpirationMonth']), '/', htmlspecialchars($_REQUEST['cardExpirationYear']), '</p>';
+  echo '<p class="confirmP>セキュリティーコード</p>';
+  $security = mb_strlen($_REQUEST['security']);
+  //forループを使用しセキュリティコードを・で出力する
+  for ($i = 0; $i <= $security; $i++) {
+    echo '<span>・</span>';
+  }
 
   ?>
-
-
-  echo <<<END
-<h1>ご入力内容の確認</h1>
-
-
-
-
-END;
-  ?>
-
-
-
 
   <?php require 'includes/footer.php'; ?>
+
 </body>
 
 </html>
