@@ -286,25 +286,71 @@ section:nth-child(2n){
 /* ----------フッター-------- */
 footer{
   background-color: #ede0d4;
+  padding-left: 12px;
+  padding-right: 12px;
+
 }
 
 footer ul{
   list-style: none;
-  border-left: 2px solid #b392ec;
+  
 
 }
 
 .footer_list{
-  margin-left: 12px;
+
+  padding-top: 16px;
+
+
 }
 
 .footer_list li{
   margin-top: 16px;
-  margin-left: 12px;
   margin-bottom: 16px;
 }
 
+.footer_list li a{
+border-left: 2px solid #b392ec;
+padding-left: 12px;
+color: #7f5539;
+}
 
+.footer_list_logo{
+  display: flex;
+  justify-content: start;
+}
+
+.sns_center_logo{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.footer_list_logo img{
+  width: 32px;
+  height: 31.76px;
+  margin-top: -4px;
+  margin-bottom: 12px;
+}
+
+.footer_shop_logo{
+display: flex;
+justify-content: end
+}
+
+.footer_shop_logo img{
+  width:72px ;
+  height: 59.56px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+footer p{
+  font-size: 8px;
+  caret-color: #7f5539;
+  text-align: center;
+  margin-top: 12px;
+  padding-bottom:26.68px ;
+}
+/* -----Footerここまで------- */
 @media screen and (min-width: 768px){
 /* 最大 1200px */
 
@@ -315,6 +361,63 @@ footer ul{
   margin-top: 12px;
   margin-left: 12px;
 }
+
+/* --------Footer--------- */
+footer{
+  padding-top: 12px;
+  padding-left:  95px; 
+  padding-right: 95px;
+}
+.footer_list{
+  display: flex;
+  padding-top: 0;
+}
+
+.footer_list li{
+  margin-top: 12pxpx;
+  margin-bottom: 0px;
+}
+
+.footer_list li a{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 62px;
+}
+
+.footer_list_logo{
+  margin-top: 52px;
+}
+.sns_center_logo{
+  margin-left:80px ;
+  margin-right: 80px;
+  
+}
+
+.footer_list_logo img{
+  width: 64px;
+  height: 64px;
+}
+
+.footer_shop_logo{
+  justify-content: center;
+
+}
+
+.footer_shop_logo img{
+  margin-top:60px;
+  margin-bottom: 28px;
+  width: 140px ;
+  height: 116.57px;
+}
+
+footer p{
+  padding-bottom:65.43px ;
+}
+/* -----Footerここまで------- */
+
+
+
+
 
 }
 
