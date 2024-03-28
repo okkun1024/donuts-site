@@ -11,11 +11,13 @@
   <!-- 必要ならば下記のCSSを追加して -->
   <link rel="stylesheet" href="">
   <!-- タイトルここ -->
-  <title>Document</title>
+  <title>カード情報登録完了</title>
 </head>
 
 <body>
-  test 
+  <?php
+  echo $_REQUEST['name'];
+  ?>
 </body>
 
 </html>
