@@ -17,15 +17,16 @@
 <body>
 <footer>
   <ul class="footer_list">
-    <li><a href="#">よくある質問</a></li>
-    <li><a href="#">お問い合わせ</a></li>
-    <li><a href="#">当サイトのポリシー</a></li> 
+    <li class="footee_list_1"><a href="#">よくある質問</a></li>
+    <li class="footee_list_2"><a href="#">お問い合わせ</a></li>
+    <li class="footee_list_3"><a href="#">当サイトのポリシー</a></li> 
   </ul>
-  <ul class="footer_list_logo">
-    <li><a href="#"><img src="common/images/instagram_icon.svg" alt=""></a></li>
-    <li class="sns_center_logo"><a href="#"><img src="common/images/facebook_icon.svg" alt=""></a></li>
-    <li><a href="#"><img src="common/images/X_icon.svg" alt=""></a></li> 
-  </ul>
+
+  <div class="footer_list_logo">
+    <p class="instagram_logo"><a href="#"><img src="common/images/instagram_icon.svg" alt=""></a></p>
+    <p class="facebook_logo"><a href="#"><img src="common/images/facebook_icon.svg" alt=""></a></p>
+    <p><a href="#"><img src="common/images/X_icon.svg" alt=""></a></p> 
+</div>
   <div class="footer_shop_logo">
   <a href="index.php"><img src="common/images/shop_logo.svg" alt=""></a>
 

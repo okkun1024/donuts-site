@@ -290,43 +290,47 @@ footer{
 
 footer ul{
   list-style: none;
-  
-
 }
 
 .footer_list{
-
   padding-top: 16px;
-
-
 }
 
-.footer_list li{
-  margin-top: 16px;
-  margin-bottom: 16px;
+.footer_list .footee_list_1,
+.footer_list .footee_list_2
+{
+margin-bottom: 24px;
 }
 
 .footer_list li a{
 border-left: 2px solid #b392ec;
 padding-left: 12px;
 color: #7f5539;
+font-size: clamp(12px, 3vw, 20px);
+
 }
+
 
 .footer_list_logo{
   display: flex;
-  justify-content: start;
+  margin-top: 24px;
 }
 
-.sns_center_logo{
-  margin-left: 20px;
-  margin-right: 20px;
-}
 .footer_list_logo img{
+  width: 8.5333vw;
+}
+
+.instagram_logo,
+.facebook_logo{
+  margin-right: 8.5333vw;
+}
+
+/* .footer_list_logo img{
   width: 32px;
   height: 31.76px;
   margin-top: -4px;
   margin-bottom: 12px;
-}
+} */
 
 .footer_shop_logo{
 display: flex;
@@ -367,18 +371,21 @@ footer{
 }
 .footer_list{
   display: flex;
-  padding-top: 0;
 }
 
 .footer_list li{
-  margin-top: 12pxpx;
+  margin-top: 12px;
   margin-bottom: 0px;
+}
+
+.footee_list_2,
+.footee_list_3{
+  margin-left: 62px;
 }
 
 .footer_list li a{
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-right: 62px;
 }
 
 .footer_list_logo{
