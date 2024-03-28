@@ -1,3 +1,4 @@
+<?php session_start()?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -26,12 +27,14 @@
       border: 2px solid #E8C2CA;
       width:89%;
       padding: 20px 0 20px 0;
+      margin-bottom:80px;
     }
     .logout-div2{
       width:53%;
       padding:23px 0;
       margin: auto;
       background-color: #7F5539;
+
     }
     .logout-a{
       display: block;

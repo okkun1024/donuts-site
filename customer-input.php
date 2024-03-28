@@ -87,7 +87,7 @@
       width: 60%;
       font-size: 16px;
       height: 48px;
-      margin: 0 auto;
+      margin: 0 auto 80px;
       margin-top: 40px;
       background-color: #7F5539;
       color: #fff;
