@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -24,8 +25,13 @@
   <?php
   require 'includes/header.php';
   ?>
-  <p class="welcome_message">ようこそ、ゲスト様(仮)</p>
-
+  <?php
+  if (isset($_SESSION['customer'])) {
+    echo '<p class="welcome_message">ようこそ',' ',$_SESSION['customer']['name'],'様</p>';
+  } else {
+    echo '<p class="welcome_message">ようこそ、ゲスト様(仮)</p>';
+  }
+  ?>
   <section id="hero_section">
     <div class="hero_container">
       <img src="common/images/top_hero.jpg" alt="">
