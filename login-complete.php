@@ -63,12 +63,12 @@ if(isset($_SESSION['customer'])){
   echo'<div class=log-comp>';
   echo '<h1>','ログイン完了','</h1>';
   echo '<div><p>','ログインが完了しました。','</div></p>';
-  echo '<p class=relog><a href="customer-input.php">','TOPページへ戻る','</a></p>';
+  echo '<p class=relog><a href="index.php">','TOPページへ戻る','</a></p>';
 }else{
   echo'<div class=log-comp>';
   echo '<h1>','ログイン失敗','</h1>';
   echo '<div><p>','ログインに失敗しました。もう一度やり直してください。','</div></p>';
-  echo '<p class=relog><a href="customer-input.php">','ログインページへ戻る','</a></p>';
+  echo '<p class=relog><a href="login-input.php">','ログインページへ戻る','</a></p>';
 }
 ?>
 </div>
