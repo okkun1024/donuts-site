@@ -21,9 +21,9 @@
 </head>
 
 <body>
-<?php
-require 'includes/header.php';
-?>
+  <?php
+  require 'includes/header.php';
+  ?>
   <p class="welcome_message">ようこそ、ゲスト様(仮)</p>
 
   <section id="hero_section">
@@ -37,7 +37,8 @@ require 'includes/header.php';
     <div class="topic_container">
       <div class="new_product">
         <img src="common/images/summer_citrus.jpg" alt="">
-        <p>サマーシトラス</p>
+        <p class="new_item"><img src="common/images/new_item.svg" alt=""></p>
+        <p class="summer_citrus">サマーシトラス</p>
       </div>
       <div class="product_promotion">
         <img src="common/images/life_with_donuts.jpg" alt="">
@@ -139,7 +140,7 @@ require 'includes/header.php';
 
   <?php require 'includes/footer.php'; ?>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="common/js/comon.js"></script>
 </body>
 

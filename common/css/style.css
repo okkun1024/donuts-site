@@ -3,7 +3,7 @@
 body {
     width: 100%;
     font-family: 'Noto Sans JP';
-    font-size: clamp(12px, 0.3vw, 14px);
+    font-size: clamp(12px, 3vw, 14px);
 }
 
 .welcome_message {
@@ -29,7 +29,7 @@ body {
 
 }
 
-.new_product p {
+.summer_citrus {
     font-family: 'Noto Serif JP';
     font-size: clamp(12px, 3vw, 20px);
     /* font-weight: bold; */
@@ -37,6 +37,12 @@ body {
     position: absolute;
     right: 5%;
     bottom: 5%;
+}
+
+.new_item {
+    position: absolute;
+    left: 3%;
+    top: 3%;
 }
 
 .product_promotion {
@@ -56,7 +62,10 @@ body {
 .new_product img,
 .product_promotion img {
     width: 42.13vw;
+}
 
+.new_item img {
+    width: 10.666vw;
 }
 
 .item_list {
@@ -127,7 +136,7 @@ body {
     position: relative;
 }
 
-h2:before {
+#ranking_section h2:before {
     content: '';
     position: absolute;
     left: 50%;
