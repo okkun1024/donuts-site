@@ -11,12 +11,12 @@
   <!-- 必要ならば下記のCSSを追加して -->
   <link rel="stylesheet" href="common/css/common.css">
   <style>
-    form {
+    .former {
       margin: auto;
       border: 2px solid #E8C2CA;
       width: 89%;
     }
-    form p{
+    .former p{
       margin:20px 0 4px 4%;
       font-size: 12px;
       color:#7F5539;
@@ -26,12 +26,12 @@
       text-align: center;
       color:#7F5539;
     }
-    form input {
+    .former input {
       display: block;
       margin: auto;
       width:90%;
     }
-    form input[type=submit]{
+    .former input[type=submit]{
       width:200px;
       padding:12px;
       border-style: none;
@@ -62,7 +62,7 @@
   require 'includes/header.php';
   ?>
   <h1 class=login-inp-h1>ログイン</h1>
-  <form action="login-complete.php" method="post">
+  <form class="former"action="login-complete.php" method="post">
     <p>メールアドレス</p>
     <input type="email" name="mail" required>
     <p>パスワード</p>

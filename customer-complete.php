@@ -11,11 +11,10 @@
   <!-- 必要ならば下記のCSSを追加して -->
   <link rel="stylesheet" href="">
   <!-- タイトルここ -->
-  <title>Document</title>
+  <title>会員登録情報確認</title>
 </head>
 
 <body>
 
-</body>
 
 </html>

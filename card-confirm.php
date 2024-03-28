@@ -17,6 +17,22 @@
 <body>
   <img src="common/images/shop_logo.svg" alt="c.c.donuts">
   <?php
+
+  echo '<h1>ご入力内容の確認</h1>';
+  echo '<p>お名前</p>';
+  echo '<p>|', htmlspecialchars($_REQUEST['name']), '</p>';
+  echo '<p>カード会社</p>';
+  echo '<p>|', htmlspecialchars($_REQUEST['card']), '</p>';
+  echo '<p>カード番号<p/>';
+  echo '<p>有効期限</p>';
+  echo '<p>|', htmlspecialchars($_REQUEST['cardExpirationMonth']), '/', htmlspecialchars($_REQUEST['cardExpirationYear']), '</p>';
+  echo '<p>セキュリティーコード</p>';
+  echo '<p>|', htmlspecialchars($_REQUEST['security']), '</p>';
+
+
+  ?>
+
+
   echo <<<END
 <h1>ご入力内容の確認</h1>
 
@@ -27,8 +43,9 @@ END;
   ?>
 
 
-  <?php require 'includes/footer.php'; ?>
 
+
+  <?php require 'includes/footer.php'; ?>
 </body>
 
 </html>
