@@ -27,7 +27,7 @@
     <li><a href="#"><img src="../common/images/X_icon.svg" alt=""></a></li> 
   </ul>
   <div class="footer_shop_logo">
-  <img src="../common/images/shop_logo.svg" alt="">
+  <a href="../index.php"><img src="../common/images/shop_logo.svg" alt=""></a>
 
   </div>
   <p>copyright(C)c.c.donutsu All Ridhts Reserves</p>    
