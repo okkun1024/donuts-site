@@ -23,10 +23,13 @@
   </ul>
   <ul class="footer_list_logo">
     <li><a href="#"><img src="../common/images/instagram_icon.svg" alt=""></a></li>
-    <li><a href="#"><img src="../common/images/facebook_icon.svg" alt=""></a></li>
+    <li class="sns_center_logo"><a href="#"><img src="../common/images/facebook_icon.svg" alt=""></a></li>
     <li><a href="#"><img src="../common/images/X_icon.svg" alt=""></a></li> 
   </ul>
+  <div class="footer_shop_logo">
   <img src="../common/images/shop_logo.svg" alt="">
+
+  </div>
   <p>copyright(C)c.c.donutsu All Ridhts Reserves</p>    
 </footer>
 </body>
