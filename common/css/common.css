@@ -269,9 +269,6 @@ small{
   padding: 20px;
 }
 
-section{
-  padding:100px 30px;
-}
 
 section:nth-child(2n){
   background:#f3f3f3; 
