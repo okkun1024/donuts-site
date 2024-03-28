@@ -6,6 +6,14 @@ body {
     font-size: clamp(12px, 3vw, 14px);
 }
 
+.sp_only {
+    display: block;
+}
+
+.pc_only {
+    display: none;
+}
+
 .welcome_message {
     margin: 12px 0 12px 5.333vw;
 }
@@ -120,10 +128,6 @@ body {
     padding-bottom: 300px;
 }
 
-.introduce_container img {
-    width: 100%;
-}
-
 #ranking_section {
     padding: 0 5.333vw;
 }
@@ -236,6 +240,133 @@ body {
     color: #bf0000;
 }
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
 
-;
+    .sp_only {
+        display: none;
+    }
+
+    .pc_only {
+        display: block;
+    }
+
+    .welcome_message {
+        font-size: 12px;
+        margin: 24px 0 12px 7.54vw;
+    }
+
+    #topic_section {
+        padding: 80px 11.932vw;
+    }
+
+    #topic_section img {
+        width: 36.603vw;
+    }
+
+    #topic_section .new_item img {
+        width: 10.675vw;
+    }
+
+    .summer_citrus {
+        font-family: 'Noto Serif JP';
+        font-size: 36px;
+        /* font-weight: bold; */
+        color: #fff;
+        position: absolute;
+        right: 5%;
+        bottom: 5%;
+    }
+
+    .product_promotion p {
+        font-family: 'Noto Serif JP';
+        font-size: 36px;
+        /* font-weight: bold; */
+        color: #fff;
+        position: absolute;
+        right: 5%;
+        bottom: 5%;
+    }
+
+    .item_list p {
+        font-family: 'Noto Serif JP';
+        font-size: 36px;
+        /* font-weight: bold; */
+        color: #7F5539;
+        position: absolute;
+        right: 2%;
+        bottom: 7%;
+    }
+
+    #topic_section .item_list img {
+        width: 76.134vw;
+    }
+
+    .new_product {
+        margin-right: 2.928vw;
+    }
+
+    #introduce_section {
+        background-image: url(../images/introduce_background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 667px;
+    }
+
+    .introduce_container h2 {
+        font-size: 36px;
+        padding-top: 200px;
+        padding-bottom: 20px;
+    }
+
+    .introduce_container h3 {
+        font-size: 20px;
+        padding-bottom: 40px;
+    }
+
+    .philosophy_title {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+
+    .philosophy_explain {
+        font-size: 24px;
+        padding-bottom: 283px;
+    }
+
+    #ranking_section h2 {
+        text-align: center;
+        font-size: 32px;
+        padding-top: 80px;
+        margin-bottom: 92px;
+        position: relative;
+    }
+
+    #ranking_section h2:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -12px;
+        display: inline-block;
+        width: 240px;
+        height: 8px;
+        -moz-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translate(-50%);
+        background-color: #ffd233;
+    }
+
+    #ranking_section img {
+        width: 23.426vw;
+        margin-bottom: 20px;
+    }
+
+    .first_third,
+    .fourth_sixth {
+        display: flex;
+    }
+
+    .button {
+        width: 23.426vw;
+    }
+}

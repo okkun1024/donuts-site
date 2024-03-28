@@ -67,7 +67,7 @@
   <section id="ranking_section">
     <h2>人気ランキング</h2>
 
-    <div class="first_second">
+    <div class="first_second sp_only">
       <div class="first_container">
         <div class="first_icon"><span>1</span></div>
         <a href="detail-1.php"><img src="common/images/CC_donuts.jpg" alt=""></a>
@@ -90,7 +90,8 @@
       </div>
     </div>
 
-    <div class="third_fourth">
+    <!-- SP版ランキング表示 -->
+    <div class="third_fourth sp_only">
       <div class="third_container">
         <div class="rank_icon"><span>3</span></div>
         <a href="#ranking_section"><img src="common/images/fruits_donuts_2.jpg"></a>
@@ -113,7 +114,7 @@
       </div>
     </div>
 
-    <div class="fifth_sixth">
+    <div class="fifth_sixth ">
       <div class="fifth_container">
         <div class="rank_icon"><span>5</span></div>
         <a href="#ranking_section"><img src="common/images/best_selection.jpg" alt=""></a>
@@ -134,7 +135,75 @@
         </div>
         <p><input type="submit" value="カートに入れる" class="button"></p>
       </div>
-    </div>
+
+      <!-- PC版ランキング表示 -->
+      <div class="first_third pc_only">
+        <div class="first_container">
+          <div class="first_icon"><span>1</span></div>
+          <a href="detail-1.php"><img src="common/images/CC_donuts.jpg" alt=""></a>
+          <p class="product_name">CCドーナツ 当店オリジナル(5個入り)</p>
+          <div class="price_container">
+            <p class="product_price">税込 &yen;1,500円</p>
+            <p><i class="fa-regular fa-heart"></i></p>
+          </div>
+          <p><input type="submit" value="カートに入れる" class="button"></p>
+        </div>
+        <div class="second_container">
+          <div class="rank_icon"><span>2</span></div>
+          <a href="#ranking_section"><img src="common/images/fruits_donuts_1.jpg" alt=""></a>
+          <p class="product_name">フルーツドーナツセット(12個入り)</p>
+          <div class="price_container">
+            <p class="product_price">税込 &yen;3,500円</p>
+            <p><i class="fa-regular fa-heart"></i></p>
+          </div>
+          <p><input type="submit" value="カートに入れる" class="button"></p>
+        </div>
+        <div class="third_container">
+          <div class="rank_icon"><span>3</span></div>
+          <a href="#ranking_section"><img src="common/images/fruits_donuts_2.jpg"></a>
+          <p class="product_name">フルーツドーナツセット(14個入り)</p>
+          <div class="price_container">
+            <p class="product_price">税込 &yen;4,000円</p>
+            <p><i class="fa-regular fa-heart"></i></p>
+          </div>
+          <p><input type="submit" value="カートに入れる" class="button"></p>
+        </div>
+      </div>
+
+
+      <div class="fourth_sixth pc_only">
+        <div class="fourth_container">
+          <div class="rank_icon"><span>4</span></div>
+          <a href="#ranking_section"><img src="common/images/chocolate_delight.jpg" alt=""></a>
+          <p class="product_name">チョコレートデライト(5個入り)</p>
+          <div class="price_container">
+            <p class="product_price">税込 &yen;1,600円</p>
+            <p><i class="fa-regular fa-heart"></i></p>
+          </div>
+          <p><input type="submit" value="カートに入れる" class="button"></p>
+        </div>
+        <div class="fifth_container">
+          <div class="rank_icon"><span>5</span></div>
+          <a href="#ranking_section"><img src="common/images/best_selection.jpg" alt=""></a>
+          <p class="product_name">ベストセレクションボックス(4個入り)</p>
+          <div class="price_container">
+            <p class="product_price">税込 &yen;1,200円</p>
+            <p><i class="fa-regular fa-heart"></i></p>
+          </div>
+          <p><input type="submit" value="カートに入れる" class="button"></p>
+        </div>
+        <div class="sixth_container">
+          <div class="rank_icon"><span>6</span></div>
+          <a href="#ranking_section"><img src="common/images/strawberry_crush.jpg" alt=""></a>
+          <p class="product_name">ストロベリークラッシュ(4個入り)</p>
+          <div class="price_container">
+            <p class="product_price">税込 &yen;1,800円</p>
+            <p><i class="fa-regular fa-heart"></i></p>
+          </div>
+          <p><input type="submit" value="カートに入れる" class="button"></p>
+        </div>
+      </div>
+
   </section>
 
 
