@@ -21,7 +21,7 @@
       margin-top: 40px;
       margin-bottom: 52px;
       text-align: center;
-      font-size: 24px;
+      font-size: 20px;
     }
 
     form {
@@ -31,7 +31,7 @@
     }
 
     p {
-      /* 文字サイズ変更・色変更 */
+      /* 文字サイズ変更・外幅下辺変更 */
       font-size: 12px;
       margin-bottom: 8px;
     }
