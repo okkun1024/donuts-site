@@ -297,35 +297,12 @@ footer {
 
 footer ul {
   list-style: none;
-<<<<<<< HEAD
-
-
-}
-
-.footer_list {
-
-=======
 }
 
 .footer_list{
->>>>>>> 229c20dc22eda9c53a3fd2a6027b2553267bb8ea
   padding-top: 16px;
 }
 
-<<<<<<< HEAD
-.footer_list li {
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-
-.footer_list li a {
-  border-left: 2px solid #b392ec;
-  padding-left: 12px;
-  color: #7f5539;
-}
-
-.footer_list_logo {
-=======
 .footer_list .footee_list_1,
 .footer_list .footee_list_2
 {
@@ -342,19 +319,10 @@ font-size: clamp(12px, 3vw, 20px);
 
 
 .footer_list_logo{
->>>>>>> 229c20dc22eda9c53a3fd2a6027b2553267bb8ea
   display: flex;
   margin-top: 24px;
 }
 
-<<<<<<< HEAD
-.sns_center_logo {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.footer_list_logo img {
-=======
 .footer_list_logo img{
   width: 8.5333vw;
 }
@@ -365,7 +333,6 @@ font-size: clamp(12px, 3vw, 20px);
 }
 
 /* .footer_list_logo img{
->>>>>>> 229c20dc22eda9c53a3fd2a6027b2553267bb8ea
   width: 32px;
   height: 31.76px;
   margin-top: -4px;
@@ -405,24 +372,6 @@ footer p {
     margin-left: 12px;
   }
 
-<<<<<<< HEAD
-  /* --------Footer--------- */
-  footer {
-    padding-top: 12px;
-    padding-left: 95px;
-    padding-right: 95px;
-  }
-
-  .footer_list {
-    display: flex;
-    padding-top: 0;
-  }
-
-  .footer_list li {
-    margin-top: 12pxpx;
-    margin-bottom: 0px;
-  }
-=======
 /* --------Footer--------- */
 footer{
   padding-top: 12px;
@@ -447,7 +396,6 @@ footer{
   padding-top: 12px;
   padding-bottom: 12px;
 }
->>>>>>> 229c20dc22eda9c53a3fd2a6027b2553267bb8ea
 
   .footer_list li a {
     padding-top: 12px;
