@@ -360,17 +360,103 @@ footer p {
 }
 
 /* -----Footerここまで------- */
+
+
+
+
 @media screen and (min-width: 768px) {
   /* 最大 1200px */
 
-  .nav_image {
-    display: block;
-    /* 画像をブロック要素として扱う */
-    width: 58.95px;
-    height: 51.91px;
-    margin-top: 12px;
-    margin-left: 12px;
-  }
+/* --------header--------- */
+.header_container {
+height: 118px;
+padding-bottom: 0px;
+}
+
+.openbtn1 span:nth-of-type(1) {
+  top: 25px;
+  left: 95px;
+}
+
+.openbtn1 span:nth-of-type(2) {
+  top: 44.2px;
+  left: 95px;
+}
+
+.openbtn1 span:nth-of-type(3) {
+  top: 63.4px;
+  left: 95px;
+}
+
+h1 img{
+  width: 80px;
+  height: 66.67px;
+  margin-top: 25.66px;
+}
+
+.header_container_icon{
+  margin-right: 75px;
+}
+.header_container_icon img{
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+}
+.header_container_icon_login span,
+.header_container_icon_cart span {
+  font-size: 12px;
+}
+.header_container_icon_cart{
+  margin-left: 32px;
+}
+
+.hedder_search_box{
+  background-color: #b392ac;
+  text-align: -webkit-right;
+  padding-right: 95px;
+  padding-top: 12px;
+}
+.search_form_1{
+width: 30vw;
+}
+
+.openbtn1 span{
+  width: 48px;
+}
+
+
+
+#g_nav.panelactive,
+#g_nav.panelactive #g_nav_list {
+  width: 600px;
+}
+
+/* ハンバーガーの中 */
+.nav_image {
+  display: block;
+  /* 画像をブロック要素として扱う */
+  width: 86.93px;
+  height: 77.77px;
+  margin-top: 12px;
+  margin-left: 12px;
+}
+
+#g_nav ul{
+top: 272.83px;
+left: 291px;
+}
+
+#g_nav li{
+  width: 400px;
+}
+#g_nav li a{
+  font-size: 24px;
+}
+
+.openbtn1.active{
+  left: 520px;
+
+}
 
 /* --------Footer--------- */
 footer{
