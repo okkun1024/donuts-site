@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -35,7 +34,7 @@
   if (isset($_SESSION['customer'])) {
     echo '<p class="welcome_message">ようこそ', ' ', $_SESSION['customer']['name'], '様</p>';
   } else {
-    echo '<p class="welcome_message">ようこそ、ゲスト様(仮)</p>';
+    echo '<p class="welcome_message">ようこそ、ゲスト様</p>';
   }
   ?>
   <section id="hero_section">

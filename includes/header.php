@@ -1,4 +1,4 @@
-<?php session_start() ?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -16,6 +16,7 @@
 </head>
 
 <body>
+<?php session_start() ?>
     <header>
         <div class="header_container">
             <h1>
@@ -26,7 +27,6 @@
             <div class="header_container_icon">
                 <div class="header_container_icon_login">
                     <?php
-                    $url = $_SERVER['REQUEST_URI'];
                         if (isset($_SESSION['customer'])) {
                             echo '<a href="logout-input.php">';
                             echo '<img src="common/images/login_icon.svg" alt="">';
@@ -38,18 +38,6 @@
                             echo '<span>ログイン</span>';
                             echo '</a>';
                         }
-                    
-                    // if (strstr($url, 'login-complete')) {
-                    //     echo '<a href="logout-input.php">';
-                    //     echo '<img src="common/images/login_icon.svg" alt="">';
-                    //     echo '<span>ログアウト</span>';
-                    //     echo '</a>';
-                    // } else if (strstr($url, 'logout-complete')) {
-                    //     echo '<a href="login-input.php">';
-                    //     echo '<img src="common/images/login_icon.svg" alt="">';
-                    //     echo '<span>ログイン</span>';
-                    //     echo '</a>';
-                    // }
                     ?>
 
 
