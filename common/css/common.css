@@ -185,7 +185,7 @@ h1 img {
 
 .fadeUp {
   animation-name: fadeUpAnime;
-  animation-duration: 0.5s;
+  animation-duration: .5s;
   animation-fill-mode: forwards;
   opacity: 0;
 }

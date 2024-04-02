@@ -1,7 +1,7 @@
 "use strict";
 
 function delayScrollAnime() {
-    var time = 0.1;
+    var time = 4;
     var value = time;
     $('.delayScroll').each(function () {
         var parent = this;
@@ -33,10 +33,11 @@ function delayScrollAnime() {
     })
 }
 
-// 画面をスクロールをしたらアニメーションを動かす
-$(window).scroll(function () {
+// 画面が読み込まれたらすぐに動かしたい場合の記述
+$(window).on('load', function () {
     delayScrollAnime();
 });
+
 $(document).ready(function () {
     // ボタンがクリックされたときの動作
     $(".openbtn1").click(function () {
