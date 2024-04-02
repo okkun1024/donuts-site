@@ -107,6 +107,6 @@ echo '<input type=hidden name="password" value="',$password,'">';
 
 <?php require 'includes/footer.php' ?>
 </body>
-</body>
+
 
 </html>
