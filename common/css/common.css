@@ -1,5 +1,45 @@
 @charset "utf-8";
 
+
+/* ローディング画面CSS */
+
+#splash {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: #eee;
+  text-align: center;
+  color: #ede0d4;
+}
+
+#splash_logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#splash_logo svg {
+  width: 70vw;
+}
+
+#mask path {
+  fill-opacity: 0;
+  transition: fill-opacity 1s;
+  fill: none;
+  stroke: #7f5539;
+}
+
+#mask.done path {
+  fill: #7f5539;
+  fill-opacity: 1;
+  stroke: none;
+}
+
+/* ローディング画面CSSここまで */
+
+
 .header_container {
   background-color: #ede0d4;
   padding-bottom: 12px;
@@ -299,36 +339,35 @@ footer ul {
   list-style: none;
 }
 
-.footer_list{
+.footer_list {
   padding-top: 16px;
 }
 
 .footer_list .footee_list_1,
-.footer_list .footee_list_2
-{
-margin-bottom: 24px;
+.footer_list .footee_list_2 {
+  margin-bottom: 24px;
 }
 
-.footer_list li a{
-border-left: 2px solid #b392ec;
-padding-left: 12px;
-color: #7f5539;
-font-size: clamp(12px, 3vw, 20px);
+.footer_list li a {
+  border-left: 2px solid #b392ec;
+  padding-left: 12px;
+  color: #7f5539;
+  font-size: clamp(12px, 3vw, 20px);
 
 }
 
 
-.footer_list_logo{
+.footer_list_logo {
   display: flex;
   margin-top: 24px;
 }
 
-.footer_list_logo img{
+.footer_list_logo img {
   width: 8.5333vw;
 }
 
 .instagram_logo,
-.facebook_logo{
+.facebook_logo {
   margin-right: 8.5333vw;
 }
 
@@ -363,125 +402,169 @@ footer p {
 
 
 
-
 @media screen and (min-width: 768px) {
   /* 最大 1200px */
 
-/* --------header--------- */
-.header_container {
-height: 118px;
-padding-bottom: 0px;
-}
+  /* ローディング画面CSS */
 
-.openbtn1 span:nth-of-type(1) {
-  top: 25px;
-  left: 95px;
-}
+  #splash {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: #eee;
+    text-align: center;
+    color: #ede0d4;
+  }
 
-.openbtn1 span:nth-of-type(2) {
-  top: 44.2px;
-  left: 95px;
-}
+  #splash_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-.openbtn1 span:nth-of-type(3) {
-  top: 63.4px;
-  left: 95px;
-}
+  #splash_logo svg {
+    width: 50vw;
+  }
 
-h1 img{
-  width: 80px;
-  height: 66.67px;
-  margin-top: 25.66px;
-}
+  #mask path {
+    fill-opacity: 0;
+    transition: fill-opacity 1s;
+    fill: none;
+    stroke: #7f5539;
+  }
 
-.header_container_icon{
-  margin-right: 75px;
-}
-.header_container_icon img{
-  width: 40px;
-  height: 40px;
-  margin-top: 20px;
-}
-.header_container_icon_login span,
-.header_container_icon_cart span {
-  font-size: 12px;
-}
-.header_container_icon_cart{
-  margin-left: 32px;
-}
+  #mask.done path {
+    fill: #7f5539;
+    fill-opacity: 1;
+    stroke: none;
+  }
 
-.hedder_search_box{
-  background-color: #b392ac;
-  text-align: -webkit-right;
-  padding-right: 95px;
-  padding-top: 12px;
-}
-.search_form_1{
-width: 30vw;
-}
-
-.openbtn1 span{
-  width: 48px;
-}
+  /* ローディング画面CSSここまで */
 
 
+  /* --------header--------- */
+  .header_container {
+    height: 118px;
+    padding-bottom: 0px;
+  }
 
-#g_nav.panelactive,
-#g_nav.panelactive #g_nav_list {
-  width: 600px;
-}
+  .openbtn1 span:nth-of-type(1) {
+    top: 25px;
+    left: 95px;
+  }
 
-/* ハンバーガーの中 */
-.nav_image {
-  display: block;
-  /* 画像をブロック要素として扱う */
-  width: 86.93px;
-  height: 77.77px;
-  margin-top: 12px;
-  margin-left: 12px;
-}
+  .openbtn1 span:nth-of-type(2) {
+    top: 44.2px;
+    left: 95px;
+  }
 
-#g_nav ul{
-top: 272.83px;
-left: 291px;
-}
+  .openbtn1 span:nth-of-type(3) {
+    top: 63.4px;
+    left: 95px;
+  }
 
-#g_nav li{
-  width: 400px;
-}
-#g_nav li a{
-  font-size: 24px;
-}
+  h1 img {
+    width: 80px;
+    height: 66.67px;
+    margin-top: 25.66px;
+  }
 
-.openbtn1.active{
-  left: 520px;
+  .header_container_icon {
+    margin-right: 75px;
+  }
 
-}
+  .header_container_icon img {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+  }
 
-/* --------Footer--------- */
-footer{
-  padding-top: 12px;
-  padding-left:  95px; 
-  padding-right: 95px;
-}
-.footer_list{
-  display: flex;
-}
+  .header_container_icon_login span,
+  .header_container_icon_cart span {
+    font-size: 12px;
+  }
 
-.footer_list li{
-  margin-top: 12px;
-  margin-bottom: 0px;
-}
+  .header_container_icon_cart {
+    margin-left: 32px;
+  }
 
-.footee_list_2,
-.footee_list_3{
-  margin-left: 62px;
-}
+  .hedder_search_box {
+    background-color: #b392ac;
+    text-align: -webkit-right;
+    padding-right: 95px;
+    padding-top: 12px;
+  }
 
-.footer_list li a{
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
+  .search_form_1 {
+    width: 30vw;
+  }
+
+  .openbtn1 span {
+    width: 48px;
+  }
+
+
+
+  #g_nav.panelactive,
+  #g_nav.panelactive #g_nav_list {
+    width: 600px;
+  }
+
+  /* ハンバーガーの中 */
+  .nav_image {
+    display: block;
+    /* 画像をブロック要素として扱う */
+    width: 86.93px;
+    height: 77.77px;
+    margin-top: 12px;
+    margin-left: 12px;
+  }
+
+  #g_nav ul {
+    top: 272.83px;
+    left: 291px;
+  }
+
+  #g_nav li {
+    width: 400px;
+  }
+
+  #g_nav li a {
+    font-size: 24px;
+  }
+
+  .openbtn1.active {
+    left: 520px;
+
+  }
+
+  /* --------Footer--------- */
+  footer {
+    padding-top: 12px;
+    padding-left: 95px;
+    padding-right: 95px;
+  }
+
+  .footer_list {
+    display: flex;
+  }
+
+  .footer_list li {
+    margin-top: 12px;
+    margin-bottom: 0px;
+  }
+
+  .footee_list_2,
+  .footee_list_3 {
+    margin-left: 62px;
+  }
+
+  .footer_list li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 
   .footer_list li a {
     padding-top: 12px;
