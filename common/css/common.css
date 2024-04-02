@@ -180,6 +180,26 @@ h1 img {
   cursor: pointer;
   width: 50px;
   height: 50px;
+  opacity: 0;
+}
+
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*×に変化*/
@@ -448,6 +468,10 @@ footer p {
   .header_container {
     height: 118px;
     padding-bottom: 0px;
+  }
+
+  .openbtn1 {
+    opacity: 0;
   }
 
   .openbtn1 span:nth-of-type(1) {

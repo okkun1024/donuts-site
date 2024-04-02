@@ -48,7 +48,9 @@
             </div>
 
         </div>
-        <div class="openbtn1"><span></span><span></span><span></span></div>
+        <div class="delayScroll">
+            <div class="openbtn1"><span></span><span></span><span></span></div>
+        </div>
         <nav id="g_nav">
             <div id="g_nav_list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
                 <img src="common/images/shop_logo.svg" class="nav_image">
