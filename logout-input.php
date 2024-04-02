@@ -12,6 +12,9 @@
   <!-- 必要ならば下記のCSSを追加して -->
   <link rel="stylesheet" href="common/css/common.css">
   <style>
+    body{
+      font-family: 'Noto Sans JP';
+    }
     .logout-inp-h1{
       text-align: center;
       margin:32px 0 60px 0 ;
