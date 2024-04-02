@@ -124,6 +124,30 @@ body {
     padding: 0 5.333vw;
 }
 
+.items_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    width: 42.133vw;
+
+    &:nth-child(1) {
+        margin-right: 5.066vw;
+    }
+
+    &:nth-child(3) {
+        margin-right: 5.066vw;
+    }
+
+    &:nth-child(5) {
+        margin-right: 5.066vw;
+    }
+}
+
+
 #ranking_section h2 {
     text-align: center;
     font-size: clamp(20px, 5vw, 36px);
@@ -152,41 +176,30 @@ body {
     margin-bottom: 20px;
 }
 
-.first_second,
-.third_fourth,
-.fifth_sixth {
-    display: flex;
-}
 
 .first_icon {
-    height: 9.333vw;
-    width: 9.333vw;
-    line-height: 9.333vw;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
     text-align: center;
     background: #ffd233;
-    font-size: clamp(16px, 4vw, 32px);
+    font-size: 16px;
     margin: 0 auto 20px;
 }
 
 .rank_icon {
-    height: 9.333vw;
-    width: 9.333vw;
-    line-height: 9.333vw;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
     text-align: center;
     background: #e8c2ca;
-    font-size: clamp(16px, 4vw, 32px);
+    font-size: clamp(16px, 4vw, 24px);
     margin: 0 auto 20px;
-}
-
-.first_container,
-.third_container,
-.fifth_container {
-    margin-right: 5.333vw;
 }
 
 .product_name,
 .product_price {
-    font-size: clamp(16px, 4vw, 32px);
+    font-size: clamp(16px, 3vw, 24px);
     margin-bottom: 22px;
 }
 
@@ -203,7 +216,7 @@ body {
 .button {
     width: 42.133vw;
     font-family: 'Noto Sans JP';
-    font-size: clamp(12px, 3vw, 20px);
+    font-size: clamp(12px, 2vw, 20px);
     text-align: center;
     cursor: pointer;
     margin-bottom: 80px;
@@ -227,7 +240,7 @@ body {
 
 .fa-heart {
     width: 12vw;
-    font-size: clamp(20px, 5vw, 36px);
+    font-size: clamp(20px, 2vw, 24px);
     text-align: right;
     color: #bf0000;
 }
@@ -345,12 +358,70 @@ body {
         margin-bottom: 20px;
     }
 
-    .first_third,
-    .fourth_sixth {
+    .first_icon {
+        height: 4.392vw;
+        width: 4.392vw;
+        line-height: 4.392vw;
+        text-align: center;
+        background: #ffd233;
+        font-size: 16px;
+        margin: 0 auto 20px;
+    }
+
+    .rank_icon {
+        height: 4.392vw;
+        width: 4.392vw;
+        line-height: 4.392vw;
+        text-align: center;
+        background: #e8c2ca;
+        font-size: clamp(16px, 4vw, 24px);
+        margin: 0 auto 20px;
+    }
+
+    .items_container {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item {
+        width: 23.426vw;
+
+        &:nth-child(1) {
+            margin-right: 4.392vw;
+        }
+
+        &:nth-child(2) {
+            margin-right: 4.392vw;
+        }
+
+        &:nth-child(3) {
+            margin-right: 0;
+        }
+
+        &:nth-child(4) {
+            margin-right: 4.392vw;
+        }
+
+        &:nth-child(5) {
+            margin-right: 4.392vw;
+        }
+    }
+
+    .product_name,
+    .product_price {
+        font-size: clamp(16px, 2vw, 24px);
+        margin-bottom: 22px;
     }
 
     .button {
-        width: 23.426vw;
+        width: 19.033vw;
+        padding: 16px 4.392vw;
+        font-size: clamp(12px, 1.5vw, 20px);
+    }
+
+    .button_area {
+        text-align: center;
     }
 }
