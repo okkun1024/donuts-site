@@ -6,14 +6,6 @@ body {
     font-size: clamp(12px, 3vw, 14px);
 }
 
-.sp_only {
-    display: block;
-}
-
-.pc_only {
-    display: none;
-}
-
 .welcome_message {
     margin: 12px 0 12px 5.333vw;
 }
@@ -241,14 +233,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-
-    .sp_only {
-        display: none;
-    }
-
-    .pc_only {
-        display: block;
-    }
 
     .welcome_message {
         font-size: 12px;
