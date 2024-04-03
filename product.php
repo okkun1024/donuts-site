@@ -44,25 +44,16 @@ $counter=0;
 // SQL文の実行結果をHTMLで出力
 foreach ($sql as $row) {
   $id = $row['id'];
-
+  $category=$row['category'];
   if($counter >=6){break;}
 
-
-// <table>
-
-// <div>
-//   <img src="common/images/product_{$id}.jpg" alt="{$row['name']}">
-//   <p><a href="detail.php?id={$id}">
-//     {$row['name']}</a> {$row['price']}
-//   </p>
-// </div>
 // 価格を3桁ごとにカンマで区切る
 $formattedPrice = number_format($row['price']);
 
 echo <<<END
 <div class="product_box">
   <div class="item">
-    <a href="detail-{$id}.php?id=$id">
+    <a href="detail-{$category}.php?id=$id">
       <img src="common/images/product_{$id}.jpg" alt="{$row['name']}">
     </a>
     <p>{$row['name']}
@@ -84,28 +75,30 @@ $counter ++;
 echo '</div>';
 
 
-$sql = $pdo->query('select * from product');
-$counter2=0;
-foreach ($sql as $row) {
-  $id = $row['id'];
 
+$counter2=0;
+// $stmt は PDOStatement オブジェクトと仮定
+$sql = $pdo->query('select * from product');
+
+// PDOStatement オブジェクトからデータを配列として取得
+$results = $sql->fetchAll(PDO::FETCH_ASSOC);
+
+// 取得した配列を array_slice() に渡す
+$slicedResults = array_slice($results, 6);
+
+foreach ($slicedResults as $row) {
+  $id = $row['id'];
+  $category=$row['category'];
   if($counter2 >=6){break;}
 
-  // <table>
-
-  // <div>
-  //   <img src="common/images/variety_{$id}.jpg" alt="{$row['name']}">
-  //   <p><a href="detail.php?id={$id}">
-  //     {$row['name']}</a> {$row['price']}
-  //   </p>
-  // </div>
 
   echo <<<END
   <div class="variety_box">
   <div class="item">
-    <a href="detail-{$category}.php">
-      <img src="common/images/variety_{$id}.jpg" alt="{$row['name']}">
+    <a href="detail-{$category}.php?id=$id">
+      <img src="common/images/product_{$id}.jpg" alt="{$row['name']}">
     </a>
+  
     <p>{$row['name']}
       <br>税込 &bsol;{$formattedPrice}
     </p>
