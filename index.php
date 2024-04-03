@@ -18,15 +18,17 @@
   <link rel="stylesheet" href="common/css/style.css">
   <link rel="stylesheet" href="common/css/common.css">
   <!-- JavaScript -->
-  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="common/js/animation.js"></script>
   <!-- タイトルここ -->
   <title>Document</title>
 </head>
 
 <body>
-<?php
-  session_start(); 
+
+  <?php
+  session_start();
+
   ?>
 
 
@@ -38,7 +40,7 @@
   require 'includes/header.php';
   ?>
 
-  
+
   <?php
   if (isset($_SESSION['customer'])) {
     echo '<p class="welcome_message">ようこそ', ' ', $_SESSION['customer']['name'], '様</p>';
@@ -55,17 +57,17 @@
 
   <section id="topic_section">
     <div class="topic_container">
-      <div class="new_product">
+      <div class="new_product fadeUpTrigger">
         <img src="common/images/product_5.jpg" alt="">
         <p class="new_item"><img src="common/images/new_item.svg" alt=""></p>
         <p class="summer_citrus">サマーシトラス</p>
       </div>
-      <div class="product_promotion">
+      <div class="product_promotion fadeUpTrigger">
         <img src="common/images/life_with_donuts.jpg" alt="">
         <p>ドーナツのある生活</p>
       </div>
     </div>
-    <div class="item_list">
+    <div class="item_list fadeUpTrigger">
       <div>
         <img src="common/images/ist_product.jpg" alt="">
         <p>商品一覧</p>
@@ -76,7 +78,7 @@
 
 
   <section id="introduce_section">
-    <div class="introduce_container">
+    <div class="introduce_container fadeUpTrigger">
       <h2>philosophy</h2>
       <h3>私たちの信念</h3>
       <p class="philosophy_title">"Creating Connections"</p>
@@ -85,10 +87,10 @@
   </section>
 
   <section id="ranking_section">
-    <h2>人気ランキング</h2>
+    <h2 class="fadeUpTrigger">人気ランキング</h2>
 
     <div class="items_container">
-      <div class="item">
+      <div class="item fadeUpTrigger">
         <div class="first_icon"><span>1</span></div>
         <a href="detail-1.php"><img src="common/images/product_1.jpg" alt=""></a>
         <p class="product_name">CCドーナツ 当店オリジナル(5個入り)</p>
@@ -98,7 +100,7 @@
         </div>
         <div class="button_area"><input type="submit" value="カートに入れる" class="button"></div>
       </div>
-      <div class="item">
+      <div class="item fadeUpTrigger">
         <div class="rank_icon"><span>2</span></div>
         <a href="#ranking_section"><img src="common/images/variety_1.jpg" alt=""></a>
         <p class="product_name">フルーツドーナツセット(12個入り)</p>
@@ -109,7 +111,7 @@
         <div class="button_area"><input type="submit" value="カートに入れる" class="button"></div>
       </div>
 
-      <div class="item">
+      <div class="item fadeUpTrigger">
         <div class="rank_icon"><span>3</span></div>
         <a href="#ranking_section"><img src="common/images/variety_2.jpg"></a>
         <p class="product_name">フルーツドーナツセット(14個入り)</p>
@@ -119,7 +121,7 @@
         </div>
         <div class="button_area"><input type="submit" value="カートに入れる" class="button"></div>
       </div>
-      <div class="item">
+      <div class="item fadeUpTrigger">
         <div class="rank_icon"><span>4</span></div>
         <a href="#ranking_section"><img src="common/images/product_2.jpg" alt=""></a>
         <p class="product_name">チョコレートデライト(5個入り)</p>
@@ -130,7 +132,7 @@
         <div class="button_area"><input type="submit" value="カートに入れる" class="button"></div>
       </div>
 
-      <div class="item">
+      <div class="item fadeUpTrigger">
         <div class="rank_icon"><span>5</span></div>
         <a href="#ranking_section"><img src="common/images/variety_3.jpg" alt=""></a>
         <p class="product_name">ベストセレクションボックス(4個入り)</p>
@@ -141,7 +143,7 @@
         <div class="button_area"><input type="submit" value="カートに入れる" class="button"></div>
       </div>
 
-      <div class="item">
+      <div class="item fadeUpTrigger">
         <div class="rank_icon"><span>6</span></div>
         <a href="#ranking_section"><img src="common/images/product_6.jpg" alt=""></a>
         <p class="product_name">ストロベリークラッシュ(4個入り)</p>
