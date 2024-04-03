@@ -167,7 +167,7 @@ h2:before {
 
     .button {
         width: 19.033vw;
-        padding: 11.75 px 4.392vw;
+        padding: 16px 4.392vw;
         font-size: clamp(12px, 1.5vw, 20px);
     }
 
