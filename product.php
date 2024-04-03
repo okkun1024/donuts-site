@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="common/css/reset.css">
   <!-- 必要ならば下記のCSSを追加して -->
   <link rel="stylesheet" href="common/css/product.css">
@@ -63,7 +64,7 @@ echo <<<END
     <p>{$row['name']}
       <br>税込 &bsol;{$formattedPrice}
     </p>
-    <p><i class="fa-heart"></i></p>
+    <p><i class="fa-regular fa-heart"></i></p>
     <form action="cartinput.php" method="post">
     <input class="cart_btn" type="button" value="カートに入れる"> 
   </div>
@@ -100,7 +101,7 @@ foreach ($sql as $row) {
     <p>{$row['name']}
       <br>税込 &bsol;{$formattedPrice}
     </p>
-    <p><i class="fa-heart"></i></p>
+    <p><i class="fa-regular fa-heart"></i></p>
     <form action="cartinput.php" method="post">
     <input class="cart_btn" type="button" value="カートに入れる"> 
   </div>
