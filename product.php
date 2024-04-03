@@ -58,7 +58,7 @@ $formattedPrice = number_format($row['price']);
 echo <<<END
 <div class="product_box">
   <div class="item">
-    <a href="detail-{$id}.php">
+    <a href="detail-{$id}.php?id=$id">
       <img src="common/images/product_{$id}.jpg" alt="{$row['name']}">
     </a>
     <p>{$row['name']}
