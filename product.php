@@ -98,6 +98,7 @@ foreach ($slicedResults as $row) {
     <a href="detail-{$category}.php?id=$id">
       <img src="common/images/product_{$id}.jpg" alt="{$row['name']}">
     </a>
+  
     <p>{$row['name']}
       <br>税込 &bsol;{$formattedPrice}
     </p>
