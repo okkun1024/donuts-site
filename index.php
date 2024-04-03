@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -25,11 +24,11 @@
 
 <body>
   <?php
-  require 'includes/header.php';
+  require 'loading.php';
   ?>
 
   <?php
-  require 'loading.php';
+  require 'includes/header.php';
   ?>
 
   
