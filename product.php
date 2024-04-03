@@ -16,108 +16,116 @@
 </head>
 
 <?php
-  require 'includes/header.php';
-  ?>
+require 'includes/header.php';
+?>
 
 <body>
-<form action="product.php" method="post">
+  <form action="product.php" method="post">
 
-<h2>商品一覧</h2>
-<?php
 
-// データベース接続
-require 'includes/database.php';
+    <?php
 
-// フォームの入力値がセットされているか判定
-if (isset($_REQUEST['keyword'])) {
-  // セットされている場合、入力値あり
-  // productテーブル内で部分一致するレコードを取得
-  $sql = $pdo->prepare('select * from product where name like ?');
-  $sql->execute(['%' . $_REQUEST['keyword'] . '%']);
-} else {
-  // セットされていない場合、入力値なし
-  // productテーブルのすべてのレコードを取得
-  $sql = $pdo->query('select * from product');
-}
+    // データベース接続
+    require 'includes/database.php';
 
-$counter=0;
-// SQL文の実行結果をHTMLで出力
-foreach ($sql as $row) {
-  $id = $row['id'];
-  $category=$row['category'];
-  if($counter >=6){break;}
+    // フォームの入力値がセットされているか判定
+    if (isset($_REQUEST['keyword'])) {
+      // セットされている場合、入力値あり
+      // productテーブル内で部分一致するレコードを取得
+      $sql = $pdo->prepare('select * from product where name like ?');
+      $sql->execute(['%' . $_REQUEST['keyword'] . '%']);
+    } else {
+      // セットされていない場合、入力値なし
+      // productテーブルのすべてのレコードを取得
+      $sql = $pdo->query('select * from product');
+    }
+    echo  '<h2>商品一覧</h2>';
+    echo '<div class="product_box">';
 
-// 価格を3桁ごとにカンマで区切る
-$formattedPrice = number_format($row['price']);
+    $counter = 0;
+    // SQL文の実行結果をHTMLで出力
+    foreach ($sql as $row) {
+      $id = $row['id'];
+      $category = $row['category'];
+      if ($counter >= 6) {
+        break;
+      }
 
-echo <<<END
-<div class="product_box">
+      // 価格を3桁ごとにカンマで区切る
+      $formattedPrice = number_format($row['price']);
+
+      echo <<<END
   <div class="item">
     <a href="detail-{$category}.php?id=$id">
       <img src="common/images/product_{$id}.jpg" alt="{$row['name']}">
     </a>
-    <p>{$row['name']}
-      <br>税込 &bsol;{$formattedPrice}
-    </p>
-    <p><i class="fa-regular fa-heart"></i></p>
+    <p class="product_name">{$row['name']}
+      </p>
+      <div class="price_container">
+        <p class="product_price">税込 &yen;{$formattedPrice}
+            </p>
+            <p><i class="fa-regular fa-heart"></i></p>
+      </div>
     <form action="cartinput.php" method="post">
     <input type="hidden" name="name" value="{$row['name']}">
     <input type="hidden" name="price" value="{$row['price']}">
     <input type="hidden" name="id" value="{$row['id']}">
     <input type="hidden" name="count" value="1">
-    <input class="cart_btn" type="submit" value="カートに入れる"> 
+    <div class="button_area"><input class="button" type="submit" value="カートに入れる"> </div>
   </div>
 END;
-$counter ++;
+      $counter++;
+    }
+    // product_boxの終了タグ
+    echo '</div>';
 
-}
-// product_boxの終了タグ
-echo '</div>';
+    echo '<h2>バラエティセット</h2>';
+    echo '<div class="product_box">';
+
+    $counter2 = 0;
+    // $stmt は PDOStatement オブジェクトと仮定
+    $sql = $pdo->query('select * from product');
+
+    // PDOStatement オブジェクトからデータを配列として取得
+    $results = $sql->fetchAll(PDO::FETCH_ASSOC);
+
+    // 取得した配列を array_slice() に渡す
+    $slicedResults = array_slice($results, 6);
+
+    foreach ($slicedResults as $row) {
+      $id = $row['id'];
+      $category = $row['category'];
+      if ($counter2 >= 6) {
+        break;
+      }
 
 
-
-$counter2=0;
-// $stmt は PDOStatement オブジェクトと仮定
-$sql = $pdo->query('select * from product');
-
-// PDOStatement オブジェクトからデータを配列として取得
-$results = $sql->fetchAll(PDO::FETCH_ASSOC);
-
-// 取得した配列を array_slice() に渡す
-$slicedResults = array_slice($results, 6);
-
-foreach ($slicedResults as $row) {
-  $id = $row['id'];
-  $category=$row['category'];
-  if($counter2 >=6){break;}
-
-
-  echo <<<END
-  <div class="variety_box">
+      echo <<<END
   <div class="item">
     <a href="detail-{$category}.php?id=$id">
       <img src="common/images/product_{$id}.jpg" alt="{$row['name']}">
     </a>
   
-    <p>{$row['name']}
-      <br>税込 &bsol;{$formattedPrice}
-    </p>
-    <p><i class="fa-regular fa-heart"></i></p>
+    <p class="product_name">{$row['name']}
+      </p>
+      <div class="price_container">
+        <p class="product_price">税込 &yen;{$formattedPrice}
+            </p>
+            <p><i class="fa-regular fa-heart"></i></p>
+      </div>
     <form action="cartinput.php" method="post">
-    <input class="cart_btn" type="button" value="カートに入れる"> 
+    <div class="button_area"><input class="button" type="button" value="カートに入れる"> </div>
   </div>
   
 
 END;
-$counter2 ++;
+      $counter2++;
+    }
+    echo '</div>';
 
 
-}
-echo '</div>';
-
-
-?>
- <?php require 'includes/footer.php'; ?>
+    ?>
+    <?php require 'includes/footer.php'; ?>
 </body>
 
 </html>
