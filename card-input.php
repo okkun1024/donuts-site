@@ -103,6 +103,7 @@
 </head>
 
 <body>
+<?php session_start() ?>
 
   <img src="common/images/shop_logo.svg" alt="c.c.donuts">
   <h1>カード登録情報</h1>
