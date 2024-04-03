@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -23,9 +25,12 @@
 </head>
 
 <body>
+
   <?php
   session_start();
+
   ?>
+
 
   <?php
   require 'loading.php';
