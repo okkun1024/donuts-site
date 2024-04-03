@@ -21,9 +21,17 @@
   $pdo = new PDO('mysql:host=localhost;dbname=donuts;charset=utf8', 'donuts', 'password');
   $sql->execute([$_REQUEST['id']]);
   foreach($sql as $row){
-    echo '<p><img alt="image" src="common/images/',$row['id'],'.jpg"></p>;
+    echo '<form action="" type="method">';
+    echo '<p><img alt="image" src="common/images/',$row['id'],'.jpg"></p>';
+    echo '';<p>{$row['name']}
+    <br>税込 &bsol;{$formattedPrice}
+    </p>
+    <p><i class="fa-heart"></i></p>
+    <form action="cartinput.php" method="post">
+    <input class="cart_btn" type="button" value="カートに入れる"> 
   }
 ?>
+
 </body>
 
 </html>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -24,12 +25,14 @@
 
 <body>
   <?php
-  require 'loading.php';
+  require 'includes/header.php';
   ?>
 
   <?php
-  require 'includes/header.php';
+  require 'loading.php';
   ?>
+
+  
   <?php
   if (isset($_SESSION['customer'])) {
     echo '<p class="welcome_message">ようこそ', ' ', $_SESSION['customer']['name'], '様</p>';
