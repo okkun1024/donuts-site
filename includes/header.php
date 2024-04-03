@@ -16,8 +16,6 @@
 
 <body>
 
-    ?>
-
     <header>
         <div class="header_container">
             <h1>
