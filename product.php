@@ -16,6 +16,10 @@
 </head>
 
 <?php
+  session_start();
+
+
+
   require 'includes/header.php';
   ?>
 
@@ -24,7 +28,7 @@
 
 <h2>商品一覧</h2>
 <?php
- session_start(); 
+  
 // データベース接続
 require 'includes/database.php';
 

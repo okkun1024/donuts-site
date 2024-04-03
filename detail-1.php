@@ -10,6 +10,7 @@
   <link href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="common/css/reset.css">
   <link rel="stylesheet" href="common/css/style.css">
+  <link rel="stylesheet" href="common/css/detail.css">
   <!-- 必要ならば下記のCSSを追加して -->
   <link rel="stylesheet" href="">
   <!-- タイトルここ -->
@@ -21,21 +22,21 @@
 
 <?php
   require 'includes/header.php';
-
-
-
+?>
+<div class=item_container>
+<?php
   require 'includes/database.php';
   $sql=$pdo->prepare('select * from product where id=?');
   $sql->execute([$_REQUEST['id']]);
   foreach($sql as $row){
     $formattedPrice = number_format($row['price']);
     echo '<form action="" type="method">';
-    echo '<p><img alt="image" src="common/images/product_',$row['id'],'.jpg"></p>';
+    echo '<p><img alt="image" src="common/images/product_',$row['id'],'.jpg" class="detail_item_image"></p>';
     echo '<p>',$row['name'];
     echo '<p>',$row['description'];
-    echo '<br>税込 &bsol;',$formattedPrice;
+    echo '<br>税込 ',$formattedPrice;
     echo '</p>';
-    echo '<p><i class="fa-heart "></i></p>';
+    echo '<p><i class="fa-heart fa-regular"></i></p>';
     echo '<input type="number" name="count" value="">';
     echo '<span>個</span>';
     echo '<form action="cartinput.php" method="post">';
@@ -44,8 +45,10 @@
     echo '<input type="hidden" name="name" value="',$row['name'],'">' ;
     echo '<input type="hidden" name="price" value="',$row['price'],'">' ;
   }
-
-
+  
+?>
+</div>
+<?php
   require 'includes/footer.php';
 ?>
 
