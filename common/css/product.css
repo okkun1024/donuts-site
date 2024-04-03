@@ -28,3 +28,31 @@ h2:before {
     transform: translate(-50%);
     background-color: #ffd233;
 }
+
+.product_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    width: 42.133vw;
+
+    &:nth-child(1) {
+        /* margin-right: 5.066vw; */
+    }
+
+    &:nth-child(3) {
+        margin-right: 5.066vw;
+    }
+
+    &:nth-child(5) {
+        margin-right: 5.066vw;
+    }
+}
+
+.item img {
+    width: 42.133vw;
+    margin-bottom: 20px;
+}
