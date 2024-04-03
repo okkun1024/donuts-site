@@ -17,9 +17,9 @@
 
 <?php
 session_start();
-?>
 
-<?php
+
+
 require 'includes/header.php';
 ?>
 
@@ -41,8 +41,6 @@ require 'includes/header.php';
       // productテーブルのすべてのレコードを取得
       $sql = $pdo->query('select * from product');
     }
-    echo  '<h2>商品一覧</h2>';
-    echo '<div class="product_box">';
 
     $counter = 0;
     // SQL文の実行結果をHTMLで出力
@@ -57,23 +55,21 @@ require 'includes/header.php';
       $formattedPrice = number_format($row['price']);
 
       echo <<<END
+<div class="product_box">
   <div class="item">
     <a href="detail-{$category}.php?id=$id">
       <img src="common/images/product_{$id}.jpg" alt="{$row['name']}">
     </a>
-    <p class="product_name">{$row['name']}
-      </p>
-      <div class="price_container">
-        <p class="product_price">税込 &yen;{$formattedPrice}
-            </p>
-            <p><i class="fa-regular fa-heart"></i></p>
-      </div>
+    <p>{$row['name']}
+      <br>税込 &bsol;{$formattedPrice}
+    </p>
+    <p><i class="fa-regular fa-heart"></i></p>
     <form action="cartinput.php" method="post">
     <input type="hidden" name="name" value="{$row['name']}">
     <input type="hidden" name="price" value="{$row['price']}">
     <input type="hidden" name="id" value="{$row['id']}">
     <input type="hidden" name="count" value="1">
-    <div class="button_area"><input class="button" type="submit" value="カートに入れる"> </div>
+    <input class="cart_btn" type="submit" value="カートに入れる"> 
   </div>
 END;
       $counter++;
@@ -81,8 +77,7 @@ END;
     // product_boxの終了タグ
     echo '</div>';
 
-    echo '<h2>バラエティセット</h2>';
-    echo '<div class="product_box">';
+
 
     $counter2 = 0;
     // $stmt は PDOStatement オブジェクトと仮定
@@ -103,20 +98,18 @@ END;
 
 
       echo <<<END
+  <div class="variety_box">
   <div class="item">
     <a href="detail-{$category}.php?id=$id">
       <img src="common/images/product_{$id}.jpg" alt="{$row['name']}">
     </a>
   
-    <p class="product_name">{$row['name']}
-      </p>
-      <div class="price_container">
-        <p class="product_price">税込 &yen;{$formattedPrice}
-            </p>
-            <p><i class="fa-regular fa-heart"></i></p>
-      </div>
+    <p>{$row['name']}
+      <br>税込 &bsol;{$formattedPrice}
+    </p>
+    <p><i class="fa-regular fa-heart"></i></p>
     <form action="cartinput.php" method="post">
-    <div class="button_area"><input class="button" type="button" value="カートに入れる"> </div>
+    <input class="cart_btn" type="button" value="カートに入れる"> 
   </div>
   
 

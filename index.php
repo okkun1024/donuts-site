@@ -89,13 +89,19 @@
     <div class="items_container">
       <div class="item fadeUpTrigger">
         <div class="first_icon"><span>1</span></div>
-        <a href="detail-1.php"><img src="common/images/product_1.jpg" alt=""></a>
+        <?php
+        
+
+        
+        echo '<a href="detail-',,'"
+        ?>
+        <!-- <a href="detail-1.php"><img src="common/images/product_1.jpg" alt=""></a>
         <p class="product_name">CCドーナツ 当店オリジナル(5個入り)</p>
         <div class="price_container">
           <p class="product_price">税込 &yen;1,500円</p>
           <p><i class="fa-regular fa-heart"></i></p>
         </div>
-        <div class="button_area"><input type="submit" value="カートに入れる" class="button"></div>
+        <div class="button_area"><input type="submit" value="カートに入れる" class="button"></div> -->
       </div>
       <div class="item fadeUpTrigger">
         <div class="rank_icon"><span>2</span></div>
