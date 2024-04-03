@@ -1,4 +1,4 @@
-<?php session_start() ?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -48,10 +48,17 @@
 </head>
 
 <body>
-<?php require'includes/header.php';?>
+
 <?php
+session_start();
 if(isset($_SESSION['customer'])){
   unset($_SESSION['customer']);
+}
+session_write_close();
+
+require'includes/header.php';
+
+if(isset($_SESSION['customer'])){
   echo '<div class="logout-wrpper">';
   echo '<h1>','ログアウト完了','</h1>';
   echo '<div class="login-com-div"><p class="">','ログアウトが完了しました。','</div></p>';
@@ -61,7 +68,11 @@ if(isset($_SESSION['customer'])){
   echo '<div class=else-div><p>','すでにログアウトしています。','</p></div>';
   echo '<p class=relog><a href="index.php">','TOPページへ戻る','</a></p>';
 }
+
+
 ?>
+
+
 </div>
 
 <?php require'includes/footer.php';?>

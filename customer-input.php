@@ -134,12 +134,7 @@
 
     <input type="submit" value="ご入力内容を確認する" >
   </form>
-  キュイ━━━━ン
-　　　∧,,∧
-　　 (・ω・｀) /|　
-　／くＴ￣￣二=二] 三二─
-　￣￣￣＼二＼
-
+ 
   <?php require 'includes/footer.php' ?>
 
 </body>

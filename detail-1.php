@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="common/css/reset.css">
   <!-- 必要ならば下記のCSSを追加して -->
   <link rel="stylesheet" href="">
@@ -15,7 +16,14 @@
 </head>
 
 <body>
-
+<?php
+  require 'includes/database.php';
+  $pdo = new PDO('mysql:host=localhost;dbname=donuts;charset=utf8', 'donuts', 'password');
+  $sql->execute([$_REQUEST['id']]);
+  foreach($sql as $row){
+    echo '<p><img alt="image" src="common/images/',$row['id'],'.jpg"></p>;
+  }
+?>
 </body>
 
 </html>

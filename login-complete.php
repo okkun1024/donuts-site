@@ -1,4 +1,4 @@
-<?php session_start() ?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -45,10 +45,11 @@
 </head>
 
 <body>
+
 <?php
-  require 'includes\header.php';
-  ?>
-<?php
+// セッションスタート
+session_start();
+
 unset ($_SESSION['customer']);
 $pdo = new PDO('mysql:host=localhost;dbname=donuts;charset=utf8','donuts','password');
 
@@ -59,6 +60,13 @@ foreach($sql as $row ){
   'id'=>$row['id'], 'name'=>$row['name'],'kana'=>$row['kana'],'post_code'=>$row['post_code'], 
   'address'=>$row['address'],'mail'=>$row['mail'],'password'=>$row['password']];
 }
+// セッション終了　↑ログイン処理のみ
+session_write_close();
+
+// ヘッダーによりセッションスタート
+require 'includes\header.php';
+
+
 if(isset($_SESSION['customer'])){
   echo'<div class=log-comp>';
   echo '<h1>','ログイン完了','</h1>';
@@ -70,6 +78,7 @@ if(isset($_SESSION['customer'])){
   echo '<div><p>','ログインに失敗しました。もう一度やり直してください。','</div></p>';
   echo '<p class=relog><a href="login-input.php">','ログインページへ戻る','</a></p>';
 }
+// 出力処理↑
 ?>
 </div>
 <?php

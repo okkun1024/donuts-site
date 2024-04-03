@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="common/css/reset.css">
   <!-- 必要ならば下記のCSSを追加して -->
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="common/css/product.css">
   <!-- タイトルここ -->
   <title>Document</title>
 </head>
@@ -35,19 +35,85 @@ if (isset($_REQUEST['keyword'])) {
   $sql = $pdo->query('select * from product');
 }
 
+$counter=0;
 // SQL文の実行結果をHTMLで出力
 foreach ($sql as $row) {
   $id = $row['id'];
-  echo <<<END
-<tr>
-<td>{$id}</td>
-<td><a href="detail.php?id={$id}">{$row['name']}</a></td>
-<td>{$row['price']}</td>
-</tr>
-END;
-}
 
-echo '</table>';
+  if($counter >=6){break;}
+
+
+// <table>
+
+// <div>
+//   <img src="common/images/product_{$id}.jpg" alt="{$row['name']}">
+//   <p><a href="detail.php?id={$id}">
+//     {$row['name']}</a> {$row['price']}
+//   </p>
+// </div>
+// 価格を3桁ごとにカンマで区切る
+$formattedPrice = number_format($row['price']);
+
+echo <<<END
+<div class="product_box">
+  <div class="item">
+    <a href="detail-{$id}.php">
+      <img src="common/images/product_{$id}.jpg" alt="{$row['name']}">
+    </a>
+    <p>{$row['name']}
+      <br>税込 &bsol;{$formattedPrice}
+    </p>
+    <p><i class="fa-heart"></i></p>
+    <form action="cartinput.php" method="post">
+    <input class="cart_btn" type="button" value="カートに入れる"> 
+  </div>
+END;
+$counter ++;
+
+}
+// product_boxの終了タグ
+echo '</div>';
+
+
+$sql = $pdo->query('select * from product');
+$counter2=0;
+foreach ($sql as $row) {
+  $id = $row['id'];
+
+  if($counter2 >=6){break;}
+
+  // <table>
+
+  // <div>
+  //   <img src="common/images/variety_{$id}.jpg" alt="{$row['name']}">
+  //   <p><a href="detail.php?id={$id}">
+  //     {$row['name']}</a> {$row['price']}
+  //   </p>
+  // </div>
+
+  echo <<<END
+  <div class="variety_box">
+  <div class="item">
+    <a href="detail-{$id}.php">
+      <img src="common/images/variety_{$id}.jpg" alt="{$row['name']}">
+    </a>
+    <p>{$row['name']}
+      <br>税込 &bsol;{$formattedPrice}
+    </p>
+    <p><i class="fa-heart"></i></p>
+    <form action="cartinput.php" method="post">
+    <input class="cart_btn" type="button" value="カートに入れる"> 
+  </div>
+  
+
+END;
+$counter2 ++;
+
+
+}
+echo '</div>';
+
+
 ?>
 </body>
 
