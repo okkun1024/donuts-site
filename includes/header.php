@@ -15,11 +15,7 @@
 </head>
 
 <body>
-    <?php
-    $url = $_SERVER['REQUEST_URI'];
-    if (!str_contains($url, 'index')) {
-        session_start();
-    }
+
     ?>
 
     <header>

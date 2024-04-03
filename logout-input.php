@@ -1,4 +1,4 @@
-<? session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -52,6 +52,7 @@
   </head>
 
   <body>
+  <?php session_start() ?>
 
   <?php
   require 'includes/header.php';
