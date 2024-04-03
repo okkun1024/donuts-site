@@ -16,6 +16,10 @@
 </head>
 
 <?php
+session_start();
+?>
+
+<?php
 require 'includes/header.php';
 ?>
 
