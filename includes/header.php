@@ -16,7 +16,13 @@
 </head>
 
 <body>
-<?php session_start() ?>
+    <?php
+    $url = $_SERVER['REQUEST_URI'];
+    if (strstr(!$url,'index')){
+        session_start();
+    } 
+    ?>
+    
     <header>
         <div class="header_container">
             <h1>
