@@ -19,12 +19,13 @@
   <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script> -->
   <!-- タイトルここ -->
+  <script src="commn/js/animation.js"></script>
   <title>Document</title>
 </head>
 
 <body>
   <?php
-  session_start(); 
+  session_start();
   ?>
 
   <?php
@@ -35,7 +36,7 @@
   require 'includes/header.php';
   ?>
 
-  
+
   <?php
   if (isset($_SESSION['customer'])) {
     echo '<p class="welcome_message">ようこそ', ' ', $_SESSION['customer']['name'], '様</p>';
@@ -85,7 +86,7 @@
     <h2>人気ランキング</h2>
 
     <div class="items_container">
-      <div class="item">
+      <div class="item fadeUpTrigger">
         <div class="first_icon"><span>1</span></div>
         <a href="detail-1.php"><img src="common/images/product_1.jpg" alt=""></a>
         <p class="product_name">CCドーナツ 当店オリジナル(5個入り)</p>
@@ -95,7 +96,7 @@
         </div>
         <div class="button_area"><input type="submit" value="カートに入れる" class="button"></div>
       </div>
-      <div class="item">
+      <div class="item fade_up">
         <div class="rank_icon"><span>2</span></div>
         <a href="#ranking_section"><img src="common/images/variety_1.jpg" alt=""></a>
         <p class="product_name">フルーツドーナツセット(12個入り)</p>
@@ -106,7 +107,7 @@
         <div class="button_area"><input type="submit" value="カートに入れる" class="button"></div>
       </div>
 
-      <div class="item">
+      <div class="item fade_up">
         <div class="rank_icon"><span>3</span></div>
         <a href="#ranking_section"><img src="common/images/variety_2.jpg"></a>
         <p class="product_name">フルーツドーナツセット(14個入り)</p>
@@ -116,7 +117,7 @@
         </div>
         <div class="button_area"><input type="submit" value="カートに入れる" class="button"></div>
       </div>
-      <div class="item">
+      <div class="item fade_up">
         <div class="rank_icon"><span>4</span></div>
         <a href="#ranking_section"><img src="common/images/product_2.jpg" alt=""></a>
         <p class="product_name">チョコレートデライト(5個入り)</p>
@@ -127,7 +128,7 @@
         <div class="button_area"><input type="submit" value="カートに入れる" class="button"></div>
       </div>
 
-      <div class="item">
+      <div class="item fade_up">
         <div class="rank_icon"><span>5</span></div>
         <a href="#ranking_section"><img src="common/images/variety_3.jpg" alt=""></a>
         <p class="product_name">ベストセレクションボックス(4個入り)</p>
@@ -138,7 +139,7 @@
         <div class="button_area"><input type="submit" value="カートに入れる" class="button"></div>
       </div>
 
-      <div class="item">
+      <div class="item fade_up">
         <div class="rank_icon"><span>6</span></div>
         <a href="#ranking_section"><img src="common/images/product_6.jpg" alt=""></a>
         <p class="product_name">ストロベリークラッシュ(4個入り)</p>
