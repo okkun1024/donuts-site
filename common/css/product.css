@@ -40,7 +40,7 @@ h2:before {
     width: 42.133vw;
 
     &:nth-child(1) {
-        /* margin-right: 5.066vw; */
+        margin-right: 5.066vw;
     }
 
     &:nth-child(3) {
@@ -55,4 +55,125 @@ h2:before {
 .item img {
     width: 42.133vw;
     margin-bottom: 20px;
+}
+
+.product_name,
+.product_price {
+    font-size: clamp(16px, 3vw, 24px);
+    margin-bottom: 22px;
+}
+
+.product_name {
+    line-height: 1.6;
+    color: #7F5539;
+}
+
+.product_price {
+    width: 30vw;
+    color: #bf0000;
+}
+
+.button {
+    width: 42.133vw;
+    font-family: 'Noto Sans JP';
+    font-size: clamp(12px, 2vw, 20px);
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 80px;
+    padding: 12px 9.866vw;
+    background: #7f5539;
+    color: #ffffff;
+    transition: .3s;
+    border: 1px solid #7f5539;
+}
+
+.button:hover {
+    color: #7f5539;
+    /* 背景色     */
+    background: #ffffff;
+    /* 文字色     */
+}
+
+.price_container {
+    display: flex;
+}
+
+.fa-heart {
+    width: 12vw;
+    font-size: clamp(20px, 2vw, 24px);
+    text-align: right;
+    color: #bf0000;
+}
+
+@media screen and (min-width: 768px) {
+
+    h2 {
+        text-align: center;
+        font-size: 32px;
+        padding-top: 80px;
+        margin-bottom: 92px;
+        position: relative;
+    }
+
+    h2:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -12px;
+        display: inline-block;
+        width: 240px;
+        height: 8px;
+        -moz-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translate(-50%);
+        background-color: #ffd233;
+    }
+
+    .item img {
+        width: 23.426vw;
+        margin-bottom: 20px;
+    }
+
+    .item {
+        width: 23.426vw;
+
+        &:nth-child(1) {
+            margin-right: 4.392vw;
+        }
+
+        &:nth-child(2) {
+            margin-right: 4.392vw;
+        }
+
+        &:nth-child(3) {
+            margin-right: 0;
+        }
+
+        &:nth-child(4) {
+            margin-right: 4.392vw;
+        }
+
+        &:nth-child(5) {
+            margin-right: 4.392vw;
+        }
+    }
+
+    .product_name,
+    .product_price {
+        font-size: clamp(16px, 2vw, 24px);
+        margin-bottom: 22px;
+    }
+
+    .button {
+        width: 19.033vw;
+        padding: 11.75 px 4.392vw;
+        font-size: clamp(12px, 1.5vw, 20px);
+    }
+
+    .button_area {
+        text-align: center;
+    }
+
+
 }
