@@ -15,6 +15,10 @@
   <title>Document</title>
 </head>
 
+<?php
+  require 'includes/header.php';
+  ?>
+
 <body>
 <form action="product.php" method="post">
 
@@ -120,6 +124,7 @@ echo '</div>';
 
 
 ?>
+ <?php require 'includes/footer.php'; ?>
 </body>
 
 </html>
