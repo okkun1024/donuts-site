@@ -66,7 +66,11 @@ echo <<<END
     </p>
     <p><i class="fa-regular fa-heart"></i></p>
     <form action="cartinput.php" method="post">
-    <input class="cart_btn" type="button" value="カートに入れる"> 
+    <input type="hidden" name="name" value="{$row['name']}">
+    <input type="hidden" name="price" value="{$row['price']}">
+    <input type="hidden" name="id" value="{$row['id']}">
+    <input type="hidden" name="count" value="1">
+    <input class="cart_btn" type="submit" value="カートに入れる"> 
   </div>
 END;
 $counter ++;
