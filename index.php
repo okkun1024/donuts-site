@@ -90,11 +90,14 @@
       <div class="item fadeUpTrigger">
         <div class="first_icon"><span>1</span></div>
         <?php
-        
+
 
         
-        echo '<a href="detail-',,'"
+        echo '<a href="detail-',$category,'">','<img src="common/images/product_',$,'.jpg" alt="">';
+
+
         ?>
+
         <!-- <a href="detail-1.php"><img src="common/images/product_1.jpg" alt=""></a>
         <p class="product_name">CCドーナツ 当店オリジナル(5個入り)</p>
         <div class="price_container">
