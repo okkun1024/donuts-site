@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -25,7 +23,6 @@
 </head>
 
 <body>
-
   <?php
   session_start();
 
@@ -102,7 +99,7 @@
       </div>
       <div class="item fadeUpTrigger">
         <div class="rank_icon"><span>2</span></div>
-        <a href="#ranking_section"><img src="common/images/variety_1.jpg" alt=""></a>
+        <a href="#ranking_section"><img src="common/images/product_7.jpg" alt=""></a>
         <p class="product_name">フルーツドーナツセット(12個入り)</p>
         <div class="price_container">
           <p class="product_price">税込 &yen;3,500円</p>
@@ -113,7 +110,7 @@
 
       <div class="item fadeUpTrigger">
         <div class="rank_icon"><span>3</span></div>
-        <a href="#ranking_section"><img src="common/images/variety_2.jpg"></a>
+        <a href="#ranking_section"><img src="common/images/product_8.jpg"></a>
         <p class="product_name">フルーツドーナツセット(14個入り)</p>
         <div class="price_container">
           <p class="product_price">税込 &yen;4,000円</p>
@@ -134,7 +131,7 @@
 
       <div class="item fadeUpTrigger">
         <div class="rank_icon"><span>5</span></div>
-        <a href="#ranking_section"><img src="common/images/variety_3.jpg" alt=""></a>
+        <a href="#ranking_section"><img src="common/images/product_9.jpg" alt=""></a>
         <p class="product_name">ベストセレクションボックス(4個入り)</p>
         <div class="price_container">
           <p class="product_price">税込 &yen;1,200円</p>

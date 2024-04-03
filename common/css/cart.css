@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+
+.cart_pankuzu {
+    display: flex;
+    border-bottom: 1px solid #333;
+    padding-top:12px;
+    padding-bottom:12px;
+    padding-left:20px;
+  }
+  .cart_name{
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #333;
+    padding-top:12px;
+    padding-bottom:12px;
+    padding-left:20px;
+  }
+
