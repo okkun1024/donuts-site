@@ -1,6 +1,3 @@
-<?php
-session_start()
-?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -15,50 +12,57 @@ session_start()
   <link rel="stylesheet" href="">
   <!-- タイトルここ -->
   <style>
-     .customer-wrpper h1{
+    .customer-wrpper h1 {
       color: #7F5539;
       text-align: center;
-      margin:40px 0 52px 0;
-      font-size:20px;
+      margin: 40px 0 52px 0;
+      font-size: 20px;
     }
 
-    .customer-wrpper div{
+    .customer-wrpper div {
       margin: 0 auto;
       border: 2px solid #E8C2CA;
-      width:89%;
+      width: 89%;
       padding: 36px 0 36px 0;
-      margin-top:60px
+      margin-top: 60px
     }
-    .customer-wrpper div p{
+
+    .customer-wrpper div p {
       text-align: center;
     }
-    .relog{
-      width:89%;
+
+    .relog {
+      width: 89%;
       margin: 0 auto;
-      margin-bottom:416px;
+      margin-bottom: 416px;
     }
-    .customer-wrpper p a{
+
+    .customer-wrpper p a {
       display: block;
       text-align: right;
-      margin-top:24px;
-      margin-bottom:80px;
+      margin-top: 24px;
+      margin-bottom: 80px;
       text-decoration: underline;
       color: #7F5539;
     }
-    .else-div{
+
+    .else-div {
       margin-top: 36px;
     }
-    .shop-logo{
-      margin:12px 0 0 12px;
-      width:60px;
-      height:50px;
+
+    .shop-logo {
+      margin: 12px 0 0 12px;
+      width: 60px;
+      height: 50px;
     }
   </style>
   <title>会員登録情報登録</title>
 </head>
 
 <body>
-<img src="common/images/shop_logo.svg" alt="main logo" class="shop-logo">
+  <?php session_start() ?>
+
+  <img src="common/images/shop_logo.svg" alt="main logo" class="shop-logo">
 
   <?php
   $pdo = new PDO('mysql:host=localhost;dbname=donuts;charset=utf8', 'donuts', 'password');
@@ -79,8 +83,8 @@ session_start()
       if (empty($sql->fetchAll())) {
         $sql = $pdo->prepare('insert into customer values(null,?,?,?,?,?,?)');
         $sql->execute([
-          $_REQUEST['name'], $_REQUEST['kana'],$_REQUEST['post_code'],
-          $_REQUEST['address'], $_REQUEST['mail'],$_REQUEST['password']
+          $_REQUEST['name'], $_REQUEST['kana'], $_REQUEST['post_code'],
+          $_REQUEST['address'], $_REQUEST['mail'], $_REQUEST['password']
         ]);
         echo '<div class="customer-wrpper">';
         echo '<h1>', '会員情報登録完了', '</h1>';

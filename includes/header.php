@@ -17,10 +17,14 @@
 
 <body>
 <?php
-    $url = $_SERVER['REQUEST_URI'];
-    if (!str_contains($url,'index')){
-        session_start();
-    } 
+    // $url = $_SERVER['REQUEST_URI'];
+    // if (!str_contains($url,'index')){
+    //     session_start();
+    // } 
+    // $searchKeyword = $_POST['search'];
+    // if($searchKeyword == 'ドーナツでつながる'){
+    //     session_start();
+    // }
     ?>
 
     <header>

@@ -20,7 +20,7 @@
 
 <h2>商品一覧</h2>
 <?php
-
+ session_start(); 
 // データベース接続
 require 'includes/database.php';
 
@@ -99,7 +99,7 @@ foreach ($sql as $row) {
   echo <<<END
   <div class="variety_box">
   <div class="item">
-    <a href="detail-{$id}.php">
+    <a href="detail-{$category}.php">
       <img src="common/images/variety_{$id}.jpg" alt="{$row['name']}">
     </a>
     <p>{$row['name']}

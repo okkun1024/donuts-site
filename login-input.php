@@ -61,6 +61,8 @@
 </head>
 
 <body>
+<?php session_start() ?>
+
   <?php
   require 'includes/header.php';
   ?>
