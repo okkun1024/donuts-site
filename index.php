@@ -90,10 +90,10 @@
       <div class="item fadeUpTrigger">
         <div class="first_icon"><span>1</span></div>
         <?php
-
+        
 
         
-        echo '<a href="detail-',$category,'">','<img src="common/images/product_',$,'.jpg" alt="">';
+        // echo '<a href="detail-',$category,'">','<img src="common/images/product_',$,'.jpg" alt="">';
 
 
         ?>
