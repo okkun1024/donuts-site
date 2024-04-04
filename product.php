@@ -44,7 +44,7 @@ require 'includes/header.php';
       // productテーブルのすべてのレコードを取得
       $sql = $pdo->query('select * from product');
     }
-    echo  '<h2>商品一覧</h2>';
+    echo  '<h2 class="fade_Up">商品一覧</h2>';
     echo '<div class="product_box">';
 
     $counter = 0;
@@ -60,7 +60,7 @@ require 'includes/header.php';
       $formattedPrice = number_format($row['price']);
 
       echo <<<END
-  <div class="item fade_Up fadeUpTrigger">
+  <div class="item_box_1 fade_Up">
     <a href="detail-{$category}.php?id=$id">
       <img src="common/images/product_{$id}.jpg" alt="{$row['name']}">
     </a>
@@ -84,7 +84,7 @@ END;
     // product_boxの終了タグ
     echo '</div>';
 
-    echo '<h2 class="variety_title">バラエティセット</h2>';
+    echo '<h2 class="variety_title fadeUpTrigger">バラエティセット</h2>';
     echo '<div class="product_box_2">';
 
     $counter2 = 0;
@@ -106,7 +106,7 @@ END;
 
 
       echo <<<END
-  <div class="item  fade_Up fadeUpTrigger">
+  <div class="item_box_2  fadeUpTrigger">
     <a href="detail-{$category}.php?id=$id">
       <img src="common/images/product_{$id}.jpg" alt="{$row['name']}">
     </a>

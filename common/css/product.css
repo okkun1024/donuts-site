@@ -37,7 +37,8 @@ h2:before {
     align-items: center;
 }
 
-.item {
+.item_box_1,
+.item_box_2 {
     width: 42.133vw;
 
     &:nth-child(1) {
@@ -53,7 +54,8 @@ h2:before {
     }
 }
 
-.item img {
+.item_box_1 img,
+.item_box_2 img {
     width: 42.133vw;
     margin-bottom: 20px;
 }
@@ -133,6 +135,12 @@ h2:before {
     animation-delay: 1s;
 }
 
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
 
 @keyframes fadeUpAnime {
     from {
@@ -144,6 +152,42 @@ h2:before {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.fadeUpTrigger {
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeUp:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.fadeUp:nth-child(3) {
+    animation-delay: 0s;
+}
+
+.fadeUp:nth-child(4) {
+    animation-delay: 0.2s;
+}
+
+.fadeUp:nth-child(5) {
+    animation-delay: 0s;
+}
+
+.fadeUp:nth-child(6) {
+    animation-delay: 0.2s;
 }
 
 @media screen and (min-width: 768px) {
@@ -179,12 +223,14 @@ h2:before {
         margin-bottom: 80px;
     }
 
-    .item img {
+    .item_box_1 img,
+    .item_box_2 img {
         width: 23.426vw;
         margin-bottom: 20px;
     }
 
-    .item {
+    .item_box_1,
+    .item_box_2 {
         width: 23.426vw;
 
         &:nth-child(1) {
