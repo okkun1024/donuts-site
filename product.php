@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="common/css/reset.css">
   <!-- 必要ならば下記のCSSを追加して -->
   <link rel="stylesheet" href="common/css/product.css">
+  <!-- javascript -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="common/js/animation.js"></script>
   <!-- タイトルここ -->
   <title>Document</title>
 </head>
@@ -57,7 +60,7 @@ require 'includes/header.php';
       $formattedPrice = number_format($row['price']);
 
       echo <<<END
-  <div class="item">
+  <div class="item fade_Up fadeUpTrigger">
     <a href="detail-{$category}.php?id=$id">
       <img src="common/images/product_{$id}.jpg" alt="{$row['name']}">
     </a>
@@ -103,7 +106,7 @@ END;
 
 
       echo <<<END
-  <div class="item">
+  <div class="item  fade_Up fadeUpTrigger">
     <a href="detail-{$category}.php?id=$id">
       <img src="common/images/product_{$id}.jpg" alt="{$row['name']}">
     </a>
