@@ -29,7 +29,8 @@ h2:before {
     background-color: #ffd233;
 }
 
-.product_box {
+.product_box,
+.product_box_2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -128,6 +129,14 @@ h2:before {
         -ms-transform: translateX(-50%);
         transform: translate(-50%);
         background-color: #ffd233;
+    }
+
+    .variety_title {
+        padding-top: 40px;
+    }
+
+    .product_box_2 {
+        margin-bottom: 80px;
     }
 
     .item img {

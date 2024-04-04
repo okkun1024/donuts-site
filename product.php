@@ -82,7 +82,7 @@ END;
     echo '</div>';
 
     echo '<h2 class="variety_title">バラエティセット</h2>';
-    echo '<div class="product_box">';
+    echo '<div class="product_box_2">';
 
     $counter2 = 0;
     // $stmt は PDOStatement オブジェクトと仮定
@@ -115,7 +115,7 @@ END;
             </p>
             <p><i class="fa-regular fa-heart"></i></p>
       </div>
-    <form action="cartinput.php" method="post">
+    <form action="cart-input.php" method="post">
     <div class="button_area"><input class="button" type="button" value="カートに入れる"> </div>
   </div>
   
