@@ -147,7 +147,26 @@ body {
     }
 }
 
-.fade_up {
+/* .fade_Up {
+    animation-name: fadeUpAnime;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+
+/* .fade_up {
     animation-name: fadeUpAnime;
     animation-duration: 0.8s;
     animation-fill-mode: forwards;
@@ -164,7 +183,7 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
-}
+} */
 
 .fadeUp {
     animation-name: fadeUpAnime;
@@ -187,6 +206,57 @@ body {
 
 .fadeUpTrigger {
     opacity: 0;
+}
+
+.fadeUp_2 {
+    animation-name: fadeUpAnime2;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime2 {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeUpTrigger_2 {
+    opacity: 0;
+}
+
+.fadeUpTrigger_2:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.fadeUpTrigger_2:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.fadeUpTrigger_2:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.fadeUpTrigger_2:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+.fadeUpTrigger_2:nth-child(6) {
+    animation-delay: 1s;
+}
+
+.fadeUpTrigger_2:nth-child(7) {
+    animation-delay: 1.2s;
+}
+
+.fadeUpTrigger_2:nth-child(8) {
+    animation-delay: 1.4s;
 }
 
 
