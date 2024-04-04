@@ -68,7 +68,7 @@ require 'includes/header.php';
             </p>
             <p><i class="fa-regular fa-heart"></i></p>
       </div>
-    <form action="cartinput.php" method="post">
+    <form action="cart-input.php" method="post">
     <input type="hidden" name="name" value="{$row['name']}">
     <input type="hidden" name="price" value="{$row['price']}">
     <input type="hidden" name="id" value="{$row['id']}">
