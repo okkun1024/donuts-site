@@ -13,7 +13,9 @@
     <!-- タイトルここ -->
     <title>Cart</title>
 </head>
-<?php 
+<body>
+  <?php 
+  session_start();
 require 'includes\header.php';
 ?>
 
@@ -37,26 +39,50 @@ require 'includes\header.php';
   ?>
 </div>
 
-<!-- 商品の出力 -->
-<?php
-$id=$_REQUEST['id'];
-if(!isset($_SESSION['product'])){
-  $_SESSION['product']=[];
-}
-$count=0;
-if(isset($_SESSION['product']['id'])){
-  $count =$_SESSION['product'][$id]['count'];
-}
-$_SESSION['product'][$id]=[
-'name'=>$_REQUEST['name'],
-'price'=>$_REQUEST['price'],
-'count'=>$count+$_REQUEST['count']
-];
-echo <<<END
-<p>カートに商品を追加しました。</p>
-<hr>
-END;
-require 'cart-show.php';
-?>
 
+
+
+  <?php
+
+
+  $id = $_REQUEST['id'];
+  $countToAdd = (int)$_REQUEST['count']; // 文字列を整数にキャスト
+
+  // セッションにproductがセットされているか判定
+  if (!isset($_SESSION['product'])) {
+    // セットされていない場合
+
+    $_SESSION['product'] = [];
+  }
+
+  // 初期個数設定
+  $count = 0;
+
+  // データベースとidが同じ商品がセッションのproductに入っているか確認
+  if (isset($_SESSION['product'][$id])) {
+    // 同じidの商品が入っている場合
+
+    // セッションのproduct内　idとリンクする個数のデータを$countに登録
+    $count = $_SESSION['product'][$id]['count'];
+  }
+
+  // セッションのproductをカートに情報を登録
+  $_SESSION['product'][$id] = [
+    'name'=>$_REQUEST['name'],
+    'price'=>$_REQUEST['price'],
+    'count' => $count + $countToAdd
+  ];
+
+  
+  echo '<p>カートに追加しました。</p>';
+
+  require 'cart.php';
+ 
+  ?>
+
+
+
+</body>
+
+</html>
 <?php require 'includes/footer.php'; ?>

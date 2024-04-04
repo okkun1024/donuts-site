@@ -11,11 +11,40 @@
   <!-- 必要ならば下記のCSSを追加して -->
   <link rel="stylesheet" href="">
   <!-- タイトルここ -->
-  <title>Document</title>
+  <title>Cart-Show</title>
 </head>
 
 <body>
+  <?php 
+session_start();
+require 'includes\header.php';
+?>
 
-</body>
+
+<!-- パンくずメニュー -->
+<div class="cart_pankuzu">
+  <span><a href="">Top</a></span>
+  <span>></span>
+  <span>カート</span>
+</div>
+
+<!-- user名の出力 -->
+<div class="cart_name">
+  <?php
+  if(isset($_SESSION['customer'])){
+    echo 'ようこそ',$_SESSION['customer']['name'],'様';
+  }else{
+    echo 'ようこそゲスト様';
+  }
+
+
+
+  ?>
+
+</div>
+  <?php
+  require 'cart.php';
+  ?>
+  </body>
 
 </html>
