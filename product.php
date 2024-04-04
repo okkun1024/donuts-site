@@ -81,7 +81,7 @@ END;
     // product_boxの終了タグ
     echo '</div>';
 
-    echo '<h2>バラエティセット</h2>';
+    echo '<h2 class="variety_title">バラエティセット</h2>';
     echo '<div class="product_box">';
 
     $counter2 = 0;
