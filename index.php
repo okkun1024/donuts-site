@@ -96,18 +96,20 @@
         foreach ($pdo->query('select * from product where id = 1') as $row) {
           $formattedPrice = number_format($row['price']);
 
-          echo '<a href="detail-', $row['category'], '">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像">';
+          echo '<a href="detail-', $row['category'], '">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像"></a>';
           echo '<p class="product_name">', $row['name'], '</p>';
           echo '<div class="price_container">';
           echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
           <p><i class="fa-regular fa-heart"></i></p>';
           echo '</div>';
+          echo '<form action="cart-input.php" method="post">';
           echo '<div class="button_area"><input type="submit" method="post" value="カートに入れる" 
           class="button"></div>';
           echo '<input type="hidden" name="name" value="', $row['name'], '">';
           echo '<input type="hidden" name="price" value="', $row['price'], '">';
           echo '<input type="hidden" name="id" value="', $row['id'], '">';
           echo '<input type="hidden" name="count" value="1">';
+          echo '</form>';
         }
         ?>
       </div>
@@ -120,18 +122,20 @@
 
         foreach ($pdo->query('select * from product where id = 7') as $row) {
           $formattedPrice = number_format($row['price']);
-          echo '<a href="detail-', $row['category'], '">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像">';
+          echo '<a href="detail-', $row['category'], '">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像"></a>';
           echo '<p class="product_name">', $row['name'], '</p>';
           echo '<div class="price_container">';
           echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
           <p><i class="fa-regular fa-heart"></i></p>';
           echo '</div>';
+          echo '<form action="cart-input.php" method="post">';
           echo '<div class="button_area"><input type="submit" method="post" value="カートに入れる" 
           class="button"></div>';
           echo '<input type="hidden" name="name" value="', $row['name'], '">';
           echo '<input type="hidden" name="price" value="', $row['price'], '">';
           echo '<input type="hidden" name="id" value="', $row['id'], '">';
           echo '<input type="hidden" name="count" value="1">';
+          echo '</form>';
         }
         ?>
       </div>
@@ -145,18 +149,20 @@
         foreach ($pdo->query('select * from product where id = 8') as $row) {
           $formattedPrice = number_format($row['price']);
 
-          echo '<a href="detail-', $row['category'], '">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像">';
+          echo '<a href="detail-', $row['category'], '">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像"></a>';
           echo '<p class="product_name">', $row['name'], '</p>';
           echo '<div class="price_container">';
           echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
           <p><i class="fa-regular fa-heart"></i></p>';
           echo '</div>';
+          echo '<form action="cart-input.php" method="post">';
           echo '<div class="button_area"><input type="submit" method="post" value="カートに入れる" 
           class="button"></div>';
           echo '<input type="hidden" name="name" value="', $row['name'], '">';
           echo '<input type="hidden" name="price" value="', $row['price'], '">';
           echo '<input type="hidden" name="id" value="', $row['id'], '">';
           echo '<input type="hidden" name="count" value="1">';
+          echo '</form>';
         }
         ?>
       </div>
@@ -170,18 +176,20 @@
         foreach ($pdo->query('select * from product where id = 2') as $row) {
           $formattedPrice = number_format($row['price']);
 
-          echo '<a href="detail-', $row['category'], '">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像">';
+          echo '<a href="detail-', $row['category'], '">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像"></a>';
           echo '<p class="product_name">', $row['name'], '</p>';
           echo '<div class="price_container">';
           echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
           <p><i class="fa-regular fa-heart"></i></p>';
           echo '</div>';
+          echo '<form action="cart-input.php" method="post">';
           echo '<div class="button_area"><input type="submit" method="post" value="カートに入れる" 
           class="button"></div>';
           echo '<input type="hidden" name="name" value="', $row['name'], '">';
           echo '<input type="hidden" name="price" value="', $row['price'], '">';
           echo '<input type="hidden" name="id" value="', $row['id'], '">';
           echo '<input type="hidden" name="count" value="1">';
+          echo '</form>';
         }
         ?>
       </div>
@@ -195,18 +203,20 @@
         foreach ($pdo->query('select * from product where id = 9') as $row) {
           $formattedPrice = number_format($row['price']);
 
-          echo '<a href="detail-', $row['category'], '">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像">';
+          echo '<a href="detail-', $row['category'], '">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像"></a>';
           echo '<p class="product_name">', $row['name'], '</p>';
           echo '<div class="price_container">';
           echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
           <p><i class="fa-regular fa-heart"></i></p>';
           echo '</div>';
+          echo '<form action="cart-input.php" method="post">';
           echo '<div class="button_area"><input type="submit" method="post" value="カートに入れる" 
           class="button"></div>';
           echo '<input type="hidden" name="name" value="', $row['name'], '">';
           echo '<input type="hidden" name="price" value="', $row['price'], '">';
           echo '<input type="hidden" name="id" value="', $row['id'], '">';
           echo '<input type="hidden" name="count" value="1">';
+          echo '</form>';
         }
         ?>
       </div>
@@ -220,18 +230,20 @@
         foreach ($pdo->query('select * from product where id = 6') as $row) {
           $formattedPrice = number_format($row['price']);
 
-          echo '<a href="detail-', $row['category'], '">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像">';
+          echo '<a href="detail-', $row['category'], '">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像"></a>';
           echo '<p class="product_name">', $row['name'], '</p>';
           echo '<div class="price_container">';
           echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
           <p><i class="fa-regular fa-heart"></i></p>';
           echo '</div>';
+          echo '<form action="cart-input.php" method="post">';
           echo '<div class="button_area"><input type="submit" method="post" value="カートに入れる" 
           class="button"></div>';
           echo '<input type="hidden" name="name" value="', $row['name'], '">';
           echo '<input type="hidden" name="price" value="', $row['price'], '">';
           echo '<input type="hidden" name="id" value="', $row['id'], '">';
           echo '<input type="hidden" name="count" value="1">';
+          echo '</form>';
         }
         ?>
       </div>
