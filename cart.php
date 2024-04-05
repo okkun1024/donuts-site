@@ -42,6 +42,8 @@ if(!empty($_SESSION['product'])){
 
   END;
 
+}else{
+  echo '<p>カートに商品がありません。</p>';
 }
 
 
