@@ -30,7 +30,7 @@
     $sql->execute([$_REQUEST['id']]);
     foreach ($sql as $row) {
       $formattedPrice = number_format($row['price']);
-      echo '<form action="" type="method">';
+      echo '<form action="cart-input.php" type="method">';
       echo '<p><img alt="image" src="common/images/product_', $row['id'], '.jpg" class="detail_item_image"></p>';
       echo '<p>', $row['name'], '</p>';
       echo '<p>', $row['description'];
