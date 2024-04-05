@@ -17,7 +17,7 @@
 
 <body>
   <?php session_start(); ?>
-  <img src="common/images/shop_logo.svg" alt="c.c.donuts">
+  <a href="index.php"><img src="common/images/shop_logo.svg" alt="c.c.donuts"></a>
 
   <?php
 
