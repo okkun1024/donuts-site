@@ -47,7 +47,9 @@
     }
 
     ?>
+    <a href="card-input.php">買う！</a>
   </div>
+
   <?php
   require 'includes/footer.php';
   ?>

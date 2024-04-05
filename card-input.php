@@ -92,6 +92,7 @@
       height: 48px;
       margin: 0 auto;
       margin-top: 40px;
+      margin-bottom: 80px;
       background-color: #7F5539;
       color: #fff;
       border: #fff;
@@ -103,7 +104,7 @@
 </head>
 
 <body>
-<?php session_start() ?>
+  <?php session_start() ?>
 
   <img src="common/images/shop_logo.svg" alt="c.c.donuts">
   <h1>カード登録情報</h1>

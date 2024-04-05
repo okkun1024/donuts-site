@@ -63,6 +63,8 @@
 </head>
 
 <body>
+  <?php session_start(); ?>
+
   <img src="common/images/shop_logo.svg" alt="c.c.donuts">
   <div class="confirmForm">
     <?php
@@ -95,13 +97,14 @@
     echo '<input type="hidden" name="name" value="', $name, '">';
     echo '<input type="hidden" name="card" value="', $card, '">';
     echo '<input type="hidden" name="cardNumber" value="', $cardNumber, '">';
-    echo '<input type="hidden" name="cardExpirationMonth" value="', $cardExpirationMonth, '" ';
-    echo '<input type="hidden" name="cardExpirationYear" value="', $cardExpirationYear, '" ';
-    echo '<input type="hidden" name="security" value="', $security, '" ';
-    ?>
+    echo '<input type="hidden" name="cardExpirationMonth" value="', $cardExpirationMonth, '" >';
+    echo '<input type="hidden" name="cardExpirationYear" value="', $cardExpirationYear, '" >';
+    echo '<input type="hidden" name="security" value="', $security, '" >';
 
-    </form>
+    ?>
     <input type="submit" value="この内容で登録する">
+    </form>
+
   </div>
 
 
