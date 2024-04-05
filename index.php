@@ -30,7 +30,7 @@
 
 
   <?php
-  // require 'loading.php';
+  require 'loading.php';
   ?>
 
   <?php

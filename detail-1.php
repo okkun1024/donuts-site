@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +24,14 @@
   <?php
   require 'includes/header.php';
   ?>
+
+  <!-- パンくずメニュー -->
+  <!-- <div class="bread_crumb">
+  <p><a href="#index.php">TOP</a>＞<a href="#product.php">商品一覧</a>
+</div> -->
+
   <div class=item_container>
+
     <?php
     require 'includes/database.php';
     $sql = $pdo->prepare('select * from product where id=?');
@@ -32,10 +40,11 @@
       $formattedPrice = number_format($row['price']);
       echo '<form action="cart-input.php" type="method">';
       echo '<p><img alt="image" src="common/images/product_', $row['id'], '.jpg" class="detail_item_image"></p>';
-      echo '<p>', $row['name'], '</p>';
-      echo '<p>', $row['description'];
-      echo '<br>税込 ', $formattedPrice;
+      echo '<div class="flex_box">';
+      echo '<p class="product_name">', $row['name'], '</p>';
+      echo '<p class="product_description">', $row['description'];
       echo '</p>';
+      echo '<p>', '税込 ', $formattedPrice, '</p>';
       echo '<p><i class="fa-heart fa-regular"></i></p>';
       echo '<input type="number" name="count" value="">';
       echo '<span>個</span>';
@@ -43,11 +52,11 @@
       echo '<input type="hidden" name="id" value="', $row['id'], '">';
       echo '<input type="hidden" name="name" value="', $row['name'], '">';
       echo '<input type="hidden" name="price" value="', $row['price'], '">';
+      echo '</div>';
       echo '</form>';
     }
 
     ?>
-    <a href="card-input.php">買う！</a>
   </div>
 
   <?php
