@@ -42,39 +42,39 @@ require 'includes\header.php';
 
 
 
-  <?php
+<?php
+session_start();
+
+// カートに商品を追加
+if (!isset($_SESSION['cart'])) {
+    $_SESSION['cart'] = array();
+}
+
+// 商品情報をPOSTから取得
+if (isset($_POST['id'], $_POST['name'], $_POST['price'])) {
+    $id = $_POST['id'];
+    $name = $_POST['name'];
+    $price = $_POST['price'];
+    $count = $_POST['count']; // 数量
+
+    // カートに商品がすでに存在するかチェック
+    if (isset($_SESSION['cart'][$id])) {
+        // 存在する場合は数量を更新
+        $_SESSION['cart'][$id]['count'] += $count;
+    } else {
+        // 存在しない場合は新たに商品情報を追加
+        $_SESSION['cart'][$id] = array(
+            'name' => $name,
+            'price' => $price,
+            'count' => $count
+        );
+    }
+}
 
 
-  $id = $_REQUEST['id'];
-  $countToAdd = (int)$_REQUEST['count']; // 文字列を整数にキャスト
+?>
 
-  // セッションにproductがセットされているか判定
-  if (!isset($_SESSION['product'])) {
-    // セットされていない場合
-
-    $_SESSION['product'] = [];
-  }
-
-  // 初期個数設定
-  $count = 0;
-
-  // データベースとidが同じ商品がセッションのproductに入っているか確認
-  if (isset($_SESSION['product'][$id])) {
-    // 同じidの商品が入っている場合
-
-    // セッションのproduct内　idとリンクする個数のデータを$countに登録
-    $count = $_SESSION['product'][$id]['count'];
-  }
-
-  // セッションのproductをカートに情報を登録
-  $_SESSION['product'][$id] = [
-    'name'=>$_REQUEST['name'],
-    'price'=>$_REQUEST['price'],
-    'count' => $count + $countToAdd
-  ];
-
-  
-  echo '<p>カートに追加しました。</p>';
+<?php
 
   require 'cart.php';
  
