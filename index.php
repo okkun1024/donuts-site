@@ -54,17 +54,17 @@
 
   <section id="topic_section">
     <div class="topic_container">
-      <div class="new_product fadeUpTrigger_2">
+      <div class="new_product fade_Up">
         <img src="common/images/product_5.jpg" alt="">
         <p class="new_item"><img src="common/images/new_item.svg" alt=""></p>
         <p class="summer_citrus">サマーシトラス</p>
       </div>
-      <div class="product_promotion fadeUpTrigger_2">
+      <div class="product_promotion fade_Up">
         <img src="common/images/life_with_donuts.jpg" alt="">
         <p>ドーナツのある生活</p>
       </div>
     </div>
-    <div class="item_list fadeUpTrigger_2">
+    <div class="item_list fade_Up">
       <div>
         <img src="common/images/ist_product.jpg" alt="">
         <p>商品一覧</p>
@@ -75,36 +75,27 @@
 
 
   <section id="introduce_section">
-    <div class="introduce_container fadeUpTrigger_2">
-      <h2 class="fadeUpTrigger_2">philosophy</h2>
-      <h3 class="fadeUpTrigger_2">私たちの信念</h3>
-      <p class="philosophy_title fadeUpTrigger_2">"Creating Connections"</p>
-      <p class="philosophy_explain fadeUpTrigger_2">ドーナツでつながる</p>
+    <div class="introduce_container">
+      <h2 fade_Up>philosophy</h2>
+      <h3 fade_Up>私たちの信念</h3>
+      <p class="philosophy_title fade_Up">"Creating Connections"</p>
+      <p class="philosophy_explain fade_Up">ドーナツでつながる</p>
     </div>
   </section>
 
-  <section id="ranking_section">
+  <!-- <section id="ranking_section">
     <h2 class="fadeUpTrigger">人気ランキング</h2>
 
     <div class="items_container">
       <div class="item fadeUpTrigger">
         <div class="first_icon"><span>1</span></div>
-        <?php
-
-
-
-        // echo '<a href="detail-',$category,'">','<img src="common/images/product_',$,'.jpg" alt="">';
-
-
-        ?>
-
-        <!-- <a href="detail-1.php"><img src="common/images/product_1.jpg" alt=""></a>
+<a href="detail-1.php"><img src="common/images/product_1.jpg" alt=""></a>
         <p class="product_name">CCドーナツ 当店オリジナル(5個入り)</p>
         <div class="price_container">
           <p class="product_price">税込 &yen;1,500円</p>
           <p><i class="fa-regular fa-heart"></i></p>
         </div>
-        <div class="button_area"><input type="submit" value="カートに入れる" class="button"></div> -->
+        <div class="button_area"><input type="submit" value="カートに入れる" class="button"></div>
       </div>
       <div class="item fadeUpTrigger">
         <div class="rank_icon"><span>2</span></div>
@@ -158,6 +149,162 @@
           <p><i class="fa-regular fa-heart"></i></p>
         </div>
         <div class="button_area"><input type="submit" value="カートに入れる" class="button"></div>
+      </div>
+    </div>
+
+  </section> -->
+
+  <section id="ranking_section">
+    <h2 class="fadeUpTrigger">人気ランキング</h2>
+
+    <div class="items_container">
+      <div class="item fadeUpTrigger">
+        <div class="first_icon"><span>1</span></div>
+        <?php
+        // 1位
+        require 'includes/database.php';
+
+        foreach ($pdo->query('select * from product where id = 1') as $row) {
+          $formattedPrice = number_format($row['price']);
+
+          echo '<a href="detail-', $row['category'], '.php">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像"></a>';
+          echo '<p class="product_name">', $row['name'], '</p>';
+          echo '<div class="price_container">';
+          echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
+          <p><i class="fa-regular fa-heart"></i></p>';
+          echo '</div>';
+          echo '<div class="button_area"><input type="submit" method="post" value="カートに入れる" 
+          class="button"></div>';
+          echo '<input type="hidden" name="name" value="', $row['name'], '">';
+          echo '<input type="hidden" name="price" value="', $row['price'], '">';
+          echo '<input type="hidden" name="id" value="', $row['id'], '">';
+          echo '<input type="hidden" name="count" value="1">';
+        }
+        ?>
+      </div>
+
+      <div class="item fadeUpTrigger">
+        <div class="rank_icon"><span>2</span></div>
+        <?php
+        // 2位
+        require 'includes/database.php';
+
+        foreach ($pdo->query('select * from product where id = 7') as $row) {
+          $formattedPrice = number_format($row['price']);
+          echo '<a href="detail-', $row['category'], '">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像"></a>';
+          echo '<p class="product_name">', $row['name'], '</p>';
+          echo '<div class="price_container">';
+          echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
+          <p><i class="fa-regular fa-heart"></i></p>';
+          echo '</div>';
+          echo '<div class="button_area"><input type="submit" method="post" value="カートに入れる" 
+          class="button"></div>';
+          echo '<input type="hidden" name="name" value="', $row['name'], '">';
+          echo '<input type="hidden" name="price" value="', $row['price'], '">';
+          echo '<input type="hidden" name="id" value="', $row['id'], '">';
+          echo '<input type="hidden" name="count" value="1">';
+        }
+        ?>
+      </div>
+
+      <div class="item fadeUpTrigger">
+        <div class="rank_icon"><span>3</span></div>
+        <?php
+        // 3位
+        require 'includes/database.php';
+
+        foreach ($pdo->query('select * from product where id = 8') as $row) {
+          $formattedPrice = number_format($row['price']);
+
+          echo '<a href="detail-', $row['category'], '">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像"></a>';
+          echo '<p class="product_name">', $row['name'], '</p>';
+          echo '<div class="price_container">';
+          echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
+          <p><i class="fa-regular fa-heart"></i></p>';
+          echo '</div>';
+          echo '<div class="button_area"><input type="submit" method="post" value="カートに入れる" 
+          class="button"></div>';
+          echo '<input type="hidden" name="name" value="', $row['name'], '">';
+          echo '<input type="hidden" name="price" value="', $row['price'], '">';
+          echo '<input type="hidden" name="id" value="', $row['id'], '">';
+          echo '<input type="hidden" name="count" value="1">';
+        }
+        ?>
+      </div>
+
+      <div class="item fadeUpTrigger">
+        <div class="rank_icon"><span>4</span></div>
+        <?php
+        // 4位
+        require 'includes/database.php';
+
+        foreach ($pdo->query('select * from product where id = 2') as $row) {
+          $formattedPrice = number_format($row['price']);
+
+          echo '<a href="detail-', $row['category'], '">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像"></a>';
+          echo '<p class="product_name">', $row['name'], '</p>';
+          echo '<div class="price_container">';
+          echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
+          <p><i class="fa-regular fa-heart"></i></p>';
+          echo '</div>';
+          echo '<div class="button_area"><input type="submit" method="post" value="カートに入れる" 
+          class="button"></div>';
+          echo '<input type="hidden" name="name" value="', $row['name'], '">';
+          echo '<input type="hidden" name="price" value="', $row['price'], '">';
+          echo '<input type="hidden" name="id" value="', $row['id'], '">';
+          echo '<input type="hidden" name="count" value="1">';
+        }
+        ?>
+      </div>
+
+      <div class="item fadeUpTrigger">
+        <div class="rank_icon"><span>5</span></div>
+        <?php
+        // 5位
+        require 'includes/database.php';
+
+        foreach ($pdo->query('select * from product where id = 9') as $row) {
+          $formattedPrice = number_format($row['price']);
+
+          echo '<a href="detail-', $row['category'], '">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像"></a>';
+          echo '<p class="product_name">', $row['name'], '</p>';
+          echo '<div class="price_container">';
+          echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
+          <p><i class="fa-regular fa-heart"></i></p>';
+          echo '</div>';
+          echo '<div class="button_area"><input type="submit" method="post" value="カートに入れる" 
+          class="button"></div>';
+          echo '<input type="hidden" name="name" value="', $row['name'], '">';
+          echo '<input type="hidden" name="price" value="', $row['price'], '">';
+          echo '<input type="hidden" name="id" value="', $row['id'], '">';
+          echo '<input type="hidden" name="count" value="1">';
+        }
+        ?>
+      </div>
+
+      <div class="item fadeUpTrigger">
+        <div class="rank_icon"><span>6</span></div>
+        <?php
+        // 6位
+        require 'includes/database.php';
+
+        foreach ($pdo->query('select * from product where id = 6') as $row) {
+          $formattedPrice = number_format($row['price']);
+
+          echo '<a href="detail-', $row['category'], '">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像"></a>';
+          echo '<p class="product_name">', $row['name'], '</p>';
+          echo '<div class="price_container">';
+          echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
+          <p><i class="fa-regular fa-heart"></i></p>';
+          echo '</div>';
+          echo '<div class="button_area"><input type="submit" method="post" value="カートに入れる" 
+          class="button"></div>';
+          echo '<input type="hidden" name="name" value="', $row['name'], '">';
+          echo '<input type="hidden" name="price" value="', $row['price'], '">';
+          echo '<input type="hidden" name="id" value="', $row['id'], '">';
+          echo '<input type="hidden" name="count" value="1">';
+        }
+        ?>
       </div>
     </div>
 
