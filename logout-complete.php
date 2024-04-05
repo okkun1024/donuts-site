@@ -55,7 +55,6 @@ session_start();
 if(isset($_SESSION['customer'])){
   unset($_SESSION['customer']);
 }
-session_write_close();
 
 require'includes/header.php';
 
