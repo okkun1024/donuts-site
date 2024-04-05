@@ -1,34 +1,66 @@
-<?php
-require 'includes/header.php';
-?>
+<!-- サーバーの登録商品データを読み取る -->
+
 <?php
 
-// カートの内容を表示
-$totalQuantity = 0; // 合計数量
-$totalPrice = 0; // 合計金額
+// データベースのカート内を確認
+if (!empty($_SESSION['product'])) {
 
-if (!empty($_SESSION['cart'])) {
-    echo "<ul>";
-    foreach ($_SESSION['cart'] as $item) {
-        $totalQuantity += $item['count'];
-        $totalPrice += $item['price'] * $item['count'];
-        echo "<li>{$item['name']}{$item['price']}円 x {$item['count']}</li>";
-        // 削除フォーム
-        echo "<form action='cart-delete.php' method='post'>";
-        echo "<input type='hidden' name='deleteId' value='{$item['id']}'>";
-        echo "<input type='submit' name='delete' value='削除'>";
-        echo "</form>";
+    // 商品データがある場合
+
+    // 合計金額計算用の変数設定
+    $total = 0;
+
+    // データベースのカート内情報を呼び出し
+    // productテーブル内の各商品データの変数$idを変数$productに変更(他のデータと重複しないため)
+    foreach ($_SESSION['product'] as $id => $product) {
+
+        // 各商品データごとに　価格×個数を変数に保管
+        $subtotal = $product['price'] * $product['count'];
+
+        //合計金額
+        $total += $subtotal;
+
+        $id_number=intval($id);
+
+        echo <<< END
+<div id="merchandise">
+        <img src="common/images/product_{$id}.jpg" alt="商品画像">
+    
+        <div id="detail">
+            <p id="name">{$product['name']}</p>
+
+            <div id="price">
+                <p id="price">税込￥{$product['price']}</p>
+                <p  id="count">個数 {$product['count']}個</p>
+            </div>
+            <div id="delete">
+                <a href="cart-delete.php?id={$id_number}">削除する</a>
+            </div>
+        </div>
+</div>
+END;
+
     }
-    echo "</ul>";
-    echo "<p>合計数量: $totalQuantity</p>";
-    echo "<p>合計金額: $totalPrice 円</p>";
+
+    echo <<< END
+
+<div id="total">
+        <ul>
+            <li> ご注文合計：</li>
+            <li>税込み￥{$total}</li>
+        </ul>
+    
+    
+       <p> <a href="purchase-confirm.php">ご購入確認へ進む</a></p>
+</div>
+   
+    <p id="continue"> <a  href="product.php">買い物を続ける</a></p>
+END;
 } else {
-    echo "<p>カートは空です。</p>";
+
+    // 商品データがない場合
+    echo '<p class="id_name_no_cart">カートに商品がありません。</p>';
 }
 
 
 ?>
-
-<?php
- require 'includes/footer.php';
-  ?>
