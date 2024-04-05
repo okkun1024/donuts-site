@@ -39,11 +39,11 @@
       echo '<p><i class="fa-heart fa-regular"></i></p>';
       echo '<input type="number" name="count" value="">';
       echo '<span>個</span>';
-      echo '<form action="cartinput.php" method="post">';
-      echo '<input class="cart_btn" type="button" value="カートに入れる">';
+      echo '<input class="cart_btn" type="submit" value="カートに入れる">';
       echo '<input type="hidden" name="id" value="', $row['id'], '">';
       echo '<input type="hidden" name="name" value="', $row['name'], '">';
       echo '<input type="hidden" name="price" value="', $row['price'], '">';
+      echo '</form>';
     }
 
     ?>
