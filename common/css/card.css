@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+/* card-inputのCSS */
+
+.inputH {
+  /* 見出しの調整・変更 */
+  margin-top: 40px;
+  margin-bottom: 52px;
+  text-align: center;
+  font-size: 20px;
+  color: #7F5539;
+}
+
+.formInput {
+  /* フォームの幅調整 */
+  margin-left: 11%;
+  margin-right: 11%;
+  color: #7F5539;
+}
+
+.formP {
+  /* 文字サイズ変更・外幅下辺変更 */
+  font-size: 12px;
+  margin-bottom: 8px;
+  color: #7F5539;
+}
+
+.formS {
+  /* 必須項目色変更 */
+  color: #BF0000;
+}
+
+
+
+input[type=text],
+input[type=submit] {
+  display: block;
+  width: 100%;
+  color: #7F5539;
+}
+
+label {
+  /* ラジオbtnの幅調整 */
+  padding-right: 30px;
+}
+
+input[type=radio] {
+  /* ラジオbtn高さ調整 */
+  margin: 12px 0 20px 0;
+}
+
+#formLong {
+  /* textの外側の高さ調整*/
+  margin-bottom: 20px;
+}
+
+#formShort {
+  /* text入力欄の幅指定 */
+  width: 20%;
+}
+
+.formD {
+  /* 横並びへの変更 ・外側下辺の幅変更*/
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.formExpiration {
+  /* 月・年のサイズ・色変更 */
+  margin-left: 12px;
+  color: #7F5539;
+}
+
+.formSecurity {
+  /* 外側上辺幅変更 */
+  margin-top: 20px;
+}
+
+input[type=submit] {
+  /* 確認btnの調整・変更 */
+  width: 60%;
+  height: 48px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  background-color: #7F5539;
+  color: #fff;
+  border: #fff;
+}
+
+
+/* card-confirmのCSS */
+.confirmH {
+  /* 見出しの調整・変更 */
+  margin-top: 40px;
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 20px;
+  color: #7F5539;
+}
+
+.confirmForm {
+  /* フォームの幅調整 */
+  margin-left: 11%;
+  margin-right: 11%;
+}
+
+.confirmItem {
+  /* 文字サイズ・外側下辺幅調整 */
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.confirmP {
+  /* 外側下辺幅・｜・内側左余白調整 */
+  margin-bottom: 24px;
+  border-left: 1px solid #7F5539;
+  padding-left: 3px;
+}
+
+.securityFlex {
+  /* 親要素にflex*/
+  display: flex;
+  border-left: 1px solid #7F5539;
+}
+
+input[type=submit] {
+  /* 確認btnの調整・変更 */
+  display: block;
+  width: 60%;
+  height: 48px;
+  margin: 0 auto;
+  background-color: #7F5539;
+  color: #fff;
+  border: #fff;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+/* card-conpleteのCSS */
+.completeH {
+  /* 見出しの調整・変更 */
+  margin-top: 40px;
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 20px;
+  color: #7F5539;
+}
+
+.comPlete {
+  width: 80%;
+  border: 1px solid #B392AC;
+  margin: 0 auto;
+  margin-bottom: 360px;
+}
+
+.completeP {
+  text-align: center;
+  padding: 20px 0 20px;
+  font-size: 12px;
+}
+
+.completeA {
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+  text-decoration: underline;
+  font-size: 12px;
+  color: #7F5539;
+}

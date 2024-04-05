@@ -9,46 +9,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="common/css/reset.css">
   <!-- 必要ならば下記のCSSを追加して -->
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="common/css/common.css">
+  <link rel="stylesheet" href="common/css/card.css">
   <!-- タイトルここ -->
-  <style>
-    h1 {
-      /* 見出しの調整・変更 */
-      margin-top: 40px;
-      margin-bottom: 60px;
-      text-align: center;
-      font-size: 20px;
-      color: #7F5539;
-    }
-
-    .comPlete {
-      width: 80%;
-      border: 1px solid #B392AC;
-      margin: 0 auto;
-      margin-bottom: 360px;
-    }
-
-    .comPletep {
-      text-align: center;
-      padding: 20px 0 20px;
-      font-size: 12px;
-    }
-
-    .comPletea {
-      display: block;
-      text-align: center;
-      padding-bottom: 20px;
-      text-decoration: underline;
-      font-size: 12px;
-      color: #7F5539;
-    }
-  </style>
   <title>カード情報登録完了</title>
 </head>
 
 <body>
   <?php session_start(); ?>
-  <img src="common/images/shop_logo.svg" alt="c.c.donuts">
+  <a href="index.php"><img src="common/images/shop_logo.svg" alt="c.c.donuts"></a>
 
   <?php
 
@@ -65,10 +34,10 @@
   // if (empty($sql->fetchAll())) {
   $sql = $pdo->prepare('insert into card values(?,?,?,?,?,?,?)');
   $sql->execute([$_SESSION['customer']['id'], $_REQUEST['name'], $_REQUEST['card'], $_REQUEST['cardNumber'], $_REQUEST['cardExpirationMonth'], $_REQUEST['cardExpirationYear'], $_REQUEST['security']]);
-  echo '<h1>カード情報登録完了</h1>';
+  echo '<h1 class="completeH">カード情報登録完了</h1>';
   echo '<div class="comPlete">';
-  echo '<p class="comPletep">クレジットカード情報を登録しました。</p>';
-  echo '<a href="purchase-confirm.php" class="comPletea">購入手続きを続ける</a>';
+  echo '<p class="completeP">クレジットカード情報を登録しました。</p>';
+  echo '<a href="purchase-confirm.php" class="completeA">購入手続きを続ける</a>';
   echo '</div>';
   // }
   // else {
