@@ -27,7 +27,6 @@ require 'includes/header.php';
 ?>
 
 <body>
-  <form action="product.php" method="post">
     <?php
 
     // データベース接続
@@ -76,7 +75,10 @@ require 'includes/header.php';
     <input type="hidden" name="price" value="{$row['price']}">
     <input type="hidden" name="id" value="{$row['id']}">
     <input type="hidden" name="count" value="1">
-    <div class="button_area"><input class="button" type="submit" value="カートに入れる"> </div>
+    <div class="button_area">
+      <input class="button" type="submit" value="カートに入れる">
+    </div>
+    </form>
   </div>
 END;
       $counter++;
@@ -119,7 +121,8 @@ END;
             <p><i class="fa-regular fa-heart"></i></p>
       </div>
     <form action="cart-input.php" method="post">
-    <div class="button_area"><input class="button" type="button" value="カートに入れる"> </div>
+    <div class="button_area"><input class="button" type="submit" value="カートに入れる"></div>
+    </form>
   </div>
   
 

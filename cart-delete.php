@@ -11,11 +11,49 @@
   <!-- 必要ならば下記のCSSを追加して -->
   <link rel="stylesheet" href="">
   <!-- タイトルここ -->
-  <title>Document</title>
+  <title>Cart-delete</title>
 </head>
 
 <body>
+<?php 
+session_start();
+require 'includes\header.php';
+?>
 
+
+<!-- パンくずメニュー -->
+<div class="cart_pankuzu">
+  <span><a href="">Top</a></span>
+  <span>></span>
+  <span>カート</span>
+</div>
+
+<!-- user名の出力 -->
+<div class="cart_name">
+  <?php
+  if(isset($_SESSION['customer'])){
+    echo 'ようこそ',$_SESSION['customer']['name'],'様';
+  }else{
+    echo 'ようこそゲスト様';
+  }
+  ?>
+
+</div>
+
+<?php
+unset($_SESSION['product'][$_REQUEST['id']]);
+
+echo '<p>カートから商品を削除しました。</p>';
+
+
+?>
+
+
+
+
+  <?php
+  require 'cart.php';
+  ?>
 </body>
 
 </html>
