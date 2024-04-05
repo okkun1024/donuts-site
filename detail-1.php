@@ -44,14 +44,18 @@
       echo '<p class="product_name">', $row['name'], '</p>';
       echo '<p class="product_description">', $row['description'];
       echo '</p>';
-      echo '<p>', '税込 ', $formattedPrice, '</p>';
+      echo '<div class="price_area">';
+      echo '<p class="product_price">', '税込 ', '&yen;', $formattedPrice, '</p>';
       echo '<p><i class="fa-heart fa-regular"></i></p>';
-      echo '<input type="number" name="count" value="">';
+      echo '</div>';
+      echo '<div class="count_cart">';
+      echo '<input type="number" name="count" value="" class="count_box">';
       echo '<span>個</span>';
       echo '<input class="cart_btn" type="submit" value="カートに入れる">';
       echo '<input type="hidden" name="id" value="', $row['id'], '">';
       echo '<input type="hidden" name="name" value="', $row['name'], '">';
       echo '<input type="hidden" name="price" value="', $row['price'], '">';
+      echo '</div>';
       echo '</div>';
       echo '</form>';
     }
