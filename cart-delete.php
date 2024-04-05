@@ -1,3 +1,6 @@
+<?php require 'includes/header.php'; ?>
+
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -7,59 +10,65 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="common/css/reset.css">
   <!-- 必要ならば下記のCSSを追加して -->
   <link rel="stylesheet" href="">
+
   <!-- タイトルここ -->
-  <title>Cart-delete</title>
+  <title>Document</title>
 </head>
 
+
+<!-- カートの商品の削除ボタンを押した際に削除される仕組み -->
+
+<html>
 <body>
-<?php 
-session_start();
-require 'includes\header.php';
-?>
-
-
-<!-- パンくずメニュー -->
-<div class="cart_pankuzu">
-  <span><a href="">Top</a></span>
-  <span>></span>
-  <span>カート</span>
-</div>
-
-<!-- user名の出力 -->
-<div class="cart_name">
-  <?php
-  if(isset($_SESSION['customer'])){
-    echo 'ようこそ',$_SESSION['customer']['name'],'様';
-  }else{
-    echo 'ようこそゲスト様';
-  }
-  ?>
-
-</div>
 
 <?php
-session_start();
+echo <<<END
+<main>
 
-if (isset($_POST['id'])) {
-    $id = $_POST['id'];
-    // 商品をカートから削除
-    unset($_SESSION['cart'][$id]);
+<ul>
+<li><a href="index.php">top</a></li>
+<li>></li>
+<li>カート</li>
+</ul>
+
+<hr>
+END;
+
+if (isset($_SESSION['customer'])) {
+// ログインしている
+
+echo '<p>ようこそ　',$_SESSION['customer']['name'],'様</p> ';
+
+}else{
+  // ログアウトしている
+echo '<p class="id_name_no_cart">ようこそ　ゲスト様</p> ';
 }
 
-// カートへリダイレクト
-header('Location: cart-show.php');
-exit;
+echo '<hr>';
+
+
+// 指定idの勝因をカートから削除
+unset($_SESSION['product'][$_REQUEST['id']]);
+// unset($_SESSION['product']);
+
+// var_dump ($_SESSION['product']);
+// var_dump ($_REQUEST['id']);
+
+echo '<p id="input_delete">カートから商品を削除しました。</p>';
+
+
+require 'cart.php';
+
+echo '</main>';
+
 ?>
 
-
-
-
-  <?php
-  require 'cart.php';
-  ?>
 </body>
-
 </html>
+
+
+<?php require 'includes/footer.php'; ?>
