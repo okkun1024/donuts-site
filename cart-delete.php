@@ -41,11 +41,17 @@ require 'includes\header.php';
 </div>
 
 <?php
-unset($_SESSION['product'][$_REQUEST['id']]);
+session_start();
 
-echo '<p>カートから商品を削除しました。</p>';
+if (isset($_POST['id'])) {
+    $id = $_POST['id'];
+    // 商品をカートから削除
+    unset($_SESSION['cart'][$id]);
+}
 
-
+// カートへリダイレクト
+header('Location: cart-show.php');
+exit;
 ?>
 
 
