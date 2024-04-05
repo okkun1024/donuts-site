@@ -36,12 +36,34 @@ require 'includes\header.php';
   }else{
     echo 'ようこそゲスト様';
   }
-
-
-
   ?>
-
 </div>
+
+<?php
+session_start();
+
+if (!isset($_SESSION['cart'])) {
+    echo 'カートは空です。';
+} else {
+    echo '<table>';
+    echo '<tr><th>商品名</th><th>価格</th><th>数量</th><th>操作</th></tr>';
+    foreach ($_SESSION['cart'] as $id => $item) {
+        echo '<tr>';
+        // 商品画像（商品IDに基づいて適切な画像パスを設定）
+        echo '<td><img src="common/images/product_' . htmlspecialchars($id) . '.jpg" alt="' . htmlspecialchars($item['name']) . '" style="width: 100px;"></td>';
+        // 商品名
+        echo '<td>' . htmlspecialchars($item['name']) . '</td>';
+        // 価格
+        echo '<td>¥' . number_format(htmlspecialchars($item['price'])) . '</td>';
+        // 数量
+        echo '<td>' . htmlspecialchars($item['count']) . '</td>';
+        // 削除機能
+        echo '<td><form action="cart-delete.php" method="post"><input type="hidden" name="id" value="' . $id . '"><input type="submit" value="削除"></form></td>';
+        echo '</tr>';
+    }
+    echo '</table>';
+}
+?>
   <?php
   require 'cart.php';
   ?>

@@ -75,9 +75,9 @@ require 'includes/header.php';
     <input type="hidden" name="price" value="{$row['price']}">
     <input type="hidden" name="id" value="{$row['id']}">
     <input type="hidden" name="count" value="1">
-    <div class="button_area">
+    <a href="cart-show.php"><div class="button_area">
       <input class="button" type="submit" value="カートに入れる">
-    </div>
+    </div></a>
     </form>
   </div>
 END;
@@ -121,7 +121,7 @@ END;
             <p><i class="fa-regular fa-heart"></i></p>
       </div>
     <form action="cart-input.php" method="post">
-    <div class="button_area"><input class="button" type="submit" value="カートに入れる"></div>
+      <input class="button" type="submit" value="カートに入れる">
     </form>
   </div>
   
