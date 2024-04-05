@@ -75,9 +75,9 @@ require 'includes/header.php';
     <input type="hidden" name="price" value="{$row['price']}">
     <input type="hidden" name="id" value="{$row['id']}">
     <input type="hidden" name="count" value="1">
-    <a href="cart-show.php"><div class="button_area">
+    <div class="button_area">
       <input class="button" type="submit" value="カートに入れる">
-    </div></a>
+    </div>
     </form>
   </div>
 END;
