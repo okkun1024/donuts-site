@@ -30,7 +30,7 @@
     $sql->execute([$_REQUEST['id']]);
     foreach ($sql as $row) {
       $formattedPrice = number_format($row['price']);
-      echo '<form action="" type="method">';
+      echo '<form action="cart-input.php" type="method">';
       echo '<p><img alt="image" src="common/images/product_', $row['id'], '.jpg" class="detail_item_image"></p>';
       echo '<p>', $row['name'], '</p>';
       echo '<p>', $row['description'];
@@ -39,11 +39,11 @@
       echo '<p><i class="fa-heart fa-regular"></i></p>';
       echo '<input type="number" name="count" value="">';
       echo '<span>個</span>';
-      echo '<form action="cartinput.php" method="post">';
-      echo '<input class="cart_btn" type="button" value="カートに入れる">';
+      echo '<input class="cart_btn" type="submit" value="カートに入れる">';
       echo '<input type="hidden" name="id" value="', $row['id'], '">';
       echo '<input type="hidden" name="name" value="', $row['name'], '">';
       echo '<input type="hidden" name="price" value="', $row['price'], '">';
+      echo '</form>';
     }
 
     ?>
