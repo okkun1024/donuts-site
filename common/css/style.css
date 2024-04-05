@@ -155,6 +155,13 @@ body {
     opacity: 0;
 }
 
+.fadeUp_2 {
+    animation-name: fadeUpAnime;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
 @keyframes fadeUpAnime {
     from {
         opacity: 0;
@@ -171,32 +178,33 @@ body {
     opacity: 0;
 }
 
-.fade_Up {
-    animation-name: fadeUpAnime;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+.fadeUpTrigger2 {
     opacity: 0;
 }
 
-.fade_Up:nth-child(2) {
-    animation-delay: 0.2s;
+/* .fadeUp:nth-child(2) {
+    animation-delay: 0.2ms;
 }
 
-.fade_Up:nth-child(3) {
-    animation-delay: 0.4s;
+.fadeUp:nth-child(4) {
+    animation-delay: 0.2ms;
 }
 
-.fade_Up:nth-child(4) {
-    animation-delay: 0.6s;
+.fadeUp:nth-child(6) {
+    animation-delay: 0.2ms;
 }
 
-.fade_Up:nth-child(5) {
-    animation-delay: 0.8s;
+.fadeUp_2:nth-child(2) {
+    animation-delay: 0.2ms;
 }
 
-.fade_Up:nth-child(6) {
-    animation-delay: 1s;
+.fadeUp_2:nth-child(3) {
+    animation-delay: 0.4ms;
 }
+
+.fadeUp_2:nth-child(4) {
+    animation-delay: 0.6ms;
+} */
 
 #ranking_section h2 {
     text-align: center;

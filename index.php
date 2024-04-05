@@ -30,7 +30,7 @@
 
 
   <?php
-  require 'loading.php';
+  // require 'loading.php';
   ?>
 
   <?php
@@ -54,17 +54,17 @@
 
   <section id="topic_section">
     <div class="topic_container">
-      <div class="new_product fade_Up">
+      <div class="new_product fadeUpTrigger2">
         <img src="common/images/product_5.jpg" alt="">
         <p class="new_item"><img src="common/images/new_item.svg" alt=""></p>
         <p class="summer_citrus">サマーシトラス</p>
       </div>
-      <div class="product_promotion fade_Up">
+      <div class="product_promotion fadeUpTrigger2">
         <img src="common/images/life_with_donuts.jpg" alt="">
         <p>ドーナツのある生活</p>
       </div>
     </div>
-    <div class="item_list fade_Up">
+    <div class="item_list fadeUpTrigger2">
       <div>
         <img src="common/images/ist_product.jpg" alt="">
         <p>商品一覧</p>
@@ -76,10 +76,10 @@
 
   <section id="introduce_section">
     <div class="introduce_container">
-      <h2 fade_Up>philosophy</h2>
-      <h3 fade_Up>私たちの信念</h3>
-      <p class="philosophy_title fade_Up">"Creating Connections"</p>
-      <p class="philosophy_explain fade_Up">ドーナツでつながる</p>
+      <h2>philosophy</h2>
+      <h3>私たちの信念</h3>
+      <p class="philosophy_title">"Creating Connections"</p>
+      <p class="philosophy_explain">ドーナツでつながる</p>
     </div>
   </section>
 
