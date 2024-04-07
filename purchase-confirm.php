@@ -25,36 +25,36 @@
     foreach ($_SESSION['cart'] as $id => $cart) {
       $subtotal = $product['price'] * $product['count'];
       $total += $subtotal;
-      $format_subtotal=number_format($subtotal);
-      $format_total=number_format($total);
+      $format_subtotal = number_format($subtotal);
+      $format_total = number_format($total);
       echo '<table>';
       echo '<tr>';
-      echo '<th>商品名<th><td>', $cart['name'], '</td>';
+      echo '<th>商品名</th><td>', $cart['name'], '</td>';
       echo '</tr>';
       echo '<tr>';
-      echo '<th>数量<th><td>', $cart['count'], '個</td>';
+      echo '<th>数量</th><td>', $cart['count'], '個</td>';
       echo '</tr>';
       echo '<tr>';
-      echo '<th>小計<th><td>税込\r￥',$format_subtotal, '</td>';
+      echo '<th>小計</th><td>税込\r￥', $format_subtotal, '</td>';
       echo '</tr>';
     }
     echo '<tr>';
-    echo '<th>合計<th><td>税込\r￥',$format_total, '</td>';
+    echo '<th>合計</th><td>税込\r￥', $format_total, '</td>';
     echo '</tr>';
     echo '</table>';
 
     echo '<h2>お届け先</h2>';
     echo '<table>';
     echo '<tr>';
-    echo '<th>お名前<th><td>', $_SESSION['customer']['name'], '</td>';
+    echo '<th>お名前</th><td>', $_SESSION['customer']['name'], '</td>';
     echo '</tr>';
     echo '<tr>';
-    echo '<th>住所<th><td>', $_SESSION['customer']['address'], '</td>';
+    echo '<th>住所</th><td>', $_SESSION['customer']['address'], '</td>';
     echo '</tr>';
     echo '</table>';
 
     require 'includes/database.php';
-    
+
     $id = $_SESSION['customer']['id'];
     $sql = $pdo->prepare('select * from card where id=?');
     $sql->execute([$id]);
@@ -64,13 +64,13 @@
       foreach ($sql as $row) {
         echo '<table>';
         echo '<tr>';
-        echo '<thお支払い<th><td>', $row['card_name'], '</td>';
+        echo '<thお支払い</th><td>', $row['card_name'], '</td>';
         echo '</tr>';
         echo '<tr>';
-        echo '<th>カード種類<th><td>', $row['card_type'], '</td>';
+        echo '<th>カード種類</th><td>', $row['card_type'], '</td>';
         echo '</tr>';
         echo '<tr>';
-        echo '<th>カード番号<th><td>', $row['card_no'], '</td>';
+        echo '<th>カード番号</th><td>', $row['card_no'], '</td>';
         echo '</tr>';
         echo '</table>';
       }
