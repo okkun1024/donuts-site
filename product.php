@@ -107,25 +107,27 @@ END;
       }
 
 
-      echo <<<END
-  <div class="item_box_2  fadeUpTrigger">
-    <a href="detail-{$category}.php?id=$id">
-      <img src="common/images/product_{$id}.jpg" alt="{$row['name']}">
-    </a>
-  
-    <p class="product_name">{$row['name']}
-      </p>
-      <div class="price_container">
-        <p class="product_price">税込 &yen;{$formattedPrice}
-            </p>
-            <p><i class="fa-regular fa-heart"></i></p>
-      </div>
-    <form action="cart-input.php" method="post">
-      <input class="button" type="submit" value="カートに入れる">
-    </form>
-  </div>
-  
+// 以前のコードと同様に、価格を3桁ごとにカンマで区切る
+$formattedPrice = number_format($row['price']);
 
+echo <<<END
+<div class="item_box_2 fadeUpTrigger">
+  <a href="detail-{$category}.php?id=$id">
+    <img src="common/images/product_{$id}.jpg" alt="{$row['name']}">
+  </a>
+  <p class="product_name">{$row['name']}</p>
+  <div class="price_container">
+    <p class="product_price">税込 &yen;{$formattedPrice}</p>
+    <p><i class="fa-regular fa-heart"></i></p>
+  </div>
+  <form action="cart-input.php" method="post">
+    <input type="hidden" name="id" value="{$id}">
+    <input type="hidden" name="count" value="1">
+    <div class="button_area">
+      <input class="button" type="submit" value="カートに入れる">
+    </div>
+  </form>
+</div>
 END;
       $counter2++;
     }
