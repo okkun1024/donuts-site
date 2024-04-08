@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="common/css/reset.css">
   <!-- 必要ならば下記のCSSを追加して -->
   <link rel="stylesheet" href="common/css/common.css">
+  <link rel="stylesheet" href="common/css/login,logout.css">
   <style>
     .logout-wrpper h1{
       text-align: center;
