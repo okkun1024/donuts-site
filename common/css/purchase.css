@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+body {
+  font-family: 'Noto Sans JP';
+}
+
+.purchaseHone {
+  /* 見出しの調整・変更 */
+  margin-top: 60px;
+  margin-bottom: 72px;
+  text-align: center;
+  font-size: 20px;
+  color: #7F5539;
+}
+
+.purchaseHtwo {
+  text-align: center;
+  font-size: 12px;
+  color: #7F5539;
+  margin-bottom: 20px;
+}
+
+
+.subBtn_area {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.subBtn {
+  font-size: clamp(16px, 3vw, 24px);
+  width: 53.333vw;
+  text-align: center;
+  cursor: pointer;
+  padding: 16px 9.6vw;
+  background: #7F5539;
+  color: #fff;
+  transition: 0.3s;
+  border: 1px solid #7F5539;
+}
+
+.subBtn:hover {
+  color: #7F5539;
+  background: #fff;
+}
+
+.table_area {
+  margin: 0 auto;
+}
+
+.tablePurchase {
+  width: 89.333vw;
+}
