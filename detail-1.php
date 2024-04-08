@@ -48,7 +48,7 @@
       echo '<p><i class="fa-heart fa-regular"></i></p>';
       echo '</div>';
       echo '<div class="count_cart">';
-      echo '<input type="number" name="count" value="" class="count_box">';
+      echo '<input type="number" min="1" max="100" name="count" value="" class="count_box">';
       echo '<span>個</span>';
       echo '<input class="button" type="submit" value="カートに入れる">';
       echo '<input type="hidden" name="id" value="', $row['id'], '">';

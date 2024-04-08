@@ -47,10 +47,10 @@ END;
     echo <<< END
 
     <div class="total_price">
-    <div class="total_price_checkbox">    
-        <p class="total_title">ご注文合計：<span>税込&yen;{$totalPrice}</span></p>    
-        <button onclick="location.href='purchase-confirm.php'" class="button">ご購入確認へ進む</button>
-    </div>
+        <div class="total_price_checkbox">    
+            <p class="total_title">ご注文合計：<span>税込&yen;{$totalPrice}</span></p>    
+            <button onclick="location.href='purchase-confirm.php'" class="button">ご購入確認へ進む</button>
+        </div>
     </div>
     <div class="continue_box">
         <button onclick="location.href='product.php'" class="continue_btn">買い物を続ける</button>
@@ -60,7 +60,7 @@ END;
 } else {
 
     // 商品データがない場合
-    echo '<p class="name_no_cart">カートに商品がありません。</p>';
+    echo '<p class="cart_none">カートに商品がありません。</p>';
 }
 
 
