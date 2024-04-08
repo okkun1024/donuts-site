@@ -1,8 +1,8 @@
 <?php
 session_start();
 ?>
-<?php require 'includes/header.php'; ?>
 
+<?php require 'includes/header.php'; ?>
 
 <!DOCTYPE html>
 <html lang="ja">
