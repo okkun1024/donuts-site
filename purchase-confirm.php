@@ -70,11 +70,10 @@
     $id = $_SESSION['customer']['id'];
     $sql = $pdo->prepare('select * from card where id = ?');
     $sql->execute([$id]);
-    $cards = $sql->fetchAll();
-    if (empty($sql->fetchAll())) {
+    if (!empty($sql->fetchAll())) {
       echo '<h2 class="purchaseHtwo">お支払い方法</h2>';
 
-      foreach ($cards as $row) {
+      foreach ($pdo->query('select * from card ') as $row) {
         $card_number = $row['card_no'];
         $number_count = mb_strlen($card_number);
         echo '<div class="table_area">';
