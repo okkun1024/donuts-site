@@ -51,3 +51,8 @@ body {
 .tablePurchase {
   width: 89.333vw;
 }
+
+.tablePurchase th {
+  text-align: left;
+  font-size: clamp(12px, 2vw, 20px);
+}

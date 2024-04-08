@@ -31,7 +31,7 @@
       $format_subtotal = number_format($subtotal);
       $format_total = number_format($total);
       echo '<div class="table_area">';
-      echo '<table class="tablePurchase">';
+      echo '<table class="tablePurchase" style=margin:auto;>';
       echo '<tr>';
       echo '<th>商品名</th><td class="borderTleft">', $product['name'], '</td>';
       echo '</tr>';
@@ -45,7 +45,7 @@
       echo '</div>';
     }
     echo '<div class="table_area">';
-    echo '<table class="tablePurchase">';
+    echo '<table class="tablePurchase" style=margin:auto;>';
     echo '<tr>';
     echo '<th>合計</th><td class="borderTleft">税込&yen;', $format_total, '</td>';
     echo '</tr>';
@@ -55,7 +55,7 @@
 
     echo '<h2 class="purchaseHtwo">お届け先</h2>';
     echo '<div class="table_area">';
-    echo '<table class="tablePurchase">';
+    echo '<table class="tablePurchase" style=margin:auto;>';
     echo '<tr>';
     echo '<th>お名前</th><td class="borderTleft">', $_SESSION['customer']['name'], '</td>';
     echo '</tr>';
@@ -78,7 +78,7 @@
         $card_number = $row['card_no'];
         $number_count = mb_strlen($card_number);
         echo '<div class="table_area">';
-        echo '<table class="tablePurchase">';
+        echo '<table class="tablePurchase" style=margin:auto>';
         echo '<tr>';
         echo '<th>お支払い</th><td class="borderTleft">クレジットカード</td>';
         echo '</tr>';
