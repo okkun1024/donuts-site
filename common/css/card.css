@@ -1,13 +1,16 @@
 @charset "UTF-8";
 
 /* card-inputのCSS */
+body {
+  font-family: 'Noto Sans JP';
+}
 
 .inputH {
   /* 見出しの調整・変更 */
   margin-top: 40px;
   margin-bottom: 52px;
   text-align: center;
-  font-size: 20px;
+  font-size: clamp(20px, 5vw, 36px);
   color: #7F5539;
 }
 
@@ -20,7 +23,7 @@
 
 .formP {
   /* 文字サイズ変更・外幅下辺変更 */
-  font-size: 12px;
+  font-size: clamp(12px, 2vw, 20px);
   margin-bottom: 8px;
   color: #7F5539;
 }
@@ -36,7 +39,8 @@ input[type=text],
 input[type=submit] {
   display: block;
   width: 100%;
-  color: #7F5539;
+  border: 1px solid #7F5539;
+  color: #262626;
 }
 
 label {
@@ -78,24 +82,34 @@ input[type=radio] {
 
 input[type=submit] {
   /* 確認btnの調整・変更 */
-  width: 60%;
+  width: 53.333vw;
   height: 48px;
   margin: 0 auto;
   margin-top: 40px;
   margin-bottom: 80px;
   background-color: #7F5539;
   color: #fff;
-  border: #fff;
+  transition: 0.3s;
+  border: 1px solid #7F5539;
+  cursor: pointer;
 }
 
+input[type=submit]:hover {
+  color: #7F5539;
+  background: #fff;
+}
 
 /* card-confirmのCSS */
+body {
+  font-family: 'Noto Sans JP';
+}
+
 .confirmH {
   /* 見出しの調整・変更 */
   margin-top: 40px;
   margin-bottom: 60px;
   text-align: center;
-  font-size: 20px;
+  font-size: clamp(20px, 5vw, 36px);
   color: #7F5539;
 }
 
@@ -107,7 +121,7 @@ input[type=submit] {
 
 .confirmItem {
   /* 文字サイズ・外側下辺幅調整 */
-  font-size: 12px;
+  font-size: clamp(12px, 2vw, 20px);
   margin-bottom: 8px;
 }
 
@@ -127,23 +141,34 @@ input[type=submit] {
 input[type=submit] {
   /* 確認btnの調整・変更 */
   display: block;
-  width: 60%;
+  width: 53.333vw;
   height: 48px;
   margin: 0 auto;
   background-color: #7F5539;
   color: #fff;
-  border: #fff;
+  transition: 0.3s;
+  border: 1px solid #7F5539;
   margin-top: 100px;
   margin-bottom: 80px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  color: #7F5539;
+  background: #fff;
 }
 
 /* card-conpleteのCSS */
+body {
+  font-family: 'Noto Sans JP';
+}
+
 .completeH {
   /* 見出しの調整・変更 */
   margin-top: 40px;
   margin-bottom: 60px;
   text-align: center;
-  font-size: 20px;
+  font-size: clamp(20px, 5vw, 36px);
   color: #7F5539;
 }
 
@@ -157,7 +182,7 @@ input[type=submit] {
 .completeP {
   text-align: center;
   padding: 20px 0 20px;
-  font-size: 12px;
+  font-size: clamp(12px, 2vw, 20px);
 }
 
 .completeA {
@@ -165,6 +190,6 @@ input[type=submit] {
   text-align: center;
   padding-bottom: 20px;
   text-decoration: underline;
-  font-size: 12px;
+  font-size: clamp(12px, 2vw, 20px);
   color: #7F5539;
 }
