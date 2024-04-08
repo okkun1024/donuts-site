@@ -22,17 +22,18 @@
 
     echo '<h1>ご購入確認</h1>';
     echo '<h2>ご購入商品</h2>';
-    foreach ($_SESSION['cart'] as $id => $cart) {
+    foreach ($_SESSION['product'] as $id => $product) {
       $subtotal = $product['price'] * $product['count'];
+      $total=0;
       $total += $subtotal;
       $format_subtotal = number_format($subtotal);
       $format_total = number_format($total);
       echo '<table>';
       echo '<tr>';
-      echo '<th>商品名</th><td>', $cart['name'], '</td>';
+      echo '<th>商品名</th><td>', $product['name'], '</td>';
       echo '</tr>';
       echo '<tr>';
-      echo '<th>数量</th><td>', $cart['count'], '個</td>';
+      echo '<th>数量</th><td>', $product['count'], '個</td>';
       echo '</tr>';
       echo '<tr>';
       echo '<th>小計</th><td>税込\r￥', $format_subtotal, '</td>';
@@ -56,25 +57,27 @@
     require 'includes/database.php';
 
     $id = $_SESSION['customer']['id'];
-    $sql = $pdo->prepare('select * from card where id=?');
+    $sql = $pdo->prepare('select * from card where id = ?');
     $sql->execute([$id]);
-    if (!empty($sql->fetchAll())) {
+    $cards = $sql->fetchAll();
+    if (empty($sql->fetchAll())) {
       echo '<h2>お支払い方法</h2>';
-
-      foreach ($sql as $row) {
+      
+      foreach ( $cards as $row) {
+        $card_number=$row['card_no'];
+        $number_count=mb_strlen($card_number);
         echo '<table>';
         echo '<tr>';
-        echo '<thお支払い</th><td>', $row['card_name'], '</td>';
+        echo '<th>お支払い</th><td>クレジットカード</td>';
         echo '</tr>';
         echo '<tr>';
         echo '<th>カード種類</th><td>', $row['card_type'], '</td>';
         echo '</tr>';
         echo '<tr>';
-        echo '<th>カード番号</th><td>', $row['card_no'], '</td>';
+        echo '<th>カード番号</th><td>',substr($card_number, 0, 6),'●●●●●●●●●</td>';
         echo '</tr>';
         echo '</table>';
       }
-
       echo '<a href="purchase-complete.php">ご購入を確定する</a>';
     } else {
       echo '<h2>お支払い方法</h2>';
