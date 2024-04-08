@@ -54,18 +54,16 @@ session_start();
 
 if(isset($_SESSION['customer'])){
   unset($_SESSION['customer']);
+  unset($_SESSION['product']);
 }
+
 
 require'includes/header.php';
 
-if(isset($_SESSION['customer'])){
+if(!isset($_SESSION['customer'])){
   echo '<div class="logout-wrpper">';
   echo '<h1>','ログアウト完了','</h1>';
   echo '<div class="login-com-div"><p class="">','ログアウトが完了しました。','</div></p>';
-  echo '<p class=relog><a href="index.php">','TOPページへ戻る','</a></p>';
-}else{
-  echo '<div class="logout-wrpper">';
-  echo '<div class=else-div><p>','すでにログアウトしています。','</p></div>';
   echo '<p class=relog><a href="index.php">','TOPページへ戻る','</a></p>';
 }
 
