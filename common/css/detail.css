@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+body {
+    font-family: 'Noto Sans JP';
+}
+
 .item_container,
 .flex_box {
     width: 89.333vw;
@@ -39,7 +43,7 @@
 }
 
 .product_description {
-    padding-top: 20px;
+    padding-top: 40px;
     position: relative;
 }
 
@@ -67,12 +71,14 @@
     padding-top: 40px;
     margin-right: 5.333vw;
     width: 25.6vw;
+    color: #bf0000;
 }
 
 .price_area i {
     padding-top: 40px;
     text-align: left;
     font-size: clamp(16px, 3vw, 24px);
+    color: #bf0000;
 }
 
 .count_cart {
@@ -80,11 +86,36 @@
 }
 
 .count_box {
-    width: 56px;
+    width: 14.933vw;
     height: 36px;
+    vertical-align: bottom;
 }
 
 .count_cart span {
-    vertical-align: baseline;
+    font-size: clamp(16px, 3vw, 24px);
+    vertical-align: bottom;
     display: inline;
+    margin-right: 5.333vw;
+    margin-left: 1.066vw;
+}
+
+.button {
+    width: 42.666vw;
+    font-family: 'Noto Sans JP';
+    font-size: clamp(12px, 2vw, 20px);
+    text-align: center;
+    cursor: pointer;
+    padding: 12px 10.133vw;
+    background: #7f5539;
+    color: #ffffff;
+    transition: .3s;
+    border: 1px solid #7f5539;
+    vertical-align: text-top;
+}
+
+.button:hover {
+    color: #7f5539;
+    /* 背景色     */
+    background: #ffffff;
+    /* 文字色     */
 }

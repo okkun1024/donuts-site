@@ -10,7 +10,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="common/css/reset.css">
-  <link rel="stylesheet" href="common/css/style.css">
   <link rel="stylesheet" href="common/css/detail.css">
   <!-- 必要ならば下記のCSSを追加して -->
   <link rel="stylesheet" href="">
@@ -51,7 +50,7 @@
       echo '<div class="count_cart">';
       echo '<input type="number" name="count" value="" class="count_box">';
       echo '<span>個</span>';
-      echo '<input class="cart_btn" type="submit" value="カートに入れる">';
+      echo '<input class="button" type="submit" value="カートに入れる">';
       echo '<input type="hidden" name="id" value="', $row['id'], '">';
       echo '<input type="hidden" name="name" value="', $row['name'], '">';
       echo '<input type="hidden" name="price" value="', $row['price'], '">';
