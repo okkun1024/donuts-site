@@ -21,19 +21,20 @@ if (!empty($_SESSION['product'])) {
         $total += $subtotal;
 
         $id_number=intval($id);
+        $formattedPrice = number_format($product['price']);
 
         echo <<< END
-<div id="merchandise">
+<div class="cart_show_container">
         <img src="common/images/product_{$id}.jpg" alt="商品画像">
     
-        <div id="detail">
-            <p id="name">{$product['name']}</p>
+        <div class="item_container">
+            <p class="item_name">{$product['name']}</p>
 
-            <div id="price">
-                <p id="price">税込￥{$product['price']}</p>
-                <p  id="count">個数 {$product['count']}個</p>
+            <div class="item_info">
+                <p class="item_price">税込 &yen;{$formattedPrice}</p>
+                <p class="item_count">数量　{$product['count']}個</p>
             </div>
-            <div id="delete">
+            <div class="item_delete">
                 <a href="cart-delete.php?id={$id_number}">削除する</a>
             </div>
         </div>
@@ -41,25 +42,22 @@ if (!empty($_SESSION['product'])) {
 END;
 
     }
+    $totalPrice = number_format($total);
 
     echo <<< END
 
-<div id="total">
-        <ul>
-            <li> ご注文合計：</li>
-            <li>税込み￥{$total}</li>
-        </ul>
+<div class="total_price">
+        <p>ご注文合計：税込&yen;{$totalPrice}</p>
     
-    
-       <p> <a href="purchase-confirm.php">ご購入確認へ進む</a></p>
+       <p><a href="purchase-confirm.php">ご購入確認へ進む</a></p>
 </div>
    
-    <p id="continue"> <a  href="product.php">買い物を続ける</a></p>
+    <p class="continu_btn"> <a  href="product.php">買い物を続ける</a></p>
 END;
 } else {
 
     // 商品データがない場合
-    echo '<p class="id_name_no_cart">カートに商品がありません。</p>';
+    echo '<p class="name_no_cart">カートに商品がありません。</p>';
 }
 
 

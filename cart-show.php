@@ -29,7 +29,7 @@ session_start();
 
 <main>
 
-    <ul>
+    <ul class="pankuzu">
         <li><a href="index.php">top</a></li>
         <li>></li>
         <li>カート</li>
@@ -44,10 +44,10 @@ if (isset($_SESSION['customer'])) {
 // ログインしている
 
 
-    echo '<p class="id_name_no_cart">ようこそ',$_SESSION['customer']['name'],'様</p> ';
+    echo '<p class="cart_name">ようこそ',$_SESSION['customer']['name'],'様</p> ';
 }else{
 
-    echo '<p class="id_name_no_cart">ようこそゲスト様</p> ';
+    echo '<p class="cart_name">ようこそゲスト様</p> ';
 }
 
 

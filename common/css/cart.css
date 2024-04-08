@@ -1,7 +1,10 @@
 @charset "UTF-8";
 
+body{
+  font-family: 'Noto Sans JP';
+}
 
-.cart_pankuzu {
+.pankuzu {
     display: flex;
     border-bottom: 1px solid #333;
     padding-top:12px;
@@ -16,3 +19,36 @@
     padding-left:20px;
   }
 
+.cart_show_container{
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.cart_show_container img{
+  width: 89.333vw;
+  padding: 20px 0;
+}
+
+.item_name{
+  font-size: clamp(16px,3vw,24px);
+  color: #7f5539;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.item_price{
+  font-size: clamp(16px,3vw,24px);
+  color: #bf0000;
+  margin-bottom: 16px;
+}
+
+.item_count{
+  font-size: clamp(16px,3vw,24px);
+  margin-bottom: 16px;
+}
+
+.item_delete a{
+  font-size: clamp(14px,2vw,20px);
+  color: #7f5539;
+  border-bottom: 1px solid #7f5539;
+}
