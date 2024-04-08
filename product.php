@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -18,9 +22,6 @@
   <title>Document</title>
 </head>
 
-<?php
-session_start();
-?>
 
 <?php
 require 'includes/header.php';
@@ -136,7 +137,7 @@ END;
 
     ?>
     <?php require 'includes/footer.php'; ?>
-    
+
 </body>
 
 </html>
