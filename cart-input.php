@@ -1,8 +1,8 @@
-
-<?php require 'includes/header.php' ?>
 <?php
 session_start();
 ?>
+
+<?php require 'includes/header.php' ?>
 
 
 <!DOCTYPE html>
@@ -29,7 +29,7 @@ session_start();
 
 <main>
 
-<ul class=cart_pankuzu>
+<ul class=pankuzu>
 <li><a href="index.php">top</a></li>
 <li>></li>
 <li>カート</li>
@@ -41,11 +41,11 @@ session_start();
 if (isset($_SESSION['customer'])) {
 // ログインしている
 
-echo '<p class="id_name_no_cart">ようこそ',$_SESSION['customer']['name'],'様</p> ';
+echo '<p class="cart_name">ようこそ',$_SESSION['customer']['name'],'様</p> ';
 
 }else{
   // ログアウトしている
-echo '<p class="id_name_no_cart">ようこそゲスト様</p> ';
+echo '<p class="cart_name">ようこそゲスト様</p> ';
 }
 
 echo '<hr>';
@@ -91,7 +91,7 @@ echo '<hr>';
     ];
   }
 
-  echo '<p class="id_name_no_cart">カートに追加しました。</p>';
+  echo '<p class="product_add">カートに追加しました。</p>';
 
   echo '<main>';
   require 'cart.php';

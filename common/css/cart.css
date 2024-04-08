@@ -6,19 +6,49 @@ body{
 
 .pankuzu {
     display: flex;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #7f5539;
     padding-top:12px;
     padding-bottom:12px;
     padding-left:20px;
+    font-size: 12px;
+    color: #7f5539;
+  }
+  .pankuzu a{
+    font-size: 12px;
+    color: #7f5539;
+  }
+
+  .pankuzu a:hover {
+    border-bottom: 1px solid #7f5539;
   }
   .cart_name{
-    background-color: #f0f0f0;
-    border-bottom: 1px solid #333;
+    font-size: 12px;
+    color: #7f5539;
+    border-bottom: 1px solid #7f5539;
     padding-top:12px;
     padding-bottom:12px;
     padding-left:20px;
   }
 
+  .product_add{
+    font-size: 12px;
+    margin-top: 24px;
+    margin-bottom: 4px;
+    margin-left: 20px;
+  }
+  .product_delete{
+    font-size: 12px;
+    margin-top: 24px;
+    margin-bottom: 4px;
+    margin-left: 20px;
+  }
+
+  .cart_none{
+    font-size: 12px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 20px;
+  }
 .cart_show_container{
   text-align: center;
   padding-bottom: 60px;
@@ -34,6 +64,7 @@ body{
   color: #7f5539;
   font-weight: bold;
   margin-bottom: 20px;
+
 }
 
 .item_price{
@@ -124,4 +155,68 @@ body{
   /* 背景色     */
   background: #ffffff;
   /* 文字色     */
+}
+
+@media screen and (min-width: 768px) {
+
+  .pankuzu,
+  .cart_name{
+    padding-left: 7.54vw;
+  }
+
+  .cart_show_container{
+    display: flex
+  }
+  .cart_show_container,
+  .total_price{
+    margin-left: 11.932vw;    
+    margin-right: 11.932vw;    
+  }
+
+  .cart_show_container img{
+    width: 24.524vw;
+    margin-right: 2.9282vw;
+  }
+
+  .cart_show_container img,
+  .item_container{
+    padding-top: 80px;
+  }
+  .item_container{
+    text-align: left;
+    width: 100%;
+  }
+
+  .item_name{
+    border-bottom: 1px solid #e6ccb2;
+    padding-bottom: 16px;
+  }
+
+  .item_info{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .item_delete{
+    text-align: right;
+    margin-top: 174px;
+    border-bottom: 1px solid #e6ccb2;
+    padding-bottom: 15px;
+  }
+
+  .total_price_checkbox{
+    padding:62px 0;
+  }
+
+  .button{
+    width: 19.473vw;
+    padding: 16px 50px;
+  }
+
+  .continue_btn{
+    width: 19.473vw;
+    padding: 16px 60px;
+
+  }
+
 }
