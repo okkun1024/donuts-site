@@ -15,7 +15,7 @@ session_start();
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="common/css/reset.css">
-    <link rel="stylesheet" href="common/css/cart.css">
+    <link rel="stylesheet" href="common/cart.css">
 
     <title>Cart-Delete page</title>
 

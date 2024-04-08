@@ -52,3 +52,76 @@ body{
   color: #7f5539;
   border-bottom: 1px solid #7f5539;
 }
+
+.total_price{
+  text-align: center;
+  margin-bottom: 40px;
+  border: 2px solid #ffd233;
+  margin: 0 5.333vw;
+}
+
+.total_price_checkbox{
+  padding: 38px 0;
+}
+
+.total_title{
+ font-size: clamp(16px,3vw,24px);
+  color: #7f5539;
+  margin-bottom: 20px;
+}
+
+.total_price_checkbox span{
+ font-size: clamp(16px,3vw,24px);
+ color: #bf0000;
+}
+
+.total_price_checkbox .anchor_box{
+  background-color: #bf0000;
+}
+
+.button {
+  width: 42.666vw;
+  font-family: 'Noto Sans JP';
+  font-size: clamp(12px, 2vw, 20px);
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  padding: 12px 8.27vw;
+  background: #bf0000;
+  color: #ffffff;
+  transition: .3s;
+  border: 1px solid #bf0000;
+}
+
+.button:hover {
+  color: #bf0000;
+  /* 背景色     */
+  background: #ffffff;
+  /* 文字色     */
+}
+
+.continue_box{
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.continue_btn {
+  width: 42.666vw;
+  font-family: 'Noto Sans JP';
+  font-size: clamp(12px, 2vw, 20px);
+  text-align: center;
+  cursor: pointer;
+  padding: 12px 8.27vw;
+  background: #7f5539;
+  color: #ffffff;
+  transition: .3s;
+  border: 1px solid #7f5539;
+}
+
+.continue_btn:hover {
+  color: #7f5539;
+  /* 背景色     */
+  background: #ffffff;
+  /* 文字色     */
+}
