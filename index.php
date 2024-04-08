@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -174,15 +173,15 @@
           echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
           <p><i class="fa-regular fa-heart"></i></p>';
           echo '</div>';
+
+          echo '<form action="cart-input.php">';
           echo '<a href="cart-show.php"><div class="button_area"><input type="submit" method="post" value="カートに入れる" 
           class="button"></div></a>';
-          echo '<form action="cart-input.php">';
           echo '<input type="hidden" name="name" value="', $row['name'], '">';
           echo '<input type="hidden" name="price" value="', $row['price'], '">';
           echo '<input type="hidden" name="id" value="', $row['id'], '">';
           echo '<input type="hidden" name="count" value="1">';
           echo '</form>';
-          
         }
         ?>
       </div>
@@ -201,9 +200,10 @@
           echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
           <p><i class="fa-regular fa-heart"></i></p>';
           echo '</div>';
+
+          echo '<form action="cart-input.php">';
           echo '<div class="button_area"><input type="submit" method="post" value="カートに入れる" 
           class="button"></div>';
-          echo '<form action="cart-input.php">';
           echo '<input type="hidden" name="name" value="', $row['name'], '">';
           echo '<input type="hidden" name="price" value="', $row['price'], '">';
           echo '<input type="hidden" name="id" value="', $row['id'], '">';
@@ -228,9 +228,10 @@
           echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
           <p><i class="fa-regular fa-heart"></i></p>';
           echo '</div>';
+
+          echo '<form action="cart-input.php">';
           echo '<div class="button_area"><input type="submit" method="post" value="カートに入れる" 
           class="button"></div>';
-          echo '<form action="cart-input.php">';
           echo '<input type="hidden" name="name" value="', $row['name'], '">';
           echo '<input type="hidden" name="price" value="', $row['price'], '">';
           echo '<input type="hidden" name="id" value="', $row['id'], '">';
@@ -255,9 +256,10 @@
           echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
           <p><i class="fa-regular fa-heart"></i></p>';
           echo '</div>';
+
+          echo '<form action="cart-input.php">';
           echo '<div class="button_area"><input type="submit" method="post" value="カートに入れる" 
           class="button"></div>';
-          echo '<form action="cart-input.php">';
           echo '<input type="hidden" name="name" value="', $row['name'], '">';
           echo '<input type="hidden" name="price" value="', $row['price'], '">';
           echo '<input type="hidden" name="id" value="', $row['id'], '">';
@@ -282,9 +284,10 @@
           echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
           <p><i class="fa-regular fa-heart"></i></p>';
           echo '</div>';
+
+          echo '<form action="cart-input.php">';
           echo '<div class="button_area"><input type="submit" method="post" value="カートに入れる" 
           class="button"></div>';
-          echo '<form action="cart-input.php">';
           echo '<input type="hidden" name="name" value="', $row['name'], '">';
           echo '<input type="hidden" name="price" value="', $row['price'], '">';
           echo '<input type="hidden" name="id" value="', $row['id'], '">';
@@ -309,9 +312,10 @@
           echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
           <p><i class="fa-regular fa-heart"></i></p>';
           echo '</div>';
+
+          echo '<form action="cart-input.php">';
           echo '<div class="button_area"><input type="submit" method="post" value="カートに入れる" 
           class="button"></div>';
-          echo '<form action="cart-input.php">';
           echo '<input type="hidden" name="name" value="', $row['name'], '">';
           echo '<input type="hidden" name="price" value="', $row['price'], '">';
           echo '<input type="hidden" name="id" value="', $row['id'], '">';
