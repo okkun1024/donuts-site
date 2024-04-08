@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!-- サーバーの登録商品データを読み取る -->
 
 <?php
@@ -23,29 +20,25 @@ if (!empty($_SESSION['product'])) {
         //合計金額
         $total += $subtotal;
 
-
         $id_number=intval($id);
-
 
         echo <<< END
 <div id="merchandise">
-        <a href="detail-1.php?id={$id}" id="img_link"><img src="common/images/product_{$id}.jpg" alt="商品画像"></a>
-        
-        
+        <img src="common/images/product_{$id}.jpg" alt="商品画像">
+    
         <div id="detail">
-        <a href="detail-1.php?id={$id}" id="name_link"><p id="name">{$product['name']}</p></a>
+            <p id="name">{$product['name']}</p>
 
             <div id="price">
-            <a href="detail-1.php?id={$id}" id="price_link"><p id="price">税込￥{$product['price']}</p></a>
+                <p id="price">税込￥{$product['price']}</p>
                 <p  id="count">個数 {$product['count']}個</p>
             </div>
             <div id="delete">
-                <a href="cart-delete.php?id={$id_number}" id="delete">削除する</a>
+                <a href="cart-delete.php?id={$id_number}">削除する</a>
             </div>
         </div>
 </div>
 END;
-
 
     }
 
