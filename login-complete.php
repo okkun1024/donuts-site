@@ -11,35 +11,7 @@
   <link rel="stylesheet" href="common/css/reset.css">
   <!-- 必要ならば下記のCSSを追加して -->
   <link rel="stylesheet" href="common/css/common.css">
-  <style>
-    .log-comp h1{
-      text-align: center;
-      margin:32px 0 60px 0 ;
-      color:#7F5539;
-    } 
-    .log-comp div{
-      margin: 0 auto;
-      border: 2px solid #E8C2CA;
-      width:89%;
-      padding: 36px 0 36px 0;
-    }
-    .log-comp div p{
-      text-align: center;
-      color:#7F5539;
-    }
-    .relog{
-      width:89%;
-      margin: 0 auto;
-    }
-    .log-comp p a{
-      display: block;
-      text-align: right;
-      margin-top:24px;
-      margin-bottom:80px;
-      text-decoration: underline;
-      color:#7F5539;
-    }
-  </style>
+  <link rel="stylesheet" href="common/css/login,logout.css">
   <!-- タイトルここ -->
   <title>ログイン完了画面</title>
 </head>

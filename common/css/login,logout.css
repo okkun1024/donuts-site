@@ -1,0 +1,142 @@
+body{
+    font-family: 'Noto Sans JP';
+  }
+
+.former {
+    margin: auto;
+    border: 2px solid #E8C2CA;
+    width: 89%;
+  }
+  .former p{
+    margin:20px 0 4px 4%;
+    font-size: 12px;
+    color:#7F5539;
+  }
+  .login-inp-h1{
+    margin:32px 0 60px 0; 
+    text-align: center;
+    color:#7F5539;
+  }
+  .former input {
+    display: block;
+    margin: auto;
+    width:90%;
+  }
+  .former input[type=submit]{
+    width:200px;
+    padding:12px;
+    border-style: none;
+    background-color: #7F5539;
+    font-size: 16px;
+    color:white;
+    margin-top:40px;
+    margin-bottom:20px;
+  }
+  .relog{
+    width:95%;
+  }
+  .relog a{
+    display: block;
+    text-align: right;
+    margin-top:24px;
+    margin-bottom:80px;
+    text-decoration: underline;
+    color:#7F5539;
+  }
+
+
+  /* login complete */
+
+  .log-comp h1{
+    text-align: center;
+    margin:32px 0 60px 0 ;
+    color:#7F5539;
+  } 
+  .log-comp div{
+    margin: 0 auto;
+    border: 2px solid #E8C2CA;
+    width:89%;
+    padding: 36px 0 36px 0;
+  }
+  .log-comp div p{
+    text-align: center;
+    color:#7F5539;
+  }
+  .relog{
+    width:89%;
+    margin: 0 auto;
+  }
+  .log-comp p a{
+    display: block;
+    text-align: right;
+    margin-top:24px;
+    margin-bottom:80px;
+    text-decoration: underline;
+    color:#7F5539;
+  }
+
+  /* logout-input */
+
+
+    .logout-inp-h1{
+      text-align: center;
+      margin:32px 0 60px 0 ;
+      color:#7F5539;
+    }
+    .logout-p{
+      text-align: center;
+      margin-bottom: 20px;
+      color:#7F5539;
+    }
+    .logout-div{
+      margin: 0 auto;
+      border: 2px solid #E8C2CA;
+      width:89%;
+      padding: 20px 0 20px 0;
+      margin-bottom:80px;
+    }
+    .logout-div2{
+      width:53%;
+      padding:23px 0;
+      margin: auto;
+      background-color: #7F5539;
+
+    }
+    .logout-a{
+      display: block;
+      text-align: center;
+      color: white;
+      
+    }
+
+    /* logout complete */
+    .logout-wrpper h1{
+        text-align: center;
+        margin:32px 0 60px 0 ;
+        color: #7F5539;
+      }
+      .logout-wrpper div{
+        margin: 0 auto;
+        border: 2px solid #E8C2CA;
+        width:89%;
+        padding: 36px 0 36px 0;
+        margin-top:60px
+      }
+      .logout-wrpper div p{
+        text-align: center;
+      }
+      .relog{
+        width:89%;
+        margin: 0 auto;
+      }
+      .logout-wrpper p a{
+        display: block;
+        text-align: right;
+        margin-top:24px;
+        margin-bottom:80px;
+        text-decoration: underline;
+        color: #7F5539;
+      }
+      .else-div{
+        margin-top: 36px;
+      }

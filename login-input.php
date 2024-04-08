@@ -11,51 +11,7 @@
   <link rel="stylesheet" href="common/css/reset.css">
   <!-- 必要ならば下記のCSSを追加して -->
   <link rel="stylesheet" href="common/css/common.css">
-  <style>
-    .former {
-      margin: auto;
-      border: 2px solid #E8C2CA;
-      width: 89%;
-    }
-    .former p{
-      margin:20px 0 4px 4%;
-      font-size: 12px;
-      color:#7F5539;
-    }
-    .login-inp-h1{
-      margin:32px 0 60px 0; 
-      text-align: center;
-      color:#7F5539;
-    }
-    .former input {
-      display: block;
-      margin: auto;
-      width:90%;
-    }
-    .former input[type=submit]{
-      width:200px;
-      padding:12px;
-      border-style: none;
-      background-color: #7F5539;
-      font-size: 16px;
-      color:white;
-      margin-top:40px;
-      margin-bottom:20px;
-    }
-    .relog{
-      width:95%;
-    }
-    .relog a{
-      display: block;
-      text-align: right;
-      margin-top:24px;
-      margin-bottom:80px;
-      text-decoration: underline;
-      color:#7F5539;
-      
-    }
-    
-  </style>
+  <link rel="stylesheet" href="common/css/login,logout.css">
   <!-- タイトルここ -->
   <title>ログイン-入力ページ</title>
 </head>
