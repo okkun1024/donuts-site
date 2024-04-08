@@ -167,7 +167,7 @@
         foreach ($pdo->query('select * from product where id = 1') as $row) {
           $formattedPrice = number_format($row['price']);
 
-          echo '<a href="detail-', $row['category'], '.php">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像"></a>';
+          echo '<a href="detail-', $row['category'], '.php?id=',$row['id'],'">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像"></a>';
           echo '<p class="product_name">', $row['name'], '</p>';
           echo '<div class="price_container">';
           echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
@@ -194,7 +194,7 @@
 
         foreach ($pdo->query('select * from product where id = 7') as $row) {
           $formattedPrice = number_format($row['price']);
-          echo '<a href="detail-', $row['category'], '">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像"></a>';
+          echo '<a href="detail-', $row['category'], '.php?id=',$row['id'],'">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像"></a>';
           echo '<p class="product_name">', $row['name'], '</p>';
           echo '<div class="price_container">';
           echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
@@ -222,7 +222,7 @@
         foreach ($pdo->query('select * from product where id = 8') as $row) {
           $formattedPrice = number_format($row['price']);
 
-          echo '<a href="detail-', $row['category'], '">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像"></a>';
+          echo '<a href="detail-', $row['category'], '.php?id=',$row['id'],'">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像"></a>';
           echo '<p class="product_name">', $row['name'], '</p>';
           echo '<div class="price_container">';
           echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
@@ -250,7 +250,7 @@
         foreach ($pdo->query('select * from product where id = 2') as $row) {
           $formattedPrice = number_format($row['price']);
 
-          echo '<a href="detail-', $row['category'], '">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像"></a>';
+          echo '<a href="detail-', $row['category'], '.php?id=',$row['id'],'">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像"></a>';
           echo '<p class="product_name">', $row['name'], '</p>';
           echo '<div class="price_container">';
           echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
@@ -278,7 +278,7 @@
         foreach ($pdo->query('select * from product where id = 9') as $row) {
           $formattedPrice = number_format($row['price']);
 
-          echo '<a href="detail-', $row['category'], '">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像"></a>';
+          echo '<a href="detail-', $row['category'], '.php?id=',$row['id'],'">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像"></a>';
           echo '<p class="product_name">', $row['name'], '</p>';
           echo '<div class="price_container">';
           echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
@@ -306,7 +306,7 @@
         foreach ($pdo->query('select * from product where id = 6') as $row) {
           $formattedPrice = number_format($row['price']);
 
-          echo '<a href="detail-', $row['category'], '">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像"></a>';
+          echo '<a href="detail-', $row['category'], '.php?id=',$row['id'],'">', '<img src="common/images/product_', $row['id'], '.jpg" alt="', $row['name'], '画像"></a>';
           echo '<p class="product_name">', $row['name'], '</p>';
           echo '<div class="price_container">';
           echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
