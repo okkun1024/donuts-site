@@ -46,13 +46,16 @@ END;
 
     echo <<< END
 
-<div class="total_price">
-        <p>ご注文合計：税込&yen;{$totalPrice}</p>
-    
-       <p><a href="purchase-confirm.php">ご購入確認へ進む</a></p>
-</div>
-   
-    <p class="continu_btn"> <a  href="product.php">買い物を続ける</a></p>
+    <div class="total_price">
+    <div class="total_price_checkbox">    
+        <p class="total_title">ご注文合計：<span>税込&yen;{$totalPrice}</span></p>    
+        <button onclick="location.href='purchase-confirm.php'" class="button">ご購入確認へ進む</button>
+    </div>
+    </div>
+    <div class="continue_box">
+        <button onclick="location.href='product.php'" class="continue_btn">買い物を続ける</button>
+    </div>
+
 END;
 } else {
 
