@@ -363,8 +363,8 @@ footer ul {
   padding-top: 16px;
 }
 
-.footer_list .footee_list_1,
-.footer_list .footee_list_2 {
+.footer_list .footer_list_1,
+.footer_list .footer_list_2 {
   margin-bottom: 24px;
 }
 
@@ -580,8 +580,8 @@ footer p {
     margin-bottom: 0px;
   }
 
-  .footee_list_2,
-  .footee_list_3 {
+  .footer_list_2,
+  .footer_list_3 {
     margin-left: 62px;
   }
 

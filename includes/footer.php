@@ -17,9 +17,9 @@
 <body>
 <footer>
   <ul class="footer_list">
-    <li class="footee_list_1"><a href="#">よくある質問</a></li>
-    <li class="footee_list_2"><a href="#">お問い合わせ</a></li>
-    <li class="footee_list_3"><a href="#">当サイトのポリシー</a></li> 
+    <li class="footer_list_1"><a href="#">よくある質問</a></li>
+    <li class="footer_list_2"><a href="#">お問い合わせ</a></li>
+    <li class="footer_list_3"><a href="#">当サイトのポリシー</a></li> 
   </ul>
 
   <div class="footer_list_logo">

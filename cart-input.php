@@ -16,9 +16,9 @@ session_start();
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="common/css/reset.css">
-  <link rel="stylesheet" href="common/css/cart.css">
+  <link rel="stylesheet" href="common/css/cart-input.css">
 
-  <title>Cart-Product list page</title>
+  <title>Cart-input</title>
 
 </head>
 
@@ -29,7 +29,7 @@ session_start();
 
 <main>
 
-<ul>
+<ul class=cart_pankuzu>
 <li><a href="index.php">top</a></li>
 <li>></li>
 <li>カート</li>
