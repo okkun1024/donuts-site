@@ -98,7 +98,7 @@
           echo '<p class="product_name">', $row['name'], '</p>';
           echo '<div class="price_container">';
           echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
-          <p><i class="fa-regular fa-heart"></i></p>';
+          <p><i  id="splash_icon" class="fa-regular fa-heart" onclick="changeColor()"></i></p>';
           echo '</div>';
 
           echo '<form action="cart-input.php">';
@@ -125,7 +125,7 @@
           echo '<p class="product_name">', $row['name'], '</p>';
           echo '<div class="price_container">';
           echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
-          <p><i class="fa-regular fa-heart"></i></p>';
+         <div id="switch_btn"></div>';
           echo '</div>';
 
           echo '<form action="cart-input.php">';
@@ -261,6 +261,7 @@
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="common/js/animation.js"></script>
+  <script src="common/js/favorite.js"></script>
 </body>
 
 </html>
