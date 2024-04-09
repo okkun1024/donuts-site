@@ -65,12 +65,21 @@
                 </ul>
             </div>
         </nav>
+
+
+        <?php
+        $char="";
+        if(isset($_POST['keyword'])){
+            $char= htmlspecialchars($_POST['keyword']);
+        }
+        ?>
+
         <div class="hedder_search_box">
-            <form action="#" class="search_form_1">
-                <button type="submit" aria-label="検索"></button>
+            <form action="product.php" class="search_form_1" method="post" >
+                <button type="submit" aria-label="検索" ></button>
 
                 <label>
-                    <input type="text">
+                    <input type="text" name="keyword" value="<?php echo $char; ?>">
                 </label>
             </form>
         </div>
@@ -78,7 +87,7 @@
     </header>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="common/js/common.js"></script>
-    
+
 </body>
 
 </html>
