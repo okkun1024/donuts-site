@@ -302,12 +302,103 @@ body {
     text-align: right;
     color: #fff;
     cursor: pointer;
+
+}
+
+#switch_btn {
+    margin-left: 10.93vw;
+    width: 20px;
+    height: 20px;
+    background: url(../images/favorite_icon_empty.svg) no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+#switch_btn2 {
+    margin-left: 10.93vw;
+    width: 20px;
+    height: 20px;
+    background: url(../images/favorite_icon_empty.svg) no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+#switch_btn3 {
+    margin-left: 10.93vw;
+    width: 20px;
+    height: 20px;
+    background: url(../images/favorite_icon_empty.svg) no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+#switch_btn4 {
+    margin-left: 10.93vw;
+    width: 20px;
+    height: 20px;
+    background: url(../images/favorite_icon_empty.svg) no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+#switch_btn5 {
+    margin-left: 10.93vw;
+    width: 20px;
+    height: 20px;
+    background: url(../images/favorite_icon_empty.svg) no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+#switch_btn6 {
+    margin-left: 10.93vw;
+    width: 20px;
+    height: 20px;
+    background: url(../images/favorite_icon_empty.svg) no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+#switch_btn2.on_switch {
+    background: url(../images/favorite_icon_fill.svg) no-repeat;
+    background-size: 100% 100%;
     animation: anim-scale 0.5s ease-out;
     transform-origin: 50% 50%;
 }
 
-.red_icon {
-    color: #bf0000;
+#switch_btn3.on_switch {
+    background: url(../images/favorite_icon_fill.svg) no-repeat;
+    background-size: 100% 100%;
+    animation: anim-scale 0.5s ease-out;
+    transform-origin: 50% 50%;
+}
+
+#switch_btn4.on_switch {
+    background: url(../images/favorite_icon_fill.svg) no-repeat;
+    background-size: 100% 100%;
+    animation: anim-scale 0.5s ease-out;
+    transform-origin: 50% 50%;
+}
+
+#switch_btn5.on_switch {
+    background: url(../images/favorite_icon_fill.svg) no-repeat;
+    background-size: 100% 100%;
+    animation: anim-scale 0.5s ease-out;
+    transform-origin: 50% 50%;
+}
+
+#switch_btn6.on_switch {
+    background: url(../images/favorite_icon_fill.svg) no-repeat;
+    background-size: 100% 100%;
+    animation: anim-scale 0.5s ease-out;
+    transform-origin: 50% 50%;
+}
+
+#switch_btn.on_switch {
+    background: url(../images/favorite_icon_fill.svg) no-repeat;
+    background-size: 100% 100%;
+    animation: anim-scale 0.5s ease-out;
+    transform-origin: 50% 50%;
 }
 
 @keyframes anim-scale {
@@ -579,5 +670,51 @@ body {
 
     .button_area {
         text-align: center;
+    }
+
+    .product_price {
+        width: 10.468vw;
+    }
+
+    #switch_btn {
+        margin-left: 11.2vw;
+        text-align: right;
+        width: 24px;
+        height: 24px;
+    }
+
+    #switch_btn2 {
+        margin-left: 11.2vw;
+        text-align: right;
+        width: 24px;
+        height: 24px;
+    }
+
+    #switch_btn3 {
+        margin-left: 11.2vw;
+        text-align: right;
+        width: 24px;
+        height: 24px;
+    }
+
+    #switch_btn4 {
+        margin-left: 11.2vw;
+        text-align: right;
+        width: 24px;
+        height: 24px;
+    }
+
+    #switch_btn5 {
+        margin-left: 11.2vw;
+        text-align: right;
+        width: 24px;
+        height: 24px;
+    }
+
+    #switch_btn6 {
+        margin-left: 11.2vw;
+        text-align: right;
+        width: 24px;
+        height: 24px;
     }
 }

@@ -98,7 +98,7 @@
           echo '<p class="product_name">', $row['name'], '</p>';
           echo '<div class="price_container">';
           echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
-          <p><i  id="splash_icon" class="fa-regular fa-heart" onclick="changeColor()"></i></p>';
+          <div id="switch_btn"></div>';
           echo '</div>';
 
           echo '<form action="cart-input.php">';
@@ -125,9 +125,8 @@
           echo '<p class="product_name">', $row['name'], '</p>';
           echo '<div class="price_container">';
           echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
-         <div id="switch_btn"></div>';
+         <div id="switch_btn2"></div>';
           echo '</div>';
-
           echo '<form action="cart-input.php">';
           echo '<div class="button_area"><input type="submit" method="post" value="カートに入れる" 
           class="button"></div>';
@@ -153,7 +152,7 @@
           echo '<p class="product_name">', $row['name'], '</p>';
           echo '<div class="price_container">';
           echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
-          <p><i class="fa-regular fa-heart"></i></p>';
+          <div id="switch_btn3"></div>';
           echo '</div>';
 
           echo '<form action="cart-input.php">';
@@ -181,7 +180,7 @@
           echo '<p class="product_name">', $row['name'], '</p>';
           echo '<div class="price_container">';
           echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
-          <p><i class="fa-regular fa-heart"></i></p>';
+          <div id="switch_btn4"></div>';
           echo '</div>';
 
           echo '<form action="cart-input.php">';
@@ -209,7 +208,7 @@
           echo '<p class="product_name">', $row['name'], '</p>';
           echo '<div class="price_container">';
           echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
-          <p><i class="fa-regular fa-heart"></i></p>';
+          <div id="switch_btn5"></div>';
           echo '</div>';
 
           echo '<form action="cart-input.php">';
@@ -237,7 +236,7 @@
           echo '<p class="product_name">', $row['name'], '</p>';
           echo '<div class="price_container">';
           echo '<p class="product_price">税込 &yen;', $formattedPrice, '</p>
-          <p><i class="fa-regular fa-heart"></i></p>';
+          <div id="switch_btn6"></div>';
           echo '</div>';
 
           echo '<form action="cart-input.php">';
