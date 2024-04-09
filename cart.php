@@ -63,5 +63,4 @@ END;
     echo '<p class="cart_none">カートに商品がありません。</p>';
 }
 
-
 ?>

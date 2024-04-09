@@ -5,6 +5,7 @@ session_start();
 <?php require 'includes/header.php' ?>
 
 
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -98,7 +99,6 @@ echo '<hr>';
   echo '<main>';
 
 
-  // var_dump ($_REQUEST['id']);
   ?>
 
 
