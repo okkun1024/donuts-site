@@ -119,3 +119,125 @@ body {
     background: #ffffff;
     /* 文字色     */
 }
+
+@media screen and (min-width: 768px) {
+
+    .item_container {
+        display: flex;
+        padding-top: 80px;
+        padding-bottom: 160px;
+    }
+
+    .item_container img {
+        padding: 0;
+        width: 39.531vw;
+        margin-left: 11.896vw;
+    }
+
+    .flex_box {
+        width: 31.844vw;
+        margin-left: 3.221vw;
+        margin-right: 0px;
+    }
+
+    .product_name,
+    .product_description,
+    .product_price {
+        font-size: clamp(20px, 2vw, 24px);
+    }
+
+    .product_name {
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .product_description {
+        line-height: 1.6;
+        padding-bottom: 20px;
+    }
+
+    .product_price {
+        padding-top: 60px;
+        margin-right: 12px;
+        width: 10.468vw;
+        color: #bf0000;
+    }
+
+    .price_area i {
+        padding-top: 60px;
+        text-align: left;
+        font-size: clamp(20px, 2vw, 24px);
+        color: #bf0000;
+    }
+
+    .count_box {
+        margin-top: 20px;
+        width: 80px;
+        height: 52px;
+        vertical-align: bottom;
+    }
+
+    .count_cart span {
+        font-size: clamp(20px, 2vw, 24px);
+        margin-top: 40px;
+        vertical-align: bottom;
+        margin-right: 20px;
+        margin-left: 8px;
+    }
+
+    .count_area {
+        width: 31.844vw;
+        display: flex;
+    }
+
+    .product_name:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -20px;
+        display: inline-block;
+        width: 33.675vw;
+        height: 1px;
+        -moz-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translate(-50%);
+        background-color: #ede0d4;
+    }
+
+    .product_description:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -20px;
+        display: inline-block;
+        width: 33.675vw;
+        height: 1px;
+        -moz-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translate(-50%);
+        background-color: #ede0d4;
+    }
+
+    .button {
+        width: 19.034vw;
+        font-family: 'Noto Sans JP';
+        font-size: clamp(12px, 2vw, 20px);
+        text-align: center;
+        cursor: pointer;
+        padding: 16px 0;
+        background: #7f5539;
+        color: #ffffff;
+        transition: .3s;
+        border: 1px solid #7f5539;
+        vertical-align: text-top;
+    }
+
+    .button:hover {
+        color: #7f5539;
+        /* 背景色     */
+        background: #ffffff;
+        /* 文字色     */
+    }
+}
