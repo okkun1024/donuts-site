@@ -22,8 +22,8 @@
 
   if (isset($_SESSION['customer'])) {
     echo <<<END
-    <h1 class="purchaseHone">ご購入確認</h1>
-    <h2 class="purchaseHtwo">ご購入商品</h2>
+    <h1 class="purchase_h1">ご購入確認</h1>
+    <h2 class="purchase_h2">ご購入商品</h2>
 
     END;
     foreach ($_SESSION['product'] as $id => $product) {
@@ -34,7 +34,7 @@
       $format_total = number_format($total);
 
       echo <<<END
-      <div class="item box">
+      <div class="item_box">
         <div class="item_name">
           <p class="divbox_1">商品名</p>
           <p class="divbox_2">{$product['name']}<p>
@@ -52,13 +52,13 @@
     }
     echo <<<END
     <div class="total_box">
-      <p>合計</p>
-      <p class="borderTleft">税込&yen;{$format_total}</p>
+      <p class="divbox_1">合計</p>
+      <p class="divbox_2"">税込&yen;{$format_total}</p>
     </div>
 
     
 
-    <h2>お届け先</h2>
+    <h2 class="purchase_h2">お届け先</h2>
     <div class="address_box">
      <div class="customer_name">
       <p class="divbox_1">お名前</p>
@@ -79,7 +79,7 @@
     $sql = $pdo->prepare('select * from card where id = ?');
     $sql->execute([$id]);
     if (!empty($sql->fetchAll())) {
-      echo '<h2 class="purchaseHtwo">お支払い方法</h2>';
+      echo '<h2 class="purchase_h2">お支払い方法</h2>';
       $sql = $pdo->prepare('select * from card where id = ?');
       $sql->execute([$id]);
       foreach ($sql as $row) {
@@ -87,7 +87,6 @@
         $number_count = mb_strlen($card_number);
        
       echo <<<END
-      <h2>お支払方法</h2>
       <div class="cash_box">
         <div class="payment_method">
           <p class="divbox_1">お支払い</p>
@@ -99,19 +98,22 @@
         </div>
        <div class="card_number">
           <p class="divbox_1">カード番号</p>
-          <p class="divbox_2">{substr($card_number, 0, 6)}●●●●●●●●●</p>
+      END;
+
+      echo  '<p class="divbox_2">',substr($card_number, 0, 6),'・・・・・・・</p>';
+      echo <<<END
        </div>
       </div>
       END;
       }
       echo <<<END
-        <div>
-        <a href="purchase-complete.php" style="text-decoration:none;" style="color:white;" class="subBtn">ご購入を確定する</a>
+        <div class="complete_box_btn">
+        <button onclick="location.href='purchase-complete.php'" class="complete_btn">ご購入を確定する</button>
         </div>
       END;
       }else{
         echo <<<END
-        <h2 class="purchaseHtwo">お支払い方法</h2>
+        <h2 class="purchase_h2">お支払い方法</h2>
         <div clss="purchaseD">
         <p class="purchaseP">お支払方法が指定されていません。クレジットカード情報を登録してください。</p>
         <a href="card-input.php" class="subBtn">カード情報を登録する</a>
@@ -201,7 +203,7 @@
     <p class="divbox_2">ドーナツ太郎</p>
   </div>
   <div class="customer_address">
-    <p class="divbox_1">住所</p>
+    <p clapurchaseHtwoss="divbox_1">住所</p>
     <p class="divbox_2">千葉県〇〇市1-1</p>
   </div>
 </div>
