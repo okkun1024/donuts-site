@@ -100,23 +100,23 @@ body {
 }
 
 .introduce_container h2 {
-    font-size: clamp(24px, 6vw, 40px);
+    font-size: clamp(24px, 3.5vw, 30px);
     padding-top: 100px;
     padding-bottom: 20px;
 }
 
 .introduce_container h3 {
-    font-size: clamp(16px, 4vw, 32px);
+    font-size: clamp(16px, 3vw, 20px);
     padding-bottom: 60px;
 }
 
 .philosophy_title {
-    font-size: clamp(20px, 5vw, 36px);
+    font-size: clamp(20px, 3vw, 24px);
     padding-bottom: 12px;
 }
 
 .philosophy_explain {
-    font-size: clamp(16px, 4vw, 32px);
+    font-size: clamp(16px, 2.5vw, 20px);
     padding-bottom: 300px;
 }
 
@@ -208,7 +208,7 @@ body {
 
 #ranking_section h2 {
     text-align: center;
-    font-size: clamp(20px, 5vw, 36px);
+    font-size: clamp(20px, 3vw, 26px);
     padding-top: 32px;
     margin-bottom: 80px;
     position: relative;
@@ -241,7 +241,7 @@ body {
     line-height: 35px;
     text-align: center;
     background: #ffd233;
-    font-size: 16px;
+    font-size: clamp(16px, 2.5vw, 20px);
     margin: 0 auto 20px;
 }
 
@@ -251,13 +251,13 @@ body {
     line-height: 35px;
     text-align: center;
     background: #e8c2ca;
-    font-size: clamp(16px, 4vw, 24px);
+    font-size: clamp(16px, 2.5vw, 20px);
     margin: 0 auto 20px;
 }
 
 .product_name,
 .product_price {
-    font-size: clamp(16px, 3vw, 24px);
+    font-size: clamp(16px, 2.5vw, 20px);
     margin-bottom: 22px;
 }
 
@@ -393,7 +393,7 @@ body {
 
     .summer_citrus {
         font-family: 'Noto Serif JP';
-        font-size: 36px;
+        font-size: clamp(20px, 2.5vw, 36px);
         /* font-weight: bold; */
         color: #fff;
         position: absolute;
@@ -403,7 +403,7 @@ body {
 
     .product_promotion p {
         font-family: 'Noto Serif JP';
-        font-size: 36px;
+        font-size: clamp(20px, 2.5vw, 36px);
         /* font-weight: bold; */
         color: #fff;
         position: absolute;
@@ -413,7 +413,7 @@ body {
 
     .item_list p {
         font-family: 'Noto Serif JP';
-        font-size: 36px;
+        font-size: clamp(20px, 2.5vw, 36px);
         /* font-weight: bold; */
         color: #7F5539;
         position: absolute;
@@ -437,7 +437,7 @@ body {
     }
 
     .introduce_container h2 {
-        font-size: 36px;
+        font-size: clamp(30px, 2.5vw, 36px);
         padding-top: 200px;
         padding-bottom: 20px;
     }
@@ -459,7 +459,7 @@ body {
 
     #ranking_section h2 {
         text-align: center;
-        font-size: 32px;
+        font-size: clamp(26px, 2vw, 32px);
         padding-top: 80px;
         margin-bottom: 92px;
         position: relative;
@@ -491,7 +491,7 @@ body {
         line-height: 4.392vw;
         text-align: center;
         background: #ffd233;
-        font-size: 16px;
+        font-size: clamp(20px, 2vw, 24px);
         margin: 0 auto 20px;
     }
 
@@ -501,7 +501,7 @@ body {
         line-height: 4.392vw;
         text-align: center;
         background: #e8c2ca;
-        font-size: clamp(16px, 4vw, 24px);
+        font-size: clamp(20px, 2vw, 24px);
         margin: 0 auto 20px;
     }
 
