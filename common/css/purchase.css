@@ -1,58 +1,109 @@
 @charset "UTF-8";
 
+
 body {
   font-family: 'Noto Sans JP';
 }
 
-.purchaseHone {
-  /* 見出しの調整・変更 */
+img{
+  width: 16vw;
+  height: 13.333vw;
+  max-width: 100px;
+  max-height: 83.333px;
+  margin-top: 3.2vw;
+  margin-left: 3.2vw;
+}
+
+.purchase_h1 {
+  text-align: center;
+  font-size: clamp(20px, 4vw, 32px);
+  color: #7f5539;
   margin-top: 60px;
   margin-bottom: 72px;
-  text-align: center;
-  font-size: 20px;
-  color: #7F5539;
 }
 
-.purchaseHtwo {
+.purchase_h2 {
   text-align: center;
-  font-size: 12px;
-  color: #7F5539;
+  font-size: clamp(12px, 2vw, 20px);
+  font-weight: 400;
+  color: #7f5539;
+  padding-bottom: 20px;
+  margin-left: 5.333vw;
+  margin-right: 5.333vw;
+  margin-bottom: 4px;
+}
+
+.item_box,
+.total_box,
+.address_box,
+.cash_box {
+  font-size: clamp(12px, 2vw, 20px);
+  padding: 4px 6.4vw;
   margin-bottom: 20px;
+  border-top:1px solid #e8c2ca ;
+  border-bottom: 1px solid #e8c2ca;
+  margin-left: 5.333vw;
+  margin-right: 5.333vw;
+}
+
+.total_box,
+.item_name,
+.item_count,
+.item_total,
+.customer_name,
+.customer_address,
+.payment_method,
+.card_type,
+.card_number {
+  display: flex;
+  align-items:center;
 }
 
 
-.subBtn_area {
+.divbox_1 {
+  flex-basis: 17.125vw;
+}
+
+
+
+.divbox_2 {
+  flex-basis: 82.875vw;
+  border-left: 2px solid #e8c2ca;
+  padding-left: 3.2vw;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.item_name p,
+.item_count p,
+.item_total p,
+.customer_name p,
+.customer_address p,
+.payment_method p,
+.card_type p,
+.card_number p {
+  margin: 4px 0;
+}
+
+/* .pocket{
+  font-size: 5px;
+} */
+
+.complete_box_btn{
   text-align: center;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 80px;
+  
 }
-
-.subBtn {
-  font-size: clamp(16px, 3vw, 24px);
-  width: 53.333vw;
+.complete_btn{
+  width: 42.666vw;
+  font-family: 'Noto Sans JP';
+  font-size: clamp(12px, 2vw, 20px);
   text-align: center;
   cursor: pointer;
-  padding: 16px 9.6vw;
-  background: #7F5539;
-  color: #fff;
-  transition: 0.3s;
-  border: 1px solid #7F5539;
-}
-
-.subBtn:hover {
-  color: #7F5539;
-  background: #fff;
-}
-
-.table_area {
-  margin: 0 auto;
-}
-
-.tablePurchase {
-  width: 89.333vw;
-}
-
-.tablePurchase th {
-  text-align: left;
-  font-size: clamp(12px, 2vw, 20px);
+  padding: 12px 8.27vw;
+  background: #7f5539;
+  color: #ffffff;
+  transition: .3s;
+  border: 1px solid #7f5539;
 }
