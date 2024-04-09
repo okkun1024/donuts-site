@@ -428,16 +428,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #7F5539;
-    border-radius: 5px;
     width: 60px;
     height: 60px;
-    color: #fff;
     text-align: center;
-    text-transform: uppercase;
     text-decoration: none;
     font-size: 0.6rem;
     transition: all 0.3s;
+}
+
+#page_top a img {
+    width: 60px;
+    height: 100px;
 }
 
 #page_top a:hover {
@@ -448,7 +449,7 @@ body {
 #page_top {
     position: fixed;
     right: 10px;
-    bottom: 10px;
+    bottom: 50px;
     z-index: 2;
     /*はじめは非表示*/
     opacity: 0;

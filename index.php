@@ -34,7 +34,7 @@
   require 'includes/header.php';
   ?>
 
-  <p id="page_top"><a href="#">Page Top</a></p>
+  <p id="page_top"><a href="#"><img src="common/images/top_page_icon.svg" alt=""></a></p>
 
   <?php
   if (isset($_SESSION['customer'])) {
