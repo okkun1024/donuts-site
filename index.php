@@ -15,9 +15,6 @@
   <!-- 必要ならば下記のCSSを追加して -->
   <link rel="stylesheet" href="common/css/style.css">
   <link rel="stylesheet" href="common/css/common.css">
-  <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="common/js/animation.js"></script>
   <!-- タイトルここ -->
   <title>Document</title>
 </head>
@@ -83,77 +80,6 @@
       <p class="philosophy_explain">ドーナツでつながる</p>
     </div>
   </section>
-
-  <!-- <section id="ranking_section">
-    <h2 class="fadeUpTrigger">人気ランキング</h2>
-
-    <div class="items_container">
-      <div class="item fadeUpTrigger">
-        <div class="first_icon"><span>1</span></div>
-<a href="detail-1.php"><img src="common/images/product_1.jpg" alt=""></a>
-        <p class="product_name">CCドーナツ 当店オリジナル(5個入り)</p>
-        <div class="price_container">
-          <p class="product_price">税込 &yen;1,500円</p>
-          <p><i class="fa-regular fa-heart"></i></p>
-        </div>
-        <div class="button_area"><input type="submit" value="カートに入れる" class="button"></div>
-      </div>
-      <div class="item fadeUpTrigger">
-        <div class="rank_icon"><span>2</span></div>
-        <a href="#ranking_section"><img src="common/images/product_7.jpg" alt=""></a>
-        <p class="product_name">フルーツドーナツセット(12個入り)</p>
-        <div class="price_container">
-          <p class="product_price">税込 &yen;3,500円</p>
-          <p><i class="fa-regular fa-heart"></i></p>
-        </div>
-        <div class="button_area"><input type="submit" value="カートに入れる" class="button"></div>
-      </div>
-
-      <div class="item fadeUpTrigger">
-        <div class="rank_icon"><span>3</span></div>
-        <a href="#ranking_section"><img src="common/images/product_8.jpg"></a>
-        <p class="product_name">フルーツドーナツセット(14個入り)</p>
-        <div class="price_container">
-          <p class="product_price">税込 &yen;4,000円</p>
-          <p><i class="fa-regular fa-heart"></i></p>
-        </div>
-        <div class="button_area"><input type="submit" value="カートに入れる" class="button"></div>
-      </div>
-      <div class="item fadeUpTrigger">
-        <div class="rank_icon"><span>4</span></div>
-        <a href="#ranking_section"><img src="common/images/product_2.jpg" alt=""></a>
-        <p class="product_name">チョコレートデライト(5個入り)</p>
-        <div class="price_container">
-          <p class="product_price">税込 &yen;1,600円</p>
-          <p><i class="fa-regular fa-heart"></i></p>
-        </div>
-        <div class="button_area"><input type="submit" value="カートに入れる" class="button"></div>
-      </div>
-
-      <div class="item fadeUpTrigger">
-        <div class="rank_icon"><span>5</span></div>
-        <a href="#ranking_section"><img src="common/images/product_9.jpg" alt=""></a>
-        <p class="product_name">ベストセレクションボックス(4個入り)</p>
-        <div class="price_container">
-          <p class="product_price">税込 &yen;1,200円</p>
-          <p><i class="fa-regular fa-heart"></i></p>
-        </div>
-        <div class="button_area"><input type="submit" value="カートに入れる" class="button"></div>
-      </div>
-
-      <div class="item fadeUpTrigger">
-        <div class="rank_icon"><span>6</span></div>
-        <a href="#ranking_section"><img src="common/images/product_6.jpg" alt=""></a>
-        <p class="product_name">ストロベリークラッシュ(4個入り)</p>
-        <div class="price_container">
-          <p class="product_price">税込 &yen;1,800円</p>
-          <p><i class="fa-regular fa-heart"></i></p>
-        </div>
-        <div class="button_area"><input type="submit" value="カートに入れる" class="button"></div>
-      </div>
-    </div>
-
-  </section> -->
 
   <section id="ranking_section">
     <h2 class="fadeUpTrigger">人気ランキング</h2>
@@ -331,6 +257,10 @@
 
 
   <?php require 'includes/footer.php'; ?>
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="common/js/animation.js"></script>
 </body>
 
 </html>
