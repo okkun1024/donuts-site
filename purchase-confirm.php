@@ -117,45 +117,56 @@
 </html>
 
 
-<!-- echoで出力させたいHTML構造 -->
-<!-- <h1>ご購入確認</h1>
+<!-- HTML出力メモ
+
+<h1>ご購入確認</h1>
 
 <h2>ご購入商品</h2>
 <div class="item_box">
-    <div class="item_name">
-        <p class="divbox_1">商品名</p>
-        <p class="divbox_2">CCドーナツ 当店オリジナル (5個入り)</p>
-    </div>
-    <div class="item_count">
-        <p class="divbox_1">数量</p>
-        <p class="divbox_2">1個</p>
-    </div>
-    <div class="item_total">
-        <p class="divbox_1">小計</p>
-        <p class="divbox_2">税込 &yen;1,500</p>
-    </div>
+  <div class="item_name">
+    <p class="divbox_1">商品名</p>
+    <p class="divbox_2">CCドーナツ 当店オリジナル (5個入り)</p>
+  </div>
+  <div class="item_count">
+    <p class="divbox_1">数量</p>
+    <p class="divbox_2">1個</p>
+  </div>
+  <div class="item_total">
+    <p class="divbox_1">小計</p>
+    <p class="divbox_2">税込 &yen;1,500</p>
+  </div>
 </div>
 
 <div class="total_box">
-    <p class="divbox_1">合計</p>
-    <p class="divbox_2">税込 &yen;1,500</p>
+  <p class="divbox_1">合計</p>
+  <p class="divbox_2">税込 &yen;1,500</p>
 </div>
 
 <h2>お届け先</h2>
 <div class="address_box">
+  <div class="customer_name">
     <p class="divbox_1">お名前</p>
     <p class="divbox_2">ドーナツ太郎</p>
+  </div>
+  <div class="customer_address">
     <p class="divbox_1">住所</p>
     <p class="divbox_2">千葉県〇〇市1-1</p>
+  </div>
 </div>
 
 
 <h2>お支払方法</h2>
 <div class="cash_box">
+  <div class="payment_method">
     <p class="divbox_1">お支払い</p>
     <p class="divbox_2">クレジットカード</p>
+  </div>
+  <div class="card_type">
     <p class="divbox_1">カード種別</p>
     <p class="divbox_2">VISA</p>
+  </div>
+  <div class="card_number">
     <p class="divbox_1">カード番号</p>
     <p class="divbox_2">123456789101112</p>
+  </div>
 </div> -->
