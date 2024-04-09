@@ -39,6 +39,7 @@ require 'includes/header.php';
       // productテーブル内で部分一致するレコードを取得
       $sql = $pdo->prepare('select * from product where name like ?');
       $sql->execute(['%' . $_REQUEST['keyword'] . '%']);
+      
     } else {
       // セットされていない場合、入力値なし
       // productテーブルのすべてのレコードを取得
@@ -87,13 +88,24 @@ END;
     // product_boxの終了タグ
     echo '</div>';
 
-    echo '<h2 class="variety_title fadeUpTrigger">バラエティセット</h2>';
-    echo '<div class="product_box_2">';
-
     $counter2 = 0;
     // $stmt は PDOStatement オブジェクトと仮定
-    $sql = $pdo->query('select * from product');
+     // データベース接続
+     require 'includes/database.php';
 
+     // フォームの入力値がセットされているか判定
+     if (!empty($_REQUEST['keyword'])) {
+       // セットされている場合、入力値あり
+       // productテーブル内で部分一致するレコードを取得
+       $sql = $pdo->prepare('select * from product where name like ?');
+       $sql->execute(['%' . $_REQUEST['keyword'] . '%']);
+     } else {
+       // セットされていない場合、入力値なし
+       // productテーブルのすべてのレコードを取得
+       $sql = $pdo->query('select * from product'); 
+       echo '<h2 class="variety_title fadeUpTrigger">バラエティセット</h2>';
+     }
+        echo '<div class="product_box_2">';
     // PDOStatement オブジェクトからデータを配列として取得
     $results = $sql->fetchAll(PDO::FETCH_ASSOC);
 
