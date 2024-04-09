@@ -1,7 +1,12 @@
 @charset "UTF-8";
 
-h1 {
+body {
+    font-family: 'Noto Sans JP';
+}
+
+.purch_comp_h {
     text-align: center;
+    color: #7F5539;
 }
 
 .purch_comp_div {
@@ -10,17 +15,18 @@ h1 {
     margin-right: 11%;
     text-align: center;
     border: 2px solid #E8C2CA;
-    padding:20px 17px 20px 15px;
-    margin-top:72px;
-    margin-bottom:20px;
+    padding: 20px 17px 20px 15px;
+    margin-top: 72px;
+    margin-bottom: 20px;
 }
-.purch_textA{
-    font-size:12px;
+
+.purch_textA {
+    font-size: 12px;
     color: #333333;
 }
 
-.purch_textB{
-    font-size:12px;
+.purch_textB {
+    font-size: 12px;
     color: #7F5539;
     margin-top: 20px;
 }
@@ -31,15 +37,16 @@ h1 {
     margin-right: 11%;
     text-align: right;
 }
-.purch_a{
+
+.purch_a {
     color: #7F5539;
     display: block;
     text-decoration: underline;
     margin-bottom: 340px;
 }
 
-.main-logo{
-    margin:12px 0 0 12px;
-    width:60px;
-    height:50px;
-  }
+.main-logo {
+    margin: 12px 0 0 12px;
+    width: 60px;
+    height: 50px;
+}
