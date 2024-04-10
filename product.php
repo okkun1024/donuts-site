@@ -15,6 +15,7 @@ session_start();
   <link rel="stylesheet" href="common/css/reset.css">
   <!-- 必要ならば下記のCSSを追加して -->
   <link rel="stylesheet" href="common/css/product.css">
+  <link rel="stylesheet" href="common/css/favorite.css">
   <!-- タイトルここ -->
   <title>Document</title>
 </head>
@@ -129,7 +130,7 @@ END;
   <p class="product_name">{$row['name']}</p>
   <div class="price_container">
     <p class="product_price">税込 &yen;{$formattedPrice}</p>
-    <p><i class="fa-regular fa-heart"></i></p>
+    <div id="switch_btn{$id}"></div>
   </div>
   <form action="cart-input.php" method="post">
     <input type="hidden" name="id" value="{$id}">
@@ -151,6 +152,7 @@ END;
 
   <!-- javascript -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="common/js/favorite.js"></script>
   <script src="common/js/animation.js"></script>
 </body>
 
