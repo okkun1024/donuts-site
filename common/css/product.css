@@ -196,6 +196,7 @@ h2:before {
     align-items: center;
     width: 70px;
     background-color: #fff;
+    border: 1px solid #7F5539;
     border-radius: 10%;
     text-align: center;
     text-decoration: none;
