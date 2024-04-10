@@ -37,12 +37,12 @@
     $sql->execute([$_REQUEST['id']]);
     foreach ($sql as $row) {
       $formattedPrice = number_format($row['price']);
-      echo '<p><img alt="image" src="common/images/product_', $row['id'], '.jpg" class="detail_item_image"></p>';
-      echo '<div class="flex_box">';
+      echo '<p><img alt="image" src="common/images/product_', $row['id'], '.jpg" class="detail_item_image fade_up"></p>';
+      echo '<div class="flex_box fade_up">';
       echo '<p class="product_name">', $row['name'], '</p>';
       echo '<p class="product_description">', $row['description'];
       echo '</p>';
-      echo '<div class="price_area">';
+      echo '<div class="price_area fade_up">';
       echo '<p class="product_price">', '税込 ', '&yen;', $formattedPrice, '</p>';
       echo '<p><i class="fa-heart fa-regular"></i></p>';
       echo '</div>';
