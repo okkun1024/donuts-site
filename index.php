@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="common/css/style.css">
   <link rel="stylesheet" href="common/css/common.css">
   <!-- タイトルここ -->
-  <title>Document</title>
+  <title>C.C.Donuts</title>
 </head>
 
 <body>
