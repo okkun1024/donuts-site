@@ -70,9 +70,9 @@
      </div>
     </div>
     END;
-  
-    
-   
+
+
+
     require 'includes/database.php';
 
     $id = $_SESSION['customer']['id'];
@@ -85,8 +85,8 @@
       foreach ($sql as $row) {
         $card_number = $row['card_no'];
         $number_count = mb_strlen($card_number);
-       
-      echo <<<END
+
+        echo <<<END
       <div class="cash_box">
         <div class="payment_method">
           <p class="divbox_1">お支払い</p>
@@ -100,8 +100,8 @@
           <p class="divbox_1">カード番号</p>
       END;
 
-      echo  '<p class="divbox_2">',substr($card_number, 0, 6),'・・・・・・・</p>';
-      echo <<<END
+        echo  '<p class="divbox_2">', substr($card_number, 0, 6), '・・・・・・・</p>';
+        echo <<<END
        </div>
       </div>
       END;
@@ -111,8 +111,8 @@
         <button onclick="location.href='purchase-complete.php'" class="complete_btn">ご購入を確定する</button>
         </div>
       END;
-      }else{
-        echo <<<END
+    } else {
+      echo <<<END
         <h2 class="purchase_h2">お支払い方法</h2>
         <div calss="purchaseD">
         <p class="purchaseP">お支払方法が指定されていません。
@@ -122,48 +122,49 @@
           </div
         </div>
         END;
-      }
-    }else{
-      echo <<<END
-      <div>
-      <p class="purchasePp">商品を購入するにはログインしてください。</p>
-      <a href="login-input.php" class="subBtn">ログイン画面へ</a>
+    }
+  } else {
+    echo <<<END
+      <h2 class="purch_h2">ご購入について</h2>
+      <div class="purch_border">
+      <p class="purch_p">商品を購入するにはログインしてください。</p>
+      <a href="login-input.php" class="purch_suba">ログイン画面へ</a>
       </div>
       END;
-    }
-    
+  }
 
 
 
-  
-//   echo '<div class="table_area">';
-//   echo '<table class="tablePurchase" style=margin:auto>';
-//   echo '<tr>';
-//   echo '<th>お支払い</th><td class="borderTleft">クレジットカード</td>';
-//   echo '</tr>';
-//   echo '<tr>';
-//   echo '<th>カード種類</th><td class="borderTleft">', $row['card_type'], '</td>';
-//   echo '</tr>';
-//   echo '<tr>';
-//   echo '<th>カード番号</th><td class="borderTleft">', substr($card_number, 0, 6), '●●●●●●●●●</td>';
-//   echo '</tr>';
-//   echo '</table>';
-//   echo '</div>';
-// }
-// echo '<div class="subBtn_area">';
-// echo '<a href="purchase-complete.php" style="text-decoration:none;" style="color:white;" class="subBtn">ご購入を確定する</a>';
-// echo '</div>';
-// } else {
-// echo '<h2 class="purchaseHtwo">お支払い方法</h2>';
-// echo '<div clss="purchaseD">';
-// echo '<p class="purchaseP">お支払方法が指定されていません。クレジットカード情報を登録してください。</p>';
-// echo '</div>';
-// echo '<a href="card-input.php" class="subBtn">カード情報を登録する</a>';
-// }
-// } else {
-// echo '<p class="purchasePp">商品を購入するにはログインしてください。</p>';
-// echo '<a href="login-input.php" class="subBtn">ログイン画面へ</a>';
-// }
+
+
+  //   echo '<div class="table_area">';
+  //   echo '<table class="tablePurchase" style=margin:auto>';
+  //   echo '<tr>';
+  //   echo '<th>お支払い</th><td class="borderTleft">クレジットカード</td>';
+  //   echo '</tr>';
+  //   echo '<tr>';
+  //   echo '<th>カード種類</th><td class="borderTleft">', $row['card_type'], '</td>';
+  //   echo '</tr>';
+  //   echo '<tr>';
+  //   echo '<th>カード番号</th><td class="borderTleft">', substr($card_number, 0, 6), '●●●●●●●●●</td>';
+  //   echo '</tr>';
+  //   echo '</table>';
+  //   echo '</div>';
+  // }
+  // echo '<div class="subBtn_area">';
+  // echo '<a href="purchase-complete.php" style="text-decoration:none;" style="color:white;" class="subBtn">ご購入を確定する</a>';
+  // echo '</div>';
+  // } else {
+  // echo '<h2 class="purchaseHtwo">お支払い方法</h2>';
+  // echo '<div clss="purchaseD">';
+  // echo '<p class="purchaseP">お支払方法が指定されていません。クレジットカード情報を登録してください。</p>';
+  // echo '</div>';
+  // echo '<a href="card-input.php" class="subBtn">カード情報を登録する</a>';
+  // }
+  // } else {
+  // echo '<p class="purchasePp">商品を購入するにはログインしてください。</p>';
+  // echo '<a href="login-input.php" class="subBtn">ログイン画面へ</a>';
+  // }
   ?>
 
   <?php
