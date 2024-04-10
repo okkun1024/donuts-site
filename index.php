@@ -64,7 +64,7 @@
     </div>
     <div class="item_list fadeUpTrigger2">
       <div>
-        <img src="common/images/ist_product.jpg" alt="">
+        <a href="product.php"><img src="common/images/ist_product.jpg" alt=""></a>
         <p>商品一覧</p>
       </div>
     </div>
