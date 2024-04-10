@@ -111,7 +111,6 @@ body{
 }
 
 .button {
-  width: 42.666vw;
   font-family: 'Noto Sans JP';
   font-size: clamp(12px, 2vw, 20px);
   font-weight: bold;
@@ -138,7 +137,7 @@ body{
 }
 
 .continue_btn {
-  width: 42.666vw;
+  max-width: 260px;
   font-family: 'Noto Sans JP';
   font-size: clamp(12px, 2vw, 20px);
   text-align: center;
@@ -175,6 +174,7 @@ body{
 
   .cart_show_container img{
     width: 24.524vw;
+    height:24.524vw ;
     margin-right: 2.9282vw;
   }
 
@@ -208,15 +208,5 @@ body{
     padding:62px 0;
   }
 
-  .button{
-    width: 19.473vw;
-    padding: 16px 50px;
-  }
-
-  .continue_btn{
-    width: 19.473vw;
-    padding: 16px 60px;
-
-  }
 
 }
