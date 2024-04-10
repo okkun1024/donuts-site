@@ -17,7 +17,7 @@ session_start();
   <link rel="stylesheet" href="common/css/product.css">
   <link rel="stylesheet" href="common/css/favorite.css">
   <!-- タイトルここ -->
-  <title>Document</title>
+  <title>商品一覧</title>
 </head>
 
 
@@ -151,9 +151,10 @@ END;
 
 
   <!-- javascript -->
+  <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="common/js/favorite.js"></script>
   <script src="common/js/animation.js"></script>
+  <script src="common/js/fovorite_2.js"></script>
 </body>
 
 </html>
