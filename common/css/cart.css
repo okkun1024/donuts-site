@@ -137,7 +137,6 @@ body{
 }
 
 .continue_btn {
-  max-width: 260px;
   font-family: 'Noto Sans JP';
   font-size: clamp(12px, 2vw, 20px);
   text-align: center;
