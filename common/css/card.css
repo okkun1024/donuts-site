@@ -87,9 +87,10 @@ input[type=radio] {
 .formSecurity {
   /* 外側上辺幅変更 */
   margin-top: 20px;
+  margin-bottom: 8px;
 }
 
-input[type=submit] {
+#card_inpsub {
   /* 確認btnの調整・変更 */
   width: 53.333vw;
   height: 48px;
@@ -101,6 +102,8 @@ input[type=submit] {
   transition: 0.3s;
   border: 1px solid #7F5539;
   cursor: pointer;
+  font-family: 'Noto Sans JP';
+  font-size: clamp(16px, 3vw, 20px);
 }
 
 input[type=submit]:hover {
@@ -170,6 +173,8 @@ input[type=submit] {
   margin-top: 100px;
   margin-bottom: 80px;
   cursor: pointer;
+  font-family: 'Noto Sans JP';
+  font-size: clamp(16px, 3vw, 20px);
 }
 
 input[type=submit]:hover {
@@ -220,4 +225,18 @@ img {
   text-decoration: underline;
   font-size: clamp(12px, 2vw, 20px);
   color: #7F5539;
+}
+
+@media screen and (min-width:768px) {
+
+  input[type=text],
+  input[type=submit] {
+    height: 24px;
+    font-size: clamp(20px, 2vw, 24px);
+  }
+
+  .formP,
+  .formSecurity {
+    font-size: clamp(20px, 2vw, 24px);
+  }
 }

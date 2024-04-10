@@ -41,7 +41,7 @@
     <p class="formSecurity">セキュリティーコード<span class="formS">（必須）</span></p>
     <input type="text" autocomplete="cc-csc" name="security" id="formShort" pattern="[\d ]{3,4}" title="4桁以下の番号を入力してください" required>
 
-    <input type="submit" value="ご入力内容を確認する">
+    <input type="submit" value="ご入力内容を確認する" id="card_inpsub">
   </form>
 
   <?php require 'includes/footer.php'; ?>
