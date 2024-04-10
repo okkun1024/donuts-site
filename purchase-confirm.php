@@ -26,10 +26,10 @@
     <h2 class="purchase_h2">ご購入商品</h2>
 
     END;
+    $total = 0;
     foreach ($_SESSION['product'] as $id => $product) {
       $subtotal = $product['price'] * $product['count'];
-      $total = 0;
-      $total += $subtotal;
+      $total =$total + $subtotal;
       $format_subtotal = number_format($subtotal);
       $format_total = number_format($total);
 
