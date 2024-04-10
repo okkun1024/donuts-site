@@ -52,8 +52,8 @@
     }
     echo <<<END
     <div class="total_box">
-      <p class="divbox_1">合計</p>
-      <p class="divbox_2"">税込&yen;{$format_total}</p>
+      <p class="divbox_1 total_price1">合計</p>
+      <p class="divbox_2 total_price2">税込&yen;{$format_total}</p>
     </div>
 
     
@@ -114,9 +114,12 @@
       }else{
         echo <<<END
         <h2 class="purchase_h2">お支払い方法</h2>
-        <div clss="purchaseD">
-        <p class="purchaseP">お支払方法が指定されていません。クレジットカード情報を登録してください。</p>
-        <a href="card-input.php" class="subBtn">カード情報を登録する</a>
+        <div calss="purchaseD">
+        <p class="purchaseP">お支払方法が指定されていません。
+        <br>クレジットカード情報を登録してください。</p>
+          <div class="card_registration_box">
+            <button onclick="location.href='card-input.php'" class="card_registration">カード情報を登録する</button>
+          </div
         </div>
         END;
       }
