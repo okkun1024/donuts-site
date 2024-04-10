@@ -68,7 +68,7 @@ require 'includes/header.php';
       <div class="price_container">
         <p class="product_price">税込 &yen;{$formattedPrice}
             </p>
-            <p><i class="fa-regular fa-heart"></i></p>
+            <div id="switch_btn{$id}"></div>
       </div>
     <form action="cart-input.php" method="post">
     <input type="hidden" name="name" value="{$row['name']}">

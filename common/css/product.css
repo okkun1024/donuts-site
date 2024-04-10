@@ -194,7 +194,7 @@ h2:before {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20vw;
+    width: 70px;
     background-color: #fff;
     border-radius: 10%;
     text-align: center;
@@ -204,7 +204,7 @@ h2:before {
 }
 
 #page_top a img {
-    width: 20vw;
+    width: 70px;
 }
 
 #page_top a:hover {
