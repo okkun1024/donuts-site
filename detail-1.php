@@ -44,7 +44,7 @@
       echo '</p>';
       echo '<div class="price_area fade_up">';
       echo '<p class="product_price">', '税込 ', '&yen;', $formattedPrice, '</p>';
-      echo '<p><i class="fa-heart fa-regular"></i></p>';
+      echo '<div id="switch_btn"></div>';
       echo '</div>';
       echo '<div class="count_cart">';
       echo '<form action="cart-input.php" type="method">';
@@ -67,6 +67,10 @@
   <?php
   require 'includes/footer.php';
   ?>
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="common/js/favorite.js"></script>
 
 </body>
 
