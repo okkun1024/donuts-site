@@ -580,20 +580,11 @@ footer p {
     margin-bottom: 0px;
   }
 
-  .footer_list_2,
-  .footer_list_3 {
-    margin-left: 62px;
-  }
 
   .footer_list li a {
     padding-top: 12px;
     padding-bottom: 12px;
-  }
-
-  .footer_list li a {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-right: 62px;
+    margin-right: 4.538vw;
   }
 
   .footer_list_logo {

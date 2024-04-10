@@ -11,7 +11,7 @@
     <!-- 必要ならば下記のCSSを追加して -->
     <link rel="stylesheet" href="common/css/common.css">
     <!-- タイトルここ -->
-    <title>Header</title>
+    <title>C.C.Donuts</title>
 </head>
 
 <body>
