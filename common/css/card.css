@@ -5,6 +5,15 @@ body {
   font-family: 'Noto Sans JP';
 }
 
+img {
+  width: 16vw;
+  height: 13.333vw;
+  max-width: 100px;
+  max-height: 83.333px;
+  margin-top: 3.2vw;
+  margin-left: 3.2vw;
+}
+
 .inputH {
   /* 見出しの調整・変更 */
   margin-top: 40px;
@@ -104,6 +113,16 @@ body {
   font-family: 'Noto Sans JP';
 }
 
+img {
+  width: 16vw;
+  height: 13.333vw;
+  max-width: 100px;
+  max-height: 83.333px;
+  margin-top: 3.2vw;
+  margin-left: 3.2vw;
+}
+
+
 .confirmH {
   /* 見出しの調整・変更 */
   margin-top: 40px;
@@ -161,6 +180,15 @@ input[type=submit]:hover {
 /* card-conpleteのCSS */
 body {
   font-family: 'Noto Sans JP';
+}
+
+img {
+  width: 16vw;
+  height: 13.333vw;
+  max-width: 100px;
+  max-height: 83.333px;
+  margin-top: 3.2vw;
+  margin-left: 3.2vw;
 }
 
 .completeH {
