@@ -94,9 +94,8 @@ echo '<hr>';
 
   echo '<p class="product_add">カートに追加しました。</p>';
 
-  echo '<main>';
   require 'cart.php';
-  echo '<main>';
+
 
 
   ?>
