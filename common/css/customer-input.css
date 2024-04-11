@@ -1,0 +1,102 @@
+body {
+    color: #7F5539;
+    font-family: 'Noto Sans JP';
+  }
+ 
+
+  h1 {
+    /* 見出しの調整・変更 */
+    margin-top: 40px;
+    margin-bottom: 52px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  form {
+    /* フォームの幅調整 */
+    width:78%;
+    margin:0 auto;
+  }
+ 
+
+  p {
+    /* 文字サイズ変更・色変更 */
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  span {
+    /* 必須項目色変更 */
+    color: #BF0000;
+  }
+
+  input[type=text],
+  input[type=submit] {
+    display: block;
+    width: 100%;
+  }
+
+  label {
+    /* ラジオbtnの幅調整 */
+    padding-right: 30px;
+  }
+
+  input[type=radio] {
+    /* ラジオbtn高さ調整 */
+    margin: 12px 0 20px 0;
+  }
+
+  #formLong {
+    /* textの外側の高さ調整*/
+    margin-bottom: 20px;
+  }
+
+  form .post-input{
+    width:47%;
+  }
+
+  div {
+    /* 横並びへの変更 ・外側下辺の幅変更*/
+    display: flex;
+    margin-bottom: 8px;
+  }
+
+  .formExpiration {
+    /* 月・年のサイズ・色変更 */
+    margin-left: 12px;
+    color: #7F5539;
+  }
+
+  .formSecurity {
+    /* 外側上辺幅変更 */
+    margin-top: 20px;
+  }
+
+  input[type=submit] {
+    /* 確認btnの調整・変更 */
+    width: 60%;
+    font-size: 16px;
+    height: 48px;
+    margin: 0 auto 80px;
+    margin-top: 40px;
+    background-color: #7F5539;
+    color: #fff;
+    border:1px solid #7F5539;
+    transition: .3s;
+  }
+  .submit_btn:hover {
+    color: #7f5539;
+    /* 背景色     */
+    background: #ffffff;
+    /* 文字色     */
+  }
+  .caution{
+    font-size:8px;
+    color:#BF0000;
+  }
+  .shop-logo{
+    margin:12px 0 0 12px;
+    width:60px;
+    height:50px;
+  }
+
