@@ -142,21 +142,25 @@ h2:before {
     animation-fill-mode: forwards;
     opacity: 0;
 }
-.cachi_kun{
-    font-size: clamp(12px, 3vw, 14px);
-    color:#7f5539;
-    position: absolute;
-    top:285px;
-    left:27px;
-    
+
+.cachi_kun {
+    font-size: clamp(12px, 2vw, 14px);
+    color: #7f5539;
+    position: relative;
+    bottom: 20px;
+    left: 7.2vw;
+    width: 100px;
+
 }
-.cachi_kun2{
-    font-size: clamp(12px, 3vw, 14px);
-    color:#7f5539;
-    position: absolute;
-    top:300px;
-    left:27px;
-    
+
+.cachi_kun2 {
+    font-size: clamp(12px, 2vw, 14px);
+    color: #7f5539;
+    position: relative;
+    width: 50vw;
+    top: -20px;
+    left: 7.2vw;
+    height: 50vh;
 }
 
 .fade_Up:nth-child(2) {
@@ -424,17 +428,21 @@ h2:before {
     #page_top a img {
         width: 80px;
     }
-    .cachi_kun{
-        color:#7f5539;
-        position: absolute;
-        top:422px;
-        left:10%;
+
+    .cachi_kun {
+        color: #7f5539;
+        position: relative;
+        bottom: 100px;
+        left: 10vw;
+        width: 10vw;
+        height: 50vh;
     }
-    .cachi_kun2{
-        color:#7f5539;
+
+    .cachi_kun2 {
+        color: #7f5539;
         position: absolute;
-        top:459px;
-        left:10%;
+        top: 459px;
+        left: 10vw;
     }
 
 }
