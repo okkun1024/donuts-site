@@ -110,7 +110,7 @@
 <body>
 <?php session_start() ?>
 
-  <img src="common/images/shop_logo.svg" alt="main logo" class="shop-logo">
+<a href="index.php"><img src="common/images/shop_logo.svg" alt="main logo" class="shop-logo"></a>
   <h1>会員登録</h1>
 
   <form action="customer-confirm.php" method="post">

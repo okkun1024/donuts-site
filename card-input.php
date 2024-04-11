@@ -19,7 +19,7 @@
 <body>
   <?php session_start() ?>
 
-  <img src="common/images/shop_logo.svg" alt="c.c.donuts">
+  <a href="index.php"><img src="common/images/shop_logo.svg" alt="c.c.donuts"></a>
   <h1 class="inputH">カード登録情報</h1>
 
   <form action="card-confirm.php" method="post" class="formInput">
