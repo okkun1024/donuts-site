@@ -120,6 +120,33 @@ body {
     padding-bottom: 300px;
 }
 
+.box{
+	opacity: 0;
+}
+
+.fadeSlide {
+animation-name:fadeSlideAnime;
+animation-duration:0.5s;
+animation-fill-mode:forwards;
+opacity: 0;
+}
+
+@keyframes fadeSlideAnime{
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+
+
+
+
 #ranking_section {
     padding: 0 5.333vw;
 }

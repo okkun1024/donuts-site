@@ -73,11 +73,11 @@
 
 
   <section id="introduce_section">
-    <div class="introduce_container">
-      <h2>philosophy</h2>
-      <h3>私たちの信念</h3>
-      <p class="philosophy_title">"Creating Connections"</p>
-      <p class="philosophy_explain">ドーナツでつながる</p>
+    <div class="introduce_container randomScroll">
+      <h2 class="box">philosophy</h2>
+      <h3 class="box">私たちの信念</h3>
+      <p class="philosophy_title box">"Creating Connections"</p>
+      <p class="philosophy_explain box">ドーナツでつながる</p>
     </div>
   </section>
 
