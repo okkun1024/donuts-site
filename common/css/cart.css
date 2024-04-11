@@ -123,6 +123,7 @@ body{
   transition: .3s;
   border: 1px solid #bf0000;
   margin-bottom: 38px;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -163,6 +164,7 @@ body{
   border: 1px solid #7f5539;
   vertical-align:middle;
   line-height: 1rem;
+  cursor: pointer;
 }
 
 .count-btns:nth-child(1){
