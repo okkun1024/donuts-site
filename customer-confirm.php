@@ -58,7 +58,7 @@
 </head>
 
 <body>
-<img src="common/images/shop_logo.svg" alt="main logo" class="shop-logo">
+<a href="index.php"><img src="common/images/shop_logo.svg" alt="main logo" class="shop-logo"></a>
 <div class="wrpper">
 <h1>ご入力内容の確認</h1>
 

@@ -18,7 +18,7 @@
 <body>
   <?php session_start(); ?>
 
-  <img src="common/images/shop_logo.svg" alt="c.c.donuts">
+  <a href="index.php"><img src="common/images/shop_logo.svg" alt="c.c.donuts"></a>
   <div class="confirmForm">
     <?php
     echo '<h1 class="confirmH">ご入力内容の確認</h1>';

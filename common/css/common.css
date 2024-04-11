@@ -131,7 +131,7 @@ h1 img {
 /*ナビゲーションの縦スクロール*/
 #g_nav.panelactive #g_nav_list {
   /*ナビの数が増えた場合縦スクロール*/
-  position: fixed;
+  position: relative;
   z-index: 999;
   width: 100%;
   height: 100vh;
