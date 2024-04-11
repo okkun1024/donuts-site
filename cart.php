@@ -15,12 +15,16 @@ if (!empty($_SESSION['product'])) {
         <p class="item_name">{$product['name']}</p>
         <div class="item_info">
             <p class="item_price">税込 &yen;{$formattedPrice}</p>
-            <div class="quantity_controls">
-                <button onclick="updateItemCount('minus', {$id_number}, '{$id_number}_count', {$product['price']})">-</button>
+           
+            <p id="subtotal_{$id_number}" class="subtotal">小計 &yen;{$formattedSubtotal}</p>
+        </div>
+        <div class="quantity_controls">
+            <div class="btn_controls">
+                <button onclick="updateItemCount('plus', {$id_number}, '{$id_number}_count', {$product['price']})" class=count-btns>+</button>
                 <span id="{$id_number}_count" class="item_count">{$product['count']}</span>
-                <button onclick="updateItemCount('plus', {$id_number}, '{$id_number}_count', {$product['price']})">+</button>個
+                <button onclick="updateItemCount('minus', {$id_number}, '{$id_number}_count', {$product['price']})" class=count-btns>-</button>個
             </div>
-            <p id="subtotal_{$id_number}" class="subtotal">小計: &yen;{$formattedSubtotal}</p>
+            
         </div>
         <div class="item_delete">
             <a href="cart-delete.php?id={$id_number}">削除する</a>
