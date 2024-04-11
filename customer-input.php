@@ -19,21 +19,21 @@
 <?php session_start() ?>
 
 <a href="index.php"><img src="common/images/shop_logo.svg" alt="main logo" class="shop-logo"></a>
-  <h1>会員登録</h1>
+  <h1 class="cutomer_title">会員登録</h1>
 
     <form action="customer-confirm.php" method="post">
-      <p>お名前<span>（必須）</span></p>
+      <p class="customer_content">お名前<span>（必須）</span></p>
       <input type="text" name="name" id="formLong" required>
     
-      <p>お名前（フリガナ）<span>（必須）</span></p>
+      <p class="customer_content">お名前（フリガナ）<span>（必須）</span></p>
       <input type="text" name="kana" id="formLong" pattern="[\u30A1-\u30FA\u30FC]+" title="全角カタカナで入力てください。" required>
-      <p>郵便番号<span>（必須）</span></p>
+      <p class="customer_content">郵便番号<span>（必須）</span></p>
       <input type="text" name="post_code" id="formLong" class="post-input"  pattern="\d{7}" title="7桁の半角数字で入力してください。" required>
-      <p>住所<span>（必須）</span></p>
+      <p class="customer_content">住所<span>（必須）</span></p>
       <input type="text" name="address" id="formLong" required>
-      <p>メールアドレス<span>（必須）</span></p>
+      <p class="customer_content">メールアドレス<span>（必須）</span></p>
       <input type="mail" name="mail" id="formLong" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-      <p>パスワード<span>（必須）</span></p>
+      <p class="customer_content">パスワード<span>（必須）</span></p>
       <p class="caution">A-Z、a-z、0-9を少なくとも各1つは含めて8文字以上で入力してください。</p>
       <input type="text" name="password" id="formLong" pattern="[a-zA-Z0-9]{8,}" required>
       <input type="submit" value="ご入力内容を確認する" class="submit_btn">
