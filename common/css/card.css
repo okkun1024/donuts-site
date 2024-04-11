@@ -106,7 +106,7 @@ input[type=radio] {
   font-size: clamp(16px, 3vw, 20px);
 }
 
-input[type=submit]:hover {
+#card_inpsub:hover {
   color: #7F5539;
   background: #fff;
 }
