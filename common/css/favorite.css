@@ -11,8 +11,8 @@
 
 #switch_btn1 {
     margin-left: 10.93vw;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     background: url(../images/favorite_icon_empty.svg) no-repeat;
     background-size: 100% 100%;
     cursor: pointer;
@@ -20,8 +20,8 @@
 
 #switch_btn2 {
     margin-left: 10.93vw;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     background: url(../images/favorite_icon_empty.svg) no-repeat;
     background-size: 100% 100%;
     cursor: pointer;
@@ -29,8 +29,8 @@
 
 #switch_btn3 {
     margin-left: 10.93vw;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     background: url(../images/favorite_icon_empty.svg) no-repeat;
     background-size: 100% 100%;
     cursor: pointer;
@@ -38,8 +38,8 @@
 
 #switch_btn4 {
     margin-left: 10.93vw;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     background: url(../images/favorite_icon_empty.svg) no-repeat;
     background-size: 100% 100%;
     cursor: pointer;
@@ -47,8 +47,8 @@
 
 #switch_btn5 {
     margin-left: 10.93vw;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     background: url(../images/favorite_icon_empty.svg) no-repeat;
     background-size: 100% 100%;
     cursor: pointer;
@@ -56,8 +56,8 @@
 
 #switch_btn6 {
     margin-left: 10.93vw;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     background: url(../images/favorite_icon_empty.svg) no-repeat;
     background-size: 100% 100%;
     cursor: pointer;
@@ -65,8 +65,8 @@
 
 #switch_btn7 {
     margin-left: 10.93vw;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     background: url(../images/favorite_icon_empty.svg) no-repeat;
     background-size: 100% 100%;
     cursor: pointer;
@@ -74,8 +74,8 @@
 
 #switch_btn8 {
     margin-left: 10.93vw;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     background: url(../images/favorite_icon_empty.svg) no-repeat;
     background-size: 100% 100%;
     cursor: pointer;
@@ -83,8 +83,8 @@
 
 #switch_btn9 {
     margin-left: 10.93vw;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     background: url(../images/favorite_icon_empty.svg) no-repeat;
     background-size: 100% 100%;
     cursor: pointer;
@@ -92,8 +92,8 @@
 
 #switch_btn10 {
     margin-left: 10.93vw;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     background: url(../images/favorite_icon_empty.svg) no-repeat;
     background-size: 100% 100%;
     cursor: pointer;
@@ -101,8 +101,8 @@
 
 #switch_btn11 {
     margin-left: 10.93vw;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     background: url(../images/favorite_icon_empty.svg) no-repeat;
     background-size: 100% 100%;
     cursor: pointer;
@@ -110,8 +110,8 @@
 
 #switch_btn12 {
     margin-left: 10.93vw;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     background: url(../images/favorite_icon_empty.svg) no-repeat;
     background-size: 100% 100%;
     cursor: pointer;
@@ -255,8 +255,8 @@
     #switch_btn11,
     #switch_btn12 {
         margin-left: 0px;
-        width: 24px;
-        height: 24px;
+        width: 2.635vw;
+        height: 2.635vw;
     }
 
 }

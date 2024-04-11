@@ -435,6 +435,7 @@ footer p {
     background: #eee;
     text-align: center;
     color: #ede0d4;
+    overflow: hidden;
   }
 
   #splash_logo {
