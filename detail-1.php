@@ -14,7 +14,7 @@
   <!-- 必要ならば下記のCSSを追加して -->
   <link rel="stylesheet" href="">
   <!-- タイトルここ -->
-  <title>Document</title>
+  <title>商品詳細</title>
 </head>
 
 <body>
