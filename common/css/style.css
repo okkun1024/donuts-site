@@ -245,9 +245,10 @@ body {
     content: '';
     position: absolute;
     left: 50%;
-    bottom: -8px;
+    bottom: -10px;
     display: inline-block;
     width: 40.53vw;
+    max-width: 240px;
     height: 4px;
     -moz-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
@@ -618,7 +619,7 @@ body {
         content: '';
         position: absolute;
         left: 50%;
-        bottom: -12px;
+        bottom: -16px;
         display: inline-block;
         width: 240px;
         height: 8px;
