@@ -28,7 +28,7 @@
     <input type="email" name="mail" required>
     <p>パスワード</p>
     <input type="password" name="password" required>
-    <input type="submit" value="ログインする">
+    <input type="submit" value="ログインする" style="font-family: 'Noto Sans JP';" class="submit_btn" >
   </form>
 
   <p class="relog"><a href="customer-input.php">会員登録がお済でない方はこちら</a></p>

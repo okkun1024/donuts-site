@@ -6,6 +6,7 @@ body{
     margin: auto;
     border: 2px solid #E8C2CA;
     width: 89%;
+   
   }
   .former p{
     margin:20px 0 4px 4%;
@@ -22,7 +23,7 @@ body{
     margin: auto;
     width:90%;
   }
-  .former input[type=submit]{
+  .former .submit_btn{
     width:200px;
     padding:12px;
     border-style: none;
@@ -32,6 +33,14 @@ body{
     margin-top:40px;
     margin-bottom:20px;
     cursor: pointer;
+    border: 1px solid #7f5539;
+    transition: .3s;
+  }
+  .submit_btn:hover {
+    color: #7f5539;
+    /* 背景色     */
+    background: #ffffff;
+    /* 文字色     */
   }
   .relog{
     width:95%;
@@ -96,20 +105,25 @@ body{
       padding: 20px 0 20px 0;
       margin-bottom:80px;
     }
-    .logout-div2{
+    
+    .logout-a{
+      display: block;
       width:53%;
       padding:23px 0;
       margin: auto;
       background-color: #7F5539;
-
-    }
-    .logout-a{
-      display: block;
+      border: 1px solid #7F5539;
+      transition: .3s;
       text-align: center;
       color: white;
-      
     }
 
+    .logout-a:hover {
+      color: #7f5539;
+      /* 背景色     */
+      background: #ffffff;
+      /* 文字色     */
+    }
     /* logout complete */
     .logout-wrpper h1{
         text-align: center;
