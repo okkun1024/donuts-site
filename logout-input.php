@@ -11,41 +11,8 @@
   <link rel="stylesheet" href="common/css/reset.css">
   <!-- 必要ならば下記のCSSを追加して -->
   <link rel="stylesheet" href="common/css/common.css">
-  <style>
-    body{
-      font-family: 'Noto Sans JP';
-    }
-    .logout-inp-h1{
-      text-align: center;
-      margin:32px 0 60px 0 ;
-      color:#7F5539;
-    }
-    .logout-p{
-      text-align: center;
-      margin-bottom: 20px;
-      color:#7F5539;
-    }
-    .logout-div{
-      margin: 0 auto;
-      border: 2px solid #E8C2CA;
-      width:89%;
-      padding: 20px 0 20px 0;
-      margin-bottom:80px;
-    }
-    .logout-div2{
-      width:53%;
-      padding:23px 0;
-      margin: auto;
-      background-color: #7F5539;
-
-    }
-    .logout-a{
-      display: block;
-      text-align: center;
-      color: white;
-      
-    }
-  </style>
+  <link rel="stylesheet" href="common/css/login,logout.css">
+ 
   <!-- タイトルここ -->
   <title>ログアウト画面</title>
 
