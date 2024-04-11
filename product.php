@@ -25,6 +25,31 @@ session_start();
 require 'includes/header.php';
 ?>
 
+<ul class="pankuzu">
+  <li><a href="index.php">top</a></li>
+  <li>></li>
+  <li>商品一覧</li>
+</ul>
+
+
+<hr>
+
+<?php
+
+if (isset($_SESSION['customer'])) {
+  // ログインしている
+
+
+  echo '<p class="cart_name">ようこそ', $_SESSION['customer']['name'], '様</p> ';
+} else {
+
+  echo '<p class="cart_name">ようこそ　ゲスト様</p> ';
+}
+
+
+?>
+<hr>
+
 <body>
   <p id="page_top"><a href="#"><img src="common/images/top_page_icon.svg" alt=""></a></p>
 

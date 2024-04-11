@@ -23,10 +23,30 @@
   require 'includes/header.php';
   ?>
 
-  <!-- パンくずメニュー -->
-  <!-- <div class="bread_crumb">
-<p><a href="#index.php">TOP</a>＞<a href="#product.php">商品一覧</a>
-</div> -->
+  <ul class="pankuzu">
+    <li><a href="index.php">top</a></li>
+    <li>></li>
+    <li>商品一覧</li>
+  </ul>
+
+
+  <hr>
+
+  <?php
+
+  if (isset($_SESSION['customer'])) {
+    // ログインしている
+
+
+    echo '<p class="cart_name">ようこそ', $_SESSION['customer']['name'], '様</p> ';
+  } else {
+
+    echo '<p class="cart_name">ようこそ　ゲスト様</p> ';
+  }
+
+
+  ?>
+  <hr>
 
   <div class=item_container>
 
