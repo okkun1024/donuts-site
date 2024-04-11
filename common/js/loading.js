@@ -4,7 +4,7 @@ var stroke;
 stroke = new Vivus('mask', {
     start: 'manual',
     type: 'scenario-sync',
-    duration: 20,
+    duration: 10,
     forceRender: false,
     animTimingFunction: Vivus.EASE,
 },
@@ -20,8 +20,8 @@ if (!sessionStorage.getItem(keyName)) {
     sessionStorage.setItem(keyName, keyValue);
     // 初回閲覧時
     $(window).on('load', function () {
-        $("#splash").delay(3000).fadeOut('slow');
-        $("#splash_logo").delay(3000).fadeOut('slow');
+        $("#splash").delay(2500).fadeOut('slow');
+        $("#splash_logo").delay(2500).fadeOut('slow');
         stroke.play();
     });
 } else {

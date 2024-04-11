@@ -1,7 +1,6 @@
 "use strict";
-
 function delayScrollAnime() {
-    var time = 4;
+    var time = 0;
     var value = time;
     $('.delayScroll').each(function () {
         var parent = this;

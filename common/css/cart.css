@@ -74,8 +74,8 @@ body{
 }
 
 .item_count{
+  display: inline-block;
   font-size: clamp(16px,3vw,24px);
-  margin-bottom: 16px;
 }
 
 .item_delete a{
@@ -99,6 +99,7 @@ body{
  font-size: clamp(16px,3vw,24px);
   color: #7f5539;
   margin-bottom: 20px;
+  margin-top: 38px;
 }
 
 .total_price_checkbox span{
@@ -121,6 +122,7 @@ body{
   color: #ffffff;
   transition: .3s;
   border: 1px solid #bf0000;
+  margin-bottom: 38px;
 }
 
 .button:hover {
@@ -146,6 +148,34 @@ body{
   color: #ffffff;
   transition: .3s;
   border: 1px solid #7f5539;
+} 
+
+.quantity_controls{
+  margin: 8px 0;
+}
+
+.count-btns{
+  width: 16px;
+  height: 16px;
+  font-size: clamp(12px, 2vw, 20px);
+  background-color: #e6ccb2;
+  color: #7f5539;
+  border: 1px solid #7f5539;
+  vertical-align:middle;
+  line-height: 1rem;
+}
+
+.count-btns:nth-child(1){
+  margin-right: 8px;
+  font-size: clamp(16px,3vw,24px);
+}
+
+.count-btns:last-child{
+  font-size: clamp(19px,3vw,28px);
+  margin-left: 8px;
+  margin-right: 10px;
+  line-height: 0.1px;
+  padding-bottom: 2px;
 }
 
 .continue_btn:hover {
@@ -203,9 +233,45 @@ body{
     padding-bottom: 15px;
   }
 
+  .total_title{
+    margin-top: 62px;
+  }
+  
   .total_price_checkbox{
     padding:62px 0;
   }
 
+  .quantity_controls{
+    text-align: right;
+  }
+  .button{
+    margin-bottom: 62px;
+  }
+  .btn_controls{
+    display: inline-block;
+  }
 
+  .count-btns{
+    width: 24px;
+    height: 24px;
+    background-color: #e6ccb2;
+    color: #7f5539;
+    border: 1px solid #7f5539;
+    vertical-align:text-top;
+    
+  }
+
+  .count-btns:nth-child(1){
+    margin-right: 10px;
+    font-size: clamp(16px,3vw,24px);
+  }
+
+  .count-btns:last-child{
+    font-size: clamp(19px,3vw,28px);
+    margin: 0 10px;
+    padding-bottom: 4px;
+  }
+  .subtotal{
+    font-size: clamp(16px,3vw,24px);
+  }
 }
