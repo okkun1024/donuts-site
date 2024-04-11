@@ -57,19 +57,24 @@ if (isset($_SESSION['customer'])) {
 
   // データベース接続
   require 'includes/database.php';
-
+  function counter(&$string){
+    echo '<div class="cachi_kun">該当:',$string,'件</div>';
+  }
+  
   // フォームの入力値がセットされているか判定
-  if (isset($_REQUEST['keyword'])) {
+  if (!empty($_REQUEST['keyword'])) {
     // セットされている場合、入力値あり
     // productテーブル内で部分一致するレコードを取得
     $sql = $pdo->prepare('select * from product where name like ?');
     $sql->execute(['%' . $_REQUEST['keyword'] . '%']);
+    echo  '<h2 class="fade_Up">検索一覧</h2>';
   } else {
     // セットされていない場合、入力値なし
     // productテーブルのすべてのレコードを取得
     $sql = $pdo->query('select * from product');
+    echo  '<h2 class="fade_Up">商品一覧</h2>';
   }
-  echo  '<h2 class="fade_Up">商品一覧</h2>';
+  
   echo '<div class="product_box">';
 
   $counter = 0;
@@ -81,6 +86,7 @@ if (isset($_SESSION['customer'])) {
       break;
     }
 
+   
     // 価格を3桁ごとにカンマで区切る
     $formattedPrice = number_format($row['price']);
 
@@ -108,9 +114,10 @@ if (isset($_SESSION['customer'])) {
   </div>
 END;
     $counter++;
-  }
+    }
   // product_boxの終了タグ
   echo '</div>';
+  
 
   $counter2 = 0;
   // $stmt は PDOStatement オブジェクトと仮定
@@ -169,7 +176,13 @@ END;
     $counter2++;
   }
   echo '</div>';
-
+  if(!empty($_REQUEST['keyword'])){
+    $totalcounter = $counter + $counter2;
+    counter($totalcounter);
+    if($totalcounter === 0){
+      echo '<div class="cachi_kun2">検索した商品は見つかりません。</div>';
+    }
+    }
 
   ?>
   <?php require 'includes/footer.php'; ?>
