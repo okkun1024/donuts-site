@@ -5,7 +5,7 @@ body {
   font-family: 'Noto Sans JP';
 }
 
-img{
+img {
   width: 16vw;
   height: 13.333vw;
   max-width: 100px;
@@ -40,7 +40,7 @@ img{
   font-size: clamp(12px, 2vw, 20px);
   padding: 4px 6.4vw;
   margin-bottom: 20px;
-  border-top:1px solid #e8c2ca ;
+  border-top: 1px solid #e8c2ca;
   border-bottom: 1px solid #e8c2ca;
   margin-left: 5.333vw;
   margin-right: 5.333vw;
@@ -56,7 +56,7 @@ img{
 .card_type,
 .card_number {
   display: flex;
-  align-items:center;
+  align-items: center;
 }
 
 
@@ -87,17 +87,18 @@ img{
 }
 
 .total_box .total_price1,
-.total_box .total_price2{
-font-weight: bold;
+.total_box .total_price2 {
+  font-weight: bold;
 }
 
-.complete_box_btn{
+.complete_box_btn {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 80px;
-  
+
 }
-.complete_btn{
+
+.complete_btn {
   width: 42.666vw;
   font-family: 'Noto Sans JP';
   font-size: clamp(12px, 2vw, 20px);
@@ -110,28 +111,32 @@ font-weight: bold;
   border: 1px solid #7f5539;
 }
 
+.complete_btn:hover {
+  color: #7F5539;
+  background: #fff;
+}
 
 
-.purchaseP{
+.purchaseP {
   text-align: center;
   font-size: clamp(12px, 2vw, 20px);
   color: #bf0000;
-  line-height:1.5em ;
+  line-height: 1.5em;
   padding: 16px 6.4vw 20px 6.4vw;
   margin-bottom: 20px;
-  border-top:1px solid #bf0000 ;
+  border-top: 1px solid #bf0000;
   border-bottom: 1px solid #bf0000;
   margin-left: 5.333vw;
   margin-right: 5.333vw;
 }
 
-.card_registration_box{
+.card_registration_box {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 80px;
 }
 
-.card_registration{
+.card_registration {
   width: 42.666vw;
   font-family: 'Noto Sans JP';
   font-size: clamp(12px, 2vw, 20px);
@@ -142,4 +147,45 @@ font-weight: bold;
   color: #ffffff;
   transition: .3s;
   border: 1px solid #7f5539;
+}
+
+.card_registration:hover {
+  color: #7F5539;
+  background: #fff;
+}
+
+
+.purch_h2 {
+  /* 見出しの調整・変更 */
+  margin-top: 40px;
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: clamp(20px, 5vw, 36px);
+  color: #7F5539;
+}
+
+
+.purch_border {
+  margin: auto;
+  border: 2px solid #E8C2CA;
+  width: 89%;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.purch_p {
+  text-align: center;
+  padding-top: 40px;
+  font-size: clamp(16px, 3vw, 20px);
+}
+
+.purch_suba {
+  display: block;
+  text-align: right;
+  margin-top: 24px;
+  margin-bottom: 30px;
+  text-decoration: underline;
+  padding-right: 10px;
+  color: #7F5539;
+  font-size: clamp(16px, 3vw, 20px);
 }

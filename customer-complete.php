@@ -62,7 +62,7 @@
 <body>
   <?php session_start() ?>
 
-  <img src="common/images/shop_logo.svg" alt="main logo" class="shop-logo">
+  <a href="index.php"><img src="common/images/shop_logo.svg" alt="main logo" class="shop-logo"></a>
 
   <?php
   $pdo = new PDO('mysql:host=localhost;dbname=donuts;charset=utf8', 'donuts', 'password');

@@ -7,7 +7,7 @@
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: 999;
+  z-index: 9999;
   background: #eee;
   text-align: center;
   color: #ede0d4;
@@ -131,7 +131,7 @@ h1 img {
 /*ナビゲーションの縦スクロール*/
 #g_nav.panelactive #g_nav_list {
   /*ナビの数が増えた場合縦スクロール*/
-  position: fixed;
+  position: relative;
   z-index: 999;
   width: 100%;
   height: 100vh;
@@ -173,7 +173,7 @@ h1 img {
 /*========= ボタンのためのCSS ===============*/
 .openbtn1 {
   position: absolute;
-  z-index: 9999;
+  z-index: 9998;
   /*ボタンを最前面に*/
   top: 10px;
   left: 0;
@@ -431,10 +431,11 @@ footer p {
     position: fixed;
     width: 100%;
     height: 100%;
-    z-index: 999;
+    z-index: 9999;
     background: #eee;
     text-align: center;
     color: #ede0d4;
+    overflow: hidden;
   }
 
   #splash_logo {
@@ -470,23 +471,35 @@ footer p {
     padding-bottom: 0px;
   }
 
+.openbtn1 {
+  position: absolute;
+  z-index: 9998;
+  /*ボタンを最前面に*/
+  top: 32px;
+  left: 50px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
   .openbtn1 {
     opacity: 0;
   }
 
   .openbtn1 span:nth-of-type(1) {
-    top: 25px;
-    left: 95px;
+    top: 0;
+    left: 0;
   }
 
   .openbtn1 span:nth-of-type(2) {
-    top: 44.2px;
-    left: 95px;
+    top: 23px;
+    left: 0;
   }
 
   .openbtn1 span:nth-of-type(3) {
-    top: 63.4px;
-    left: 95px;
+    top: 47px;
+    left: 0;
   }
 
   h1 img {

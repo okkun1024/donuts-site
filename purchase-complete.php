@@ -21,7 +21,7 @@
   session_start();
   ?>
 
-  <img src="common/images/shop_logo.svg" alt="main logo" class="main-logo">
+<a href="index.php"><img src="common/images/shop_logo.svg" alt="main logo" class="main-logo"></a>
   <?php
   require 'includes/database.php';
   if (isset($_SESSION['product'])) {

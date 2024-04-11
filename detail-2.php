@@ -13,7 +13,7 @@
   <!-- 必要ならば下記のCSSを追加して -->
   <link rel="stylesheet" href="">
   <!-- タイトルここ -->
-  <title>Document</title>
+  <title>商品詳細</title>
 </head>
 
 <body>
@@ -23,10 +23,47 @@
   require 'includes/header.php';
   ?>
 
-  <!-- パンくずメニュー -->
-  <!-- <div class="bread_crumb">
-<p><a href="#index.php">TOP</a>＞<a href="#product.php">商品一覧</a>
-</div> -->
+<?php
+  require 'includes/database.php';
+
+ // 商品IDに基づいて商品情報を取得
+$sql = $pdo->prepare('select * from product where id=?');
+$sql->execute([$_REQUEST['id']]);
+
+// 取得した商品情報を表示
+foreach ($sql as $row) {
+    echo<<<END
+    
+    <ul class="pankuzu">
+      <li><a href="index.php">top</a></li>
+      <li>></li>
+      <li><a href="product.php">商品一覧</a></li>
+      <li>></li>
+      <li>{$row['name']}</li>
+    </ul>
+    <hr>
+
+END;
+  }
+
+
+  ?>
+
+  <?php
+
+  if (isset($_SESSION['customer'])) {
+    // ログインしている
+
+
+    echo '<p class="cart_name">ようこそ', $_SESSION['customer']['name'], '様</p> ';
+  } else {
+
+    echo '<p class="cart_name">ようこそ　ゲスト様</p> ';
+  }
+
+
+  ?>
+  <hr>
 
   <div class=item_container>
 
