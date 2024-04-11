@@ -10,49 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="common/css/reset.css">
   <!-- 必要ならば下記のCSSを追加して -->
-  <link rel="stylesheet" href="">
-  <style>
-
-    .wrpper{
-      margin-left: 11%;
-      margin-right: 11%;
-    }
-    .wrpper h1{
-      color: #7F5539;
-      text-align: center;
-      margin:40px 0 52px 0;
-      font-size:20px;
-    }
-    .title-confirm{
-      font-size:12px;
-      margin-bottom: 8px;
-      color: #7F5539;
-    }
-    .content-confirm{
-      margin-bottom: 20px ;
-      font-size: 12px;
-    }
-    input[type=submit] {
-      /* 確認btnの調整・変更 */
-      display: block;
-      font-size: 16px;
-      width: 60%;
-      height: 48px;
-      margin: 0 auto 80px;
-      margin-top: 40px;
-      background-color: #7F5539;
-      color: #fff;
-      border: #fff;
-    }
-    .shop-logo{
-      margin:12px 0 0 12px;
-      width:60px;
-      height:50px;
-    }
-    .passflex{
-      font-size: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="common/css/customer-comp.css">
   <!-- タイトルここ -->
   <title>ご入力情報確認</title>
 </head>

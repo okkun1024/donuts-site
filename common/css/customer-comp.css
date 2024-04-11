@@ -1,0 +1,115 @@
+/* customer-confirm */
+body{
+    font-family: 'Noto Sans JP';
+}
+.wrpper{
+    margin-left: 11%;
+    margin-right: 11%;
+  }
+  .wrpper h1{
+    color: #7F5539;
+    text-align: center;
+    margin:40px 0 52px 0;
+    font-size: clamp(20px,2.5vw,22px);
+  }
+  .title-confirm{
+    font-size: clamp(12px,2vw,16px);
+    margin-bottom: 8px;
+    color: #7F5539;
+  }
+  .content-confirm{
+    margin-bottom: 20px ;
+    font-size: clamp(12px,2vw,16px);
+  }
+  input[type=submit] {
+    /* 確認btnの調整・変更 */
+    display: block;
+    font-size: 16px;
+    width: 60%;
+    height: 48px;
+    margin: 0 auto 80px;
+    margin-top: 40px;
+    background-color: #7F5539;
+    color: #fff;
+    border: #fff;
+    cursor: pointer;
+    font-family: 'Noto Sans JP';
+    border: 1px solid  #7F5539;
+    transition: .3s;
+  }
+  input[type=submit]:hover {
+    color: #7f5539;
+    /* 背景色     */
+    background: #ffffff;
+    /* 文字色     */
+  }
+  .shop-logo{
+    margin:12px 0 0 12px;
+    width:60px;
+    height:50px;
+  }
+  .passflex{
+    font-size: 10px;
+  }
+
+  @media screen and (min-width:768px){
+    .wrpper h1 {
+      /* 見出しの調整・変更 */
+      font-size: clamp(22px,2.5vw,30px);
+    }
+    .title-confirm,.content-confirm {
+      /* 文字サイズ変更・色変更 */
+      font-size: clamp(16px,2.5vw,24px);
+      
+    }
+    input[type=submit] {
+        height: 68px;
+        font-size:24px;
+      }
+
+}
+  /* customer-comp */
+  .customer-wrpper h1 {
+    color: #7F5539;
+    text-align: center;
+    margin: 40px 0 52px 0;
+    font-size: clamp(20px,2.5vw,22px);
+  }
+
+  .customer-wrpper div {
+    margin: 0 auto;
+    border: 2px solid #E8C2CA;
+    width: 89%;
+    padding: 36px 0 36px 0;
+    margin-top: 60px
+  }
+
+  .customer-wrpper div p {
+    text-align: center;
+    font-size: clamp(12px,2vw,16px);
+  }
+
+  .relog {
+    width: 89%;
+    margin: 0 auto;
+    margin-bottom: 416px;
+  }
+
+  .customer-wrpper p a {
+    display: block;
+    text-align: right;
+    margin-top: 24px;
+    margin-bottom: 80px;
+    text-decoration: underline;
+    color: #7F5539;
+  }
+
+  .else-div {
+    margin-top: 36px;
+  }
+
+  .shop-logo {
+    margin: 12px 0 0 12px;
+    width: 60px;
+    height: 50px;
+  }
