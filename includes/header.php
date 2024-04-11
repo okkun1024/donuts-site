@@ -55,7 +55,7 @@
         </div>
         <nav id="g_nav">
             <div id="g_nav_list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
-                <img src="common/images/shop_logo.svg" class="nav_image">
+                <a href="../index.php"><img src="common/images/shop_logo.svg" class="nav_image"></a>
                 <ul>
                     <li><a href="index.php">Top</a></li>
                     <li><a href="product.php ">商品一覧</a></li>
