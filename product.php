@@ -179,9 +179,7 @@ END;
   if(!empty($_REQUEST['keyword'])){
     $totalcounter = $counter + $counter2;
     counter($totalcounter);
-    if($totalcounter === 0){
-      echo '<div class="cachi_kun2">検索した商品は見つかりません。</div>';
-    }
+    
     }
 
   ?>
