@@ -79,7 +79,8 @@
                 <button type="submit" aria-label="検索" ></button>
 
                 <label>
-                    <input type="text" name="keyword" value="<?php echo $char; ?>">
+                    <input type="text" name="keyword" value="<?php echo $char; ?>" style="font-family: 'Noto Sans JP';
+                    color:#7f5539;">
                 </label>
             </form>
         </div>
