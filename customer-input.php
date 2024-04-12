@@ -32,7 +32,7 @@
       <p class="customer_content">住所<span>（必須）</span></p>
       <input type="text" name="address" id="formLong" required>
       <p class="customer_content">メールアドレス<span>（必須）</span></p>
-      <input type="mail" name="mail" id="formLong" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+      <input type="text" name="mail" id="formLong" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
       <p class="customer_content">パスワード<span>（必須）</span></p>
       <p class="caution">A-Z、a-z、0-9を少なくとも各1つは含めて8文字以上で入力してください。</p>
       <input type="text" name="password" id="formLong" pattern="[a-zA-Z0-9]{8,}" required>
