@@ -57,6 +57,17 @@ h2:before {
     background-color: #ffd233;
 }
 
+.cachi_kun {
+    font-size: clamp(12px, 2vw, 14px);
+    color: #7f5539;
+    position: absolute;
+    top: 295px;
+    left: 6.3vw;
+    width: 100px;
+    height: 50vh;
+}
+
+
 .product_box,
 .product_box_2 {
     display: flex;
@@ -143,25 +154,6 @@ h2:before {
     opacity: 0;
 }
 
-.cachi_kun {
-    font-size: clamp(12px, 2vw, 14px);
-    color: #7f5539;
-    position: relative;
-    bottom: 20px;
-    left: 7.2vw;
-    width: 100px;
-
-}
-
-.cachi_kun2 {
-    font-size: clamp(12px, 2vw, 14px);
-    color: #7f5539;
-    position: relative;
-    width: 50vw;
-    top: -20px;
-    left: 7.2vw;
-    height: 50vh;
-}
 
 .fade_Up:nth-child(2) {
     animation-delay: 0.2s;
@@ -431,18 +423,11 @@ h2:before {
 
     .cachi_kun {
         color: #7f5539;
-        position: relative;
-        bottom: 100px;
-        left: 10vw;
+        position: absolute;
+        top: 430px;
+        left: 10.5vw;
         width: 10vw;
         height: 50vh;
-    }
-
-    .cachi_kun2 {
-        color: #7f5539;
-        position: absolute;
-        top: 459px;
-        left: 10vw;
     }
 
 }
